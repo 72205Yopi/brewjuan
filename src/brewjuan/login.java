@@ -37,8 +37,8 @@ public class login extends javax.swing.JFrame {
         pass_field = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        small_logo = new javax.swing.JLabel();
-        big_logo = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         user_dialog.setInputValue(user_field.getText());
 
@@ -79,8 +79,7 @@ public class login extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Password:");
 
-        small_logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/BrewJuan_Logo_white_no name.png"))); // NOI18N
-        small_logo.setFocusable(false);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/BrewJuan_Logo_white_no name.png"))); // NOI18N
 
         javax.swing.GroupLayout login_panelLayout = new javax.swing.GroupLayout(login_panel);
         login_panel.setLayout(login_panelLayout);
@@ -99,19 +98,19 @@ public class login extends javax.swing.JFrame {
             .addGroup(login_panelLayout.createSequentialGroup()
                 .addGroup(login_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(login_panelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(small_logo))
-                    .addGroup(login_panelLayout.createSequentialGroup()
                         .addGap(121, 121, 121)
-                        .addComponent(login_button)))
+                        .addComponent(login_button))
+                    .addGroup(login_panelLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jLabel5)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         login_panelLayout.setVerticalGroup(
             login_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(login_panelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(small_logo)
-                .addGap(68, 68, 68)
+                .addComponent(jLabel5)
+                .addGap(134, 134, 134)
                 .addGroup(login_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(user_field, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
@@ -124,8 +123,7 @@ public class login extends javax.swing.JFrame {
                 .addContainerGap(186, Short.MAX_VALUE))
         );
 
-        big_logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/BrewJuan_Logo_white.png"))); // NOI18N
-        big_logo.setFocusable(false);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/BrewJuan_Logo_white.png"))); // NOI18N
 
         javax.swing.GroupLayout mainpanelLayout = new javax.swing.GroupLayout(mainpanel);
         mainpanel.setLayout(mainpanelLayout);
@@ -134,9 +132,9 @@ public class login extends javax.swing.JFrame {
             .addGroup(mainpanelLayout.createSequentialGroup()
                 .addGap(52, 52, 52)
                 .addComponent(login_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
-                .addComponent(big_logo)
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addGap(58, 58, 58)
+                .addComponent(jLabel4)
+                .addContainerGap(72, Short.MAX_VALUE))
         );
         mainpanelLayout.setVerticalGroup(
             mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,9 +144,9 @@ public class login extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(login_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(mainpanelLayout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(big_logo)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                        .addGap(110, 110, 110)
+                        .addComponent(jLabel4)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -163,6 +161,7 @@ public class login extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void user_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_user_fieldActionPerformed
@@ -179,8 +178,8 @@ public class login extends javax.swing.JFrame {
            pass_dialog.showMessageDialog(null,"Please fill out the Username");
        }
        else if(user_field.getText().contains("admin")&& pass_field.getText().contains("123456")) {
-          order_page order = new order_page();
-          order.show();
+         btnspage frame = new btnspage();
+          frame.show();
           
           dispose();
            
@@ -230,16 +229,16 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel big_logo;
     private javax.swing.JOptionPane error_dialog;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JButton login_button;
     private javax.swing.JPanel login_panel;
     private javax.swing.JPanel mainpanel;
     private javax.swing.JOptionPane pass_dialog;
     private javax.swing.JPasswordField pass_field;
-    private javax.swing.JLabel small_logo;
     private javax.swing.JOptionPane succes_dialog;
     private javax.swing.JOptionPane user_dialog;
     private javax.swing.JTextField user_field;

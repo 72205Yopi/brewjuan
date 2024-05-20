@@ -584,6 +584,11 @@ public class order_page extends javax.swing.JFrame {
 
     private void back_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back_ButtonActionPerformed
         // TODO add your handling code here:
+        btnspage frame = new btnspage();
+          frame.show();
+          
+          dispose();
+        
     }//GEN-LAST:event_back_ButtonActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
