@@ -69,7 +69,7 @@ public class order_page extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
+        title = new javax.swing.JLabel();
         back_Button = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -82,6 +82,7 @@ public class order_page extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(81, 55, 36));
 
         jLabel4.setFont(new java.awt.Font("Segoe Script", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Coffee");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -499,6 +500,8 @@ public class order_page extends javax.swing.JFrame {
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/BrewJuan_Logo_white_no name_order_logo.png"))); // NOI18N
         jLabel12.setText("jLabel12");
 
+        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -510,8 +513,14 @@ public class order_page extends javax.swing.JFrame {
             .addGap(0, 606, Short.MAX_VALUE)
         );
 
-        jLabel13.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
-        jLabel13.setText("BREW JUAN");
+        title.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        title.setForeground(new java.awt.Color(255, 255, 255));
+        title.setText("BREW JUAN");
+        title.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                titleMouseClicked(evt);
+            }
+        });
 
         back_Button.setBackground(new java.awt.Color(0, 0, 0));
         back_Button.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
@@ -519,6 +528,7 @@ public class order_page extends javax.swing.JFrame {
         back_Button.setText("Back");
         back_Button.setBorderPainted(false);
         back_Button.setFocusPainted(false);
+        back_Button.setOpaque(false);
         back_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 back_ButtonActionPerformed(evt);
@@ -539,7 +549,7 @@ public class order_page extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel13)
+                        .addComponent(title)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 846, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -557,7 +567,7 @@ public class order_page extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(back_Button)
                         .addGap(8, 8, 8)
-                        .addComponent(jLabel13)))
+                        .addComponent(title)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -639,6 +649,16 @@ public class order_page extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton12ActionPerformed
 
+    private void titleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMouseClicked
+        // TODO add your handling code here:
+         login frame = new login();
+          frame.show();
+          
+          dispose();
+        
+        
+    }//GEN-LAST:event_titleMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -689,7 +709,6 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -720,5 +739,6 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner7;
     private javax.swing.JSpinner jSpinner8;
     private javax.swing.JSpinner jSpinner9;
+    private javax.swing.JLabel title;
     // End of variables declaration//GEN-END:variables
 }
