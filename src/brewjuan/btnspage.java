@@ -39,18 +39,21 @@ public class btnspage extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        bjlbl.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
+        bjlbl.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         bjlbl.setForeground(new java.awt.Color(242, 242, 242));
         bjlbl.setText("Brew Juan");
 
         historybtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         historybtn.setText("History");
+        historybtn.setFocusPainted(false);
 
         inventorybtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         inventorybtn.setText("Inventory");
+        inventorybtn.setFocusPainted(false);
 
         menubtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         menubtn.setText("Menu");
+        menubtn.setFocusPainted(false);
         menubtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menubtnActionPerformed(evt);
@@ -59,6 +62,7 @@ public class btnspage extends javax.swing.JFrame {
 
         customerBtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         customerBtn.setText("Customer");
+        customerBtn.setFocusPainted(false);
         customerBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 customerBtnActionPerformed(evt);
@@ -69,6 +73,7 @@ public class btnspage extends javax.swing.JFrame {
 
         Logout_Button.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         Logout_Button.setText("Log-out");
+        Logout_Button.setFocusPainted(false);
         Logout_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Logout_ButtonActionPerformed(evt);
