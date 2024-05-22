@@ -55,10 +55,8 @@
                           <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="Logout_Button" pref="117" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="inventorybtn" pref="117" max="32767" attributes="0"/>
-                                  <Component id="historybtn" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="inventorybtn" pref="117" max="32767" attributes="0"/>
+                              <Component id="historybtn" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="57" pref="57" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -116,6 +114,9 @@
             <Property name="text" type="java.lang.String" value="History"/>
             <Property name="focusPainted" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="historybtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="inventorybtn">
           <Properties>

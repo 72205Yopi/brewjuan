@@ -46,6 +46,11 @@ public class btnspage extends javax.swing.JFrame {
         historybtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         historybtn.setText("History");
         historybtn.setFocusPainted(false);
+        historybtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                historybtnActionPerformed(evt);
+            }
+        });
 
         inventorybtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         inventorybtn.setText("Inventory");
@@ -95,9 +100,8 @@ public class btnspage extends javax.swing.JFrame {
                         .addGap(110, 110, 110)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(Logout_Button, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(inventorybtn, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                                .addComponent(historybtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(inventorybtn, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
+                            .addComponent(historybtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(57, 57, 57)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(menubtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -140,9 +144,9 @@ public class btnspage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void menubtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menubtnActionPerformed
-        dispose();
         order_page frame = new order_page();
         frame.setVisible(true);
+        dispose();
     }//GEN-LAST:event_menubtnActionPerformed
 
     private void customerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerBtnActionPerformed
@@ -156,6 +160,12 @@ public class btnspage extends javax.swing.JFrame {
         dispose();
         
     }//GEN-LAST:event_Logout_ButtonActionPerformed
+
+    private void historybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historybtnActionPerformed
+        historypage history = new historypage();
+        history.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_historybtnActionPerformed
 
     /**
      * @param args the command line arguments
