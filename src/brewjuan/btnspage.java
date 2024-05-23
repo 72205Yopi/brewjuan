@@ -55,6 +55,11 @@ public class btnspage extends javax.swing.JFrame {
         inventorybtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         inventorybtn.setText("Inventory");
         inventorybtn.setFocusPainted(false);
+        inventorybtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                inventorybtnActionPerformed(evt);
+            }
+        });
 
         menubtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         menubtn.setText("Menu");
@@ -166,6 +171,13 @@ public class btnspage extends javax.swing.JFrame {
         history.setVisible(true);
         dispose();
     }//GEN-LAST:event_historybtnActionPerformed
+
+    private void inventorybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inventorybtnActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        invpage frame = new invpage();
+        frame.setVisible(true);
+    }//GEN-LAST:event_inventorybtnActionPerformed
 
     /**
      * @param args the command line arguments
