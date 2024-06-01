@@ -67,7 +67,7 @@ public class invpage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ProductID", "ProductName", "Type", "Stock", "Price", "Status", "Date"
+                "Product ID", "Product Name", "Type", "Stock", "Price", "Status", "Date"
             }
         ) {
             Class[] types = new Class [] {
@@ -292,21 +292,21 @@ public void loadData(){
         Connection con = DriverManager.getConnection(url, user, pass);
         Statement st = con.createStatement();
         
-     DefaultTableModel model = new DefaultTableModel(new String[]{"ProductID", 
-         "ProductName", "Type", "Price", "Status", "Date"},0);
+     DefaultTableModel model = new DefaultTableModel(new String[]{"prod_id", 
+         "prod_naame", "type", "price", "status", "date"},0);
      Table.setModel(model);
     String sql = "SELECT * FROM inventory";
     ResultSet rs = st.executeQuery(sql);
     String prodname, id, type, price, status,stock, date;
     
     while(rs.next()){
-        prodname = rs.getString("ProductName");
-        id = rs.getString("ProductID");
-        price = rs.getString("Price");
-        type = rs.getString("Type");
-        status = rs.getString("Status");
-        stock = rs.getString("Stock");
-        date = rs.getString("Date");
+        prodname = rs.getString("prod_name");
+        id = rs.getString("prod_id");
+        price = rs.getString("price");
+        type = rs.getString("type");
+        status = rs.getString("status");
+        stock = rs.getString("stock");
+        date = rs.getString("date");
        model.addRow (new Object []{prodname, id, price, type,stock, status, date});
     }
     
