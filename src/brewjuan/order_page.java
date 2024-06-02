@@ -4,6 +4,8 @@
  */
 package brewjuan;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author USER
@@ -14,11 +16,18 @@ public class order_page extends javax.swing.JFrame {
      * Creates new form order_page
      */
     
-    double price = 0.00;
+    double total = 0.00;
     public order_page() {
         initComponents();
     }
-
+    
+    public boolean qtyIsZero (int qty){
+        if (qty == 0){
+            JOptionPane.showMessageDialog(null,"Please increase quantity of product");
+            return false;
+        }
+        return true;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,71 +44,114 @@ public class order_page extends javax.swing.JFrame {
         americano_frame = new javax.swing.JPanel();
         jSpinner1 = new javax.swing.JSpinner();
         americanobtn = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        americanolbl = new javax.swing.JLabel();
+        americanoprice = new javax.swing.JLabel();
         Latte_frame = new javax.swing.JPanel();
         jSpinner2 = new javax.swing.JSpinner();
         jButton2 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        lattelbl = new javax.swing.JLabel();
+        caramelnut = new javax.swing.JLabel();
         Cappuccino_frame = new javax.swing.JPanel();
         jSpinner3 = new javax.swing.JSpinner();
         jButton3 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        cappucinolbl = new javax.swing.JLabel();
+        cappucinoprice = new javax.swing.JLabel();
         ATTC_frame = new javax.swing.JPanel();
         jSpinner4 = new javax.swing.JSpinner();
         jButton4 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        ATTClbl = new javax.swing.JLabel();
+        ATTCprice = new javax.swing.JLabel();
         Caramelnut_frame = new javax.swing.JPanel();
         jSpinner5 = new javax.swing.JSpinner();
         jButton5 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        caramelnutlbl = new javax.swing.JLabel();
+        caramelnutprice = new javax.swing.JLabel();
         Caramel_Macciato_frame = new javax.swing.JPanel();
         jSpinner6 = new javax.swing.JSpinner();
         jButton6 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        caramachilbl = new javax.swing.JLabel();
+        caramacchiprice = new javax.swing.JLabel();
         CrackerJack_Caramel_frame = new javax.swing.JPanel();
         jSpinner7 = new javax.swing.JSpinner();
         jButton7 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        crkrjckcmllbl = new javax.swing.JLabel();
+        CJCprice = new javax.swing.JLabel();
         Dark_Chocolate_frame = new javax.swing.JPanel();
         jSpinner8 = new javax.swing.JSpinner();
         jButton8 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        darkChocolbl = new javax.swing.JLabel();
+        darkchocoprice = new javax.swing.JLabel();
         Matcha_Esspresso_frame = new javax.swing.JPanel();
         jSpinner9 = new javax.swing.JSpinner();
         jButton9 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        matchpresslbl = new javax.swing.JLabel();
+        matchapressprice = new javax.swing.JLabel();
         MCISE_frame = new javax.swing.JPanel();
         jSpinner10 = new javax.swing.JSpinner();
         jButton10 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        mciselbl1 = new javax.swing.JLabel();
+        mciselbl2 = new javax.swing.JLabel();
+        MCISEprice = new javax.swing.JLabel();
         Salted_caramel_frame = new javax.swing.JPanel();
         jSpinner11 = new javax.swing.JSpinner();
         jButton11 = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        saltedcaralbl = new javax.swing.JLabel();
+        saltedcaraprice = new javax.swing.JLabel();
         white_chocolate_frame = new javax.swing.JPanel();
         jSpinner12 = new javax.swing.JSpinner();
         jButton12 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        whitechocolbl = new javax.swing.JLabel();
+        whitechocoprice = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         ATOTC_frame = new javax.swing.JPanel();
         jSpinner13 = new javax.swing.JSpinner();
         jButton13 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
         Chocolate_frame = new javax.swing.JPanel();
         jSpinner14 = new javax.swing.JSpinner();
         jButton14 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
         Every_Summertime_frame = new javax.swing.JPanel();
         jSpinner15 = new javax.swing.JSpinner();
         jButton15 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
         Matcha_Tea_Latte_frame = new javax.swing.JPanel();
         jSpinner16 = new javax.swing.JSpinner();
         jButton16 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
         Ovaltine_Foster_frame = new javax.swing.JPanel();
         jSpinner17 = new javax.swing.JSpinner();
         jButton17 = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jSpinner18 = new javax.swing.JSpinner();
+        jLabel21 = new javax.swing.JLabel();
         title = new javax.swing.JLabel();
         back_Button = new javax.swing.JButton();
         receiptpanel = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         receiptpanel2 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        receipttxt = new javax.swing.JTextArea();
         totallb = new javax.swing.JLabel();
         cashlbl = new javax.swing.JLabel();
         Changelbl = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        totaltxt = new javax.swing.JTextField();
+        cashtxt = new javax.swing.JTextField();
+        changetxt = new javax.swing.JTextField();
         clearBtn = new javax.swing.JButton();
         payoutBtn = new javax.swing.JButton();
 
@@ -123,21 +175,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel3.setText("Price:");
+
+        americanolbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        americanolbl.setText("Americano");
+
+        americanoprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        americanoprice.setText("80.00");
+
         javax.swing.GroupLayout americano_frameLayout = new javax.swing.GroupLayout(americano_frame);
         americano_frame.setLayout(americano_frameLayout);
         americano_frameLayout.setHorizontalGroup(
             americano_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(americano_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(americanobtn)
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addGroup(americano_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(americanolbl)
+                    .addGroup(americano_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(americanobtn))
+                    .addGroup(americano_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(americanoprice)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         americano_frameLayout.setVerticalGroup(
             americano_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, americano_frameLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(americanolbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(americano_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(americanoprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(americano_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(americanobtn))
@@ -151,21 +225,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel5.setText("Price:");
+
+        lattelbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lattelbl.setText("Latte");
+
+        caramelnut.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        caramelnut.setText("90.00");
+
         javax.swing.GroupLayout Latte_frameLayout = new javax.swing.GroupLayout(Latte_frame);
         Latte_frame.setLayout(Latte_frameLayout);
         Latte_frameLayout.setHorizontalGroup(
             Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Latte_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton2)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addGroup(Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Latte_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton2))
+                    .addGroup(Latte_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(caramelnut))
+                    .addComponent(lattelbl))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Latte_frameLayout.setVerticalGroup(
             Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Latte_frameLayout.createSequentialGroup()
-                .addContainerGap(208, Short.MAX_VALUE)
+                .addContainerGap(157, Short.MAX_VALUE)
+                .addComponent(lattelbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(caramelnut))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2))
@@ -179,21 +275,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel7.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel7.setText("Price:");
+
+        cappucinolbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        cappucinolbl.setText("Cappucino");
+
+        cappucinoprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        cappucinoprice.setText("100.00");
+
         javax.swing.GroupLayout Cappuccino_frameLayout = new javax.swing.GroupLayout(Cappuccino_frame);
         Cappuccino_frame.setLayout(Cappuccino_frameLayout);
         Cappuccino_frameLayout.setHorizontalGroup(
             Cappuccino_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Cappuccino_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton3)
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addGroup(Cappuccino_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Cappuccino_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton3))
+                    .addComponent(cappucinolbl)
+                    .addGroup(Cappuccino_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(cappucinoprice)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Cappuccino_frameLayout.setVerticalGroup(
             Cappuccino_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Cappuccino_frameLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cappucinolbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Cappuccino_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cappucinoprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Cappuccino_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3))
@@ -207,21 +325,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel6.setText("Price:");
+
+        ATTClbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        ATTClbl.setText("A Tale of Two Chocolates");
+
+        ATTCprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        ATTCprice.setText("120.00");
+
         javax.swing.GroupLayout ATTC_frameLayout = new javax.swing.GroupLayout(ATTC_frame);
         ATTC_frame.setLayout(ATTC_frameLayout);
         ATTC_frameLayout.setHorizontalGroup(
             ATTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ATTC_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton4)
+                .addGroup(ATTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ATTC_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton4))
+                    .addGroup(ATTC_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ATTCprice))
+                    .addComponent(ATTClbl))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         ATTC_frameLayout.setVerticalGroup(
             ATTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ATTC_frameLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(170, Short.MAX_VALUE)
+                .addComponent(ATTClbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ATTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(ATTCprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ATTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4))
@@ -235,21 +375,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel9.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel9.setText("Price:");
+
+        caramelnutlbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        caramelnutlbl.setText("Caramel Nut");
+
+        caramelnutprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        caramelnutprice.setText("130.00");
+
         javax.swing.GroupLayout Caramelnut_frameLayout = new javax.swing.GroupLayout(Caramelnut_frame);
         Caramelnut_frame.setLayout(Caramelnut_frameLayout);
         Caramelnut_frameLayout.setHorizontalGroup(
             Caramelnut_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Caramelnut_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton5)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addGroup(Caramelnut_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Caramelnut_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton5))
+                    .addGroup(Caramelnut_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(caramelnutprice))
+                    .addComponent(caramelnutlbl))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Caramelnut_frameLayout.setVerticalGroup(
             Caramelnut_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Caramelnut_frameLayout.createSequentialGroup()
-                .addContainerGap(232, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(caramelnutlbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Caramelnut_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(caramelnutprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Caramelnut_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton5))
@@ -263,21 +425,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel8.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel8.setText("Price:");
+
+        caramachilbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        caramachilbl.setText("Caramel Macchiato");
+
+        caramacchiprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        caramacchiprice.setText("110.00");
+
         javax.swing.GroupLayout Caramel_Macciato_frameLayout = new javax.swing.GroupLayout(Caramel_Macciato_frame);
         Caramel_Macciato_frame.setLayout(Caramel_Macciato_frameLayout);
         Caramel_Macciato_frameLayout.setHorizontalGroup(
             Caramel_Macciato_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Caramel_Macciato_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton6)
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addGroup(Caramel_Macciato_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Caramel_Macciato_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton6))
+                    .addGroup(Caramel_Macciato_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(caramacchiprice))
+                    .addComponent(caramachilbl))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Caramel_Macciato_frameLayout.setVerticalGroup(
             Caramel_Macciato_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Caramel_Macciato_frameLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(caramachilbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Caramel_Macciato_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(caramacchiprice, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Caramel_Macciato_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton6))
@@ -291,21 +475,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel10.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel10.setText("Price:");
+
+        crkrjckcmllbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        crkrjckcmllbl.setText("CrackerJack Caramel");
+
+        CJCprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        CJCprice.setText("130.00");
+
         javax.swing.GroupLayout CrackerJack_Caramel_frameLayout = new javax.swing.GroupLayout(CrackerJack_Caramel_frame);
         CrackerJack_Caramel_frame.setLayout(CrackerJack_Caramel_frameLayout);
         CrackerJack_Caramel_frameLayout.setHorizontalGroup(
             CrackerJack_Caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CrackerJack_Caramel_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton7)
+                .addGroup(CrackerJack_Caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CrackerJack_Caramel_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton7))
+                    .addGroup(CrackerJack_Caramel_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CJCprice))
+                    .addComponent(crkrjckcmllbl))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         CrackerJack_Caramel_frameLayout.setVerticalGroup(
             CrackerJack_Caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CrackerJack_Caramel_frameLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(crkrjckcmllbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CrackerJack_Caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(CJCprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(CrackerJack_Caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton7))
@@ -319,21 +525,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel11.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel11.setText("Price:");
+
+        darkChocolbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        darkChocolbl.setText("Dark Chocolate");
+
+        darkchocoprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        darkchocoprice.setText("110.00");
+
         javax.swing.GroupLayout Dark_Chocolate_frameLayout = new javax.swing.GroupLayout(Dark_Chocolate_frame);
         Dark_Chocolate_frame.setLayout(Dark_Chocolate_frameLayout);
         Dark_Chocolate_frameLayout.setHorizontalGroup(
             Dark_Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Dark_Chocolate_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton8)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addGroup(Dark_Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Dark_Chocolate_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton8))
+                    .addGroup(Dark_Chocolate_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(darkchocoprice))
+                    .addComponent(darkChocolbl))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Dark_Chocolate_frameLayout.setVerticalGroup(
             Dark_Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Dark_Chocolate_frameLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(darkChocolbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Dark_Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(darkchocoprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Dark_Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton8))
@@ -347,21 +575,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel12.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel12.setText("Price:");
+
+        matchpresslbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        matchpresslbl.setText("Matcha Espresso");
+
+        matchapressprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        matchapressprice.setText("120.00");
+
         javax.swing.GroupLayout Matcha_Esspresso_frameLayout = new javax.swing.GroupLayout(Matcha_Esspresso_frame);
         Matcha_Esspresso_frame.setLayout(Matcha_Esspresso_frameLayout);
         Matcha_Esspresso_frameLayout.setHorizontalGroup(
             Matcha_Esspresso_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Matcha_Esspresso_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton9)
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addGroup(Matcha_Esspresso_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Matcha_Esspresso_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jButton9))
+                    .addGroup(Matcha_Esspresso_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(matchapressprice))
+                    .addComponent(matchpresslbl))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Matcha_Esspresso_frameLayout.setVerticalGroup(
             Matcha_Esspresso_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Matcha_Esspresso_frameLayout.createSequentialGroup()
-                .addContainerGap(239, Short.MAX_VALUE)
+                .addContainerGap(168, Short.MAX_VALUE)
+                .addComponent(matchpresslbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Matcha_Esspresso_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(matchapressprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Matcha_Esspresso_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton9))
@@ -375,25 +625,63 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel14.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel14.setText("Price:");
+
+        mciselbl1.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        mciselbl1.setText("Muscovado Cinnamon Iced ");
+
+        mciselbl2.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        mciselbl2.setText("Shaken Espresso ");
+
+        MCISEprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        MCISEprice.setText("125.00");
+
         javax.swing.GroupLayout MCISE_frameLayout = new javax.swing.GroupLayout(MCISE_frame);
         MCISE_frame.setLayout(MCISE_frameLayout);
         MCISE_frameLayout.setHorizontalGroup(
             MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MCISE_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton10)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(mciselbl1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(MCISE_frameLayout.createSequentialGroup()
+                        .addGroup(MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MCISE_frameLayout.createSequentialGroup()
+                                .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
+                                .addComponent(jButton10))
+                            .addGroup(MCISE_frameLayout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(MCISEprice)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(MCISE_frameLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(mciselbl2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         MCISE_frameLayout.setVerticalGroup(
             MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MCISE_frameLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(160, Short.MAX_VALUE)
+                .addComponent(mciselbl1)
+                .addGap(30, 30, 30)
+                .addGroup(MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(MCISEprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton10))
                 .addContainerGap())
+            .addGroup(MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MCISE_frameLayout.createSequentialGroup()
+                    .addContainerGap(188, Short.MAX_VALUE)
+                    .addComponent(mciselbl2)
+                    .addGap(65, 65, 65)))
         );
 
         jButton11.setText("ADD");
@@ -403,21 +691,46 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel13.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel13.setText("Price:");
+
+        saltedcaralbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        saltedcaralbl.setText("Salted Caramel");
+
+        saltedcaraprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        saltedcaraprice.setText("115.00");
+
         javax.swing.GroupLayout Salted_caramel_frameLayout = new javax.swing.GroupLayout(Salted_caramel_frame);
         Salted_caramel_frame.setLayout(Salted_caramel_frameLayout);
         Salted_caramel_frameLayout.setHorizontalGroup(
             Salted_caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Salted_caramel_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner11, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton11)
-                .addGap(34, 34, 34))
+                .addGroup(Salted_caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Salted_caramel_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner11, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                        .addComponent(jButton11)
+                        .addGap(34, 34, 34))
+                    .addGroup(Salted_caramel_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(saltedcaraprice)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(Salted_caramel_frameLayout.createSequentialGroup()
+                        .addComponent(saltedcaralbl)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         Salted_caramel_frameLayout.setVerticalGroup(
             Salted_caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Salted_caramel_frameLayout.createSequentialGroup()
-                .addContainerGap(232, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(saltedcaralbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Salted_caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(saltedcaraprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Salted_caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton11))
@@ -431,21 +744,43 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel15.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel15.setText("Price:");
+
+        whitechocolbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        whitechocolbl.setText("White Chocolate");
+
+        whitechocoprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        whitechocoprice.setText("110.00");
+
         javax.swing.GroupLayout white_chocolate_frameLayout = new javax.swing.GroupLayout(white_chocolate_frame);
         white_chocolate_frame.setLayout(white_chocolate_frameLayout);
         white_chocolate_frameLayout.setHorizontalGroup(
             white_chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(white_chocolate_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner12, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(jButton12)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addGroup(white_chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(white_chocolate_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner12, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)
+                        .addComponent(jButton12))
+                    .addGroup(white_chocolate_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(whitechocoprice))
+                    .addComponent(whitechocolbl))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         white_chocolate_frameLayout.setVerticalGroup(
             white_chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, white_chocolate_frameLayout.createSequentialGroup()
-                .addContainerGap(224, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(whitechocolbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(white_chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(whitechocoprice))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(white_chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton12))
@@ -462,21 +797,31 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel16.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel16.setText("Price:");
+
         javax.swing.GroupLayout ATOTC_frameLayout = new javax.swing.GroupLayout(ATOTC_frame);
         ATOTC_frame.setLayout(ATOTC_frameLayout);
         ATOTC_frameLayout.setHorizontalGroup(
             ATOTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ATOTC_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner13, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49))
+                .addGroup(ATOTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ATOTC_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner13, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(49, 49, 49))
+                    .addGroup(ATOTC_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel16)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         ATOTC_frameLayout.setVerticalGroup(
             ATOTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ATOTC_frameLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ATOTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner13, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton13))
@@ -490,21 +835,31 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel17.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel17.setText("Price:");
+
         javax.swing.GroupLayout Chocolate_frameLayout = new javax.swing.GroupLayout(Chocolate_frame);
         Chocolate_frame.setLayout(Chocolate_frameLayout);
         Chocolate_frameLayout.setHorizontalGroup(
             Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Chocolate_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner14, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton14)
-                .addGap(29, 29, 29))
+                .addGroup(Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Chocolate_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner14, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                        .addComponent(jButton14)
+                        .addGap(29, 29, 29))
+                    .addGroup(Chocolate_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel17)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         Chocolate_frameLayout.setVerticalGroup(
             Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Chocolate_frameLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel17)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner14, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton14))
@@ -518,21 +873,31 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel18.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel18.setText("Price:");
+
         javax.swing.GroupLayout Every_Summertime_frameLayout = new javax.swing.GroupLayout(Every_Summertime_frame);
         Every_Summertime_frame.setLayout(Every_Summertime_frameLayout);
         Every_Summertime_frameLayout.setHorizontalGroup(
             Every_Summertime_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Every_Summertime_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner15, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton15)
+                .addGroup(Every_Summertime_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Every_Summertime_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner15, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
+                        .addComponent(jButton15))
+                    .addGroup(Every_Summertime_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel18)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         Every_Summertime_frameLayout.setVerticalGroup(
             Every_Summertime_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Every_Summertime_frameLayout.createSequentialGroup()
-                .addContainerGap(177, Short.MAX_VALUE)
+                .addContainerGap(148, Short.MAX_VALUE)
+                .addComponent(jLabel18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Every_Summertime_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner15, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton15))
@@ -541,21 +906,31 @@ public class order_page extends javax.swing.JFrame {
 
         jButton16.setText("ADD");
 
+        jLabel19.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel19.setText("Price:");
+
         javax.swing.GroupLayout Matcha_Tea_Latte_frameLayout = new javax.swing.GroupLayout(Matcha_Tea_Latte_frame);
         Matcha_Tea_Latte_frame.setLayout(Matcha_Tea_Latte_frameLayout);
         Matcha_Tea_Latte_frameLayout.setHorizontalGroup(
             Matcha_Tea_Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Matcha_Tea_Latte_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner16, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                .addComponent(jButton16)
-                .addGap(19, 19, 19))
+                .addGroup(Matcha_Tea_Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Matcha_Tea_Latte_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner16, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                        .addComponent(jButton16)
+                        .addGap(19, 19, 19))
+                    .addGroup(Matcha_Tea_Latte_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel19)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         Matcha_Tea_Latte_frameLayout.setVerticalGroup(
             Matcha_Tea_Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Matcha_Tea_Latte_frameLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Matcha_Tea_Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner16, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton16))
@@ -569,21 +944,31 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        jLabel20.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel20.setText("Price:");
+
         javax.swing.GroupLayout Ovaltine_Foster_frameLayout = new javax.swing.GroupLayout(Ovaltine_Foster_frame);
         Ovaltine_Foster_frame.setLayout(Ovaltine_Foster_frameLayout);
         Ovaltine_Foster_frameLayout.setHorizontalGroup(
             Ovaltine_Foster_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Ovaltine_Foster_frameLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner17, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton17)
+                .addGroup(Ovaltine_Foster_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Ovaltine_Foster_frameLayout.createSequentialGroup()
+                        .addComponent(jSpinner17, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                        .addComponent(jButton17))
+                    .addGroup(Ovaltine_Foster_frameLayout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         Ovaltine_Foster_frameLayout.setVerticalGroup(
             Ovaltine_Foster_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ovaltine_Foster_frameLayout.createSequentialGroup()
-                .addContainerGap(209, Short.MAX_VALUE)
+                .addContainerGap(180, Short.MAX_VALUE)
+                .addComponent(jLabel20)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Ovaltine_Foster_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner17, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton17))
@@ -593,19 +978,26 @@ public class order_page extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe Script", 1, 24)); // NOI18N
         jLabel2.setText("Specialty");
 
+        jLabel21.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        jLabel21.setText("Price:");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner18, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSpinner18, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel21))
                 .addContainerGap(141, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(206, Short.MAX_VALUE)
+                .addContainerGap(177, Short.MAX_VALUE)
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSpinner18, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -631,7 +1023,7 @@ public class order_page extends javax.swing.JFrame {
                                                 .addComponent(CrackerJack_Caramel_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addComponent(MCISE_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                             .addComponent(Matcha_Tea_Latte_frame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(52, 52, 52)
+                                        .addGap(28, 28, 28)
                                         .addGroup(menulistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(Chocolate_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(Caramelnut_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -639,7 +1031,7 @@ public class order_page extends javax.swing.JFrame {
                                             .addComponent(Dark_Chocolate_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(Salted_caramel_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(Ovaltine_Foster_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                                .addGap(50, 50, 50)
+                                .addGap(23, 23, 23)
                                 .addGroup(menulistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(Cappuccino_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(Matcha_Esspresso_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -681,7 +1073,7 @@ public class order_page extends javax.swing.JFrame {
                 .addGroup(menulistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Salted_caramel_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(MCISE_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(white_chocolate_frame, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(white_chocolate_frame, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addGap(32, 32, 32)
@@ -732,9 +1124,9 @@ public class order_page extends javax.swing.JFrame {
         receiptpanel2.setBackground(new java.awt.Color(0, 0, 0));
         receiptpanel2.setForeground(new java.awt.Color(242, 242, 242));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane3.setViewportView(jTextArea1);
+        receipttxt.setColumns(20);
+        receipttxt.setRows(5);
+        jScrollPane3.setViewportView(receipttxt);
 
         totallb.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         totallb.setForeground(new java.awt.Color(242, 242, 242));
@@ -748,26 +1140,26 @@ public class order_page extends javax.swing.JFrame {
         Changelbl.setForeground(new java.awt.Color(242, 242, 242));
         Changelbl.setText("Change:");
 
-        jTextField1.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        jTextField1.setText("₱ 0.00");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        totaltxt.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        totaltxt.setText("₱ 0.00");
+        totaltxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                totaltxtActionPerformed(evt);
             }
         });
 
-        jTextField2.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        cashtxt.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        cashtxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                cashtxtActionPerformed(evt);
             }
         });
 
-        jTextField3.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        jTextField3.setText("₱ 0.00");
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        changetxt.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        changetxt.setText("₱ 0.00");
+        changetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                changetxtActionPerformed(evt);
             }
         });
 
@@ -796,27 +1188,29 @@ public class order_page extends javax.swing.JFrame {
         receiptpanel2Layout.setHorizontalGroup(
             receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(receiptpanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(receiptpanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(receiptpanel2Layout.createSequentialGroup()
+                                .addComponent(totallb)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(totaltxt, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(receiptpanel2Layout.createSequentialGroup()
+                                .addComponent(cashlbl)
+                                .addGap(18, 18, 18)
+                                .addComponent(cashtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(receiptpanel2Layout.createSequentialGroup()
+                                .addComponent(Changelbl)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(changetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(receiptpanel2Layout.createSequentialGroup()
+                        .addGap(79, 79, 79)
                         .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(payoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(receiptpanel2Layout.createSequentialGroup()
-                            .addComponent(totallb)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(receiptpanel2Layout.createSequentialGroup()
-                            .addComponent(cashlbl)
-                            .addGap(18, 18, 18)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(receiptpanel2Layout.createSequentialGroup()
-                            .addComponent(Changelbl)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(14, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(payoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
         receiptpanel2Layout.setVerticalGroup(
             receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -826,20 +1220,20 @@ public class order_page extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(totallb)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(totaltxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cashlbl)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cashtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Changelbl)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(66, 66, 66)
+                    .addComponent(changetxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(payoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(184, Short.MAX_VALUE))
+                    .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(payoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(receiptpanel2);
@@ -849,14 +1243,16 @@ public class order_page extends javax.swing.JFrame {
         receiptpanelLayout.setHorizontalGroup(
             receiptpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(receiptpanelLayout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jScrollPane2)
                 .addContainerGap())
         );
         receiptpanelLayout.setVerticalGroup(
             receiptpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(receiptpanelLayout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 697, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, receiptpanelLayout.createSequentialGroup()
+                .addContainerGap(17, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -876,7 +1272,7 @@ public class order_page extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 873, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(receiptpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(17, Short.MAX_VALUE))))
+                        .addContainerGap(11, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -915,7 +1311,7 @@ public class order_page extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void back_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back_ButtonActionPerformed
         // TODO add your handling code here:
         btnspage frame = new btnspage();
@@ -923,7 +1319,16 @@ public class order_page extends javax.swing.JFrame {
 
         dispose();
     }//GEN-LAST:event_back_ButtonActionPerformed
-
+    
+    public void brewJuan(){
+        String receiptMessage = "**************MARAMING SALAMAT PO!***************** \n";
+        receiptMessage += "********************************************************* \n";
+        receiptMessage += "               \t   BREW JUAN                       \n";
+        receiptMessage += "Item Name:\t\t\t";
+        receiptMessage += "Price(₱) \n";
+        
+        receipttxt.setText(receiptMessage);
+    }
     private void titleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMouseClicked
         // TODO add your handling code here:
         login frame = new login();
@@ -993,23 +1398,32 @@ public class order_page extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void americanobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_americanobtnActionPerformed
-
+        int qty = Integer.parseInt(jSpinner1.getValue().toString());
+        if (qtyIsZero(qty)){
+            brewJuan();
+        }
+        double price = qty * 80.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+ americanolbl.getText()+ "\t\t\t" + price + "\n");
+        
+        jSpinner1.setValue(0);
     }//GEN-LAST:event_americanobtnActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void totaltxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totaltxtActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_totaltxtActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void cashtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cashtxtActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_cashtxtActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void changetxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changetxtActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_changetxtActionPerformed
 
     private void clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBtnActionPerformed
-        // TODO add your handling code here:
+        receipttxt.setText("");
+        
     }//GEN-LAST:event_clearBtnActionPerformed
 
     private void payoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payoutBtnActionPerformed
@@ -1054,6 +1468,9 @@ public class order_page extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ATOTC_frame;
     private javax.swing.JPanel ATTC_frame;
+    private javax.swing.JLabel ATTClbl;
+    private javax.swing.JLabel ATTCprice;
+    private javax.swing.JLabel CJCprice;
     private javax.swing.JPanel Cappuccino_frame;
     private javax.swing.JPanel Caramel_Macciato_frame;
     private javax.swing.JPanel Caramelnut_frame;
@@ -1064,15 +1481,30 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JPanel Every_Summertime_frame;
     private javax.swing.JPanel Latte_frame;
     private javax.swing.JPanel MCISE_frame;
+    private javax.swing.JLabel MCISEprice;
     private javax.swing.JPanel Matcha_Esspresso_frame;
     private javax.swing.JPanel Matcha_Tea_Latte_frame;
     private javax.swing.JPanel Ovaltine_Foster_frame;
     private javax.swing.JPanel Salted_caramel_frame;
     private javax.swing.JPanel americano_frame;
     private javax.swing.JButton americanobtn;
+    private javax.swing.JLabel americanolbl;
+    private javax.swing.JLabel americanoprice;
     private javax.swing.JButton back_Button;
+    private javax.swing.JLabel cappucinolbl;
+    private javax.swing.JLabel cappucinoprice;
+    private javax.swing.JLabel caramacchiprice;
+    private javax.swing.JLabel caramachilbl;
+    private javax.swing.JLabel caramelnut;
+    private javax.swing.JLabel caramelnutlbl;
+    private javax.swing.JLabel caramelnutprice;
     private javax.swing.JLabel cashlbl;
+    private javax.swing.JTextField cashtxt;
+    private javax.swing.JTextField changetxt;
     private javax.swing.JButton clearBtn;
+    private javax.swing.JLabel crkrjckcmllbl;
+    private javax.swing.JLabel darkChocolbl;
+    private javax.swing.JLabel darkchocoprice;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
@@ -1090,8 +1522,26 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
@@ -1115,16 +1565,23 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner7;
     private javax.swing.JSpinner jSpinner8;
     private javax.swing.JSpinner jSpinner9;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JLabel lattelbl;
+    private javax.swing.JLabel matchapressprice;
+    private javax.swing.JLabel matchpresslbl;
+    private javax.swing.JLabel mciselbl1;
+    private javax.swing.JLabel mciselbl2;
     private javax.swing.JPanel menulist;
     private javax.swing.JButton payoutBtn;
     private javax.swing.JPanel receiptpanel;
     private javax.swing.JPanel receiptpanel2;
+    private javax.swing.JTextArea receipttxt;
+    private javax.swing.JLabel saltedcaralbl;
+    private javax.swing.JLabel saltedcaraprice;
     private javax.swing.JLabel title;
     private javax.swing.JLabel totallb;
+    private javax.swing.JTextField totaltxt;
     private javax.swing.JPanel white_chocolate_frame;
+    private javax.swing.JLabel whitechocolbl;
+    private javax.swing.JLabel whitechocoprice;
     // End of variables declaration//GEN-END:variables
 }

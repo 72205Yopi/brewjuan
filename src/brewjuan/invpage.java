@@ -293,7 +293,7 @@ public void loadData(){
         Statement st = con.createStatement();
         
      DefaultTableModel model = new DefaultTableModel(new String[]{"prod_id", 
-         "prod_naame", "type", "price", "status", "date"},0);
+         "prod_name", "type", "price", "status", "date"},0);
      Table.setModel(model);
     String sql = "SELECT * FROM inventory";
     ResultSet rs = st.executeQuery(sql);
