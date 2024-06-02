@@ -32,7 +32,7 @@ public class order_page extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         americano_frame = new javax.swing.JPanel();
         jSpinner1 = new javax.swing.JSpinner();
-        jButton1 = new javax.swing.JButton();
+        americanobtn = new javax.swing.JButton();
         Latte_frame = new javax.swing.JPanel();
         jSpinner2 = new javax.swing.JSpinner();
         jButton2 = new javax.swing.JButton();
@@ -86,6 +86,8 @@ public class order_page extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jSpinner18 = new javax.swing.JSpinner();
         jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        receiptTxt = new javax.swing.JTextField();
         title = new javax.swing.JLabel();
         back_Button = new javax.swing.JButton();
 
@@ -102,10 +104,10 @@ public class order_page extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Coffee");
 
-        jButton1.setText("ADD");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        americanobtn.setText("ADD");
+        americanobtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                americanobtnActionPerformed(evt);
             }
         });
 
@@ -117,7 +119,7 @@ public class order_page extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
-                .addComponent(jButton1)
+                .addComponent(americanobtn)
                 .addContainerGap(59, Short.MAX_VALUE))
         );
         americano_frameLayout.setVerticalGroup(
@@ -126,7 +128,7 @@ public class order_page extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(americano_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(americanobtn))
                 .addContainerGap())
         );
 
@@ -690,15 +692,48 @@ public class order_page extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
 
+        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel4.setForeground(new java.awt.Color(242, 242, 242));
+
+        receiptTxt.setBackground(new java.awt.Color(0, 0, 0));
+        receiptTxt.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        receiptTxt.setForeground(new java.awt.Color(242, 242, 242));
+        receiptTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                receiptTxtActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(receiptTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 303, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(receiptTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 904, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 321, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 606, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         title.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
@@ -716,7 +751,6 @@ public class order_page extends javax.swing.JFrame {
         back_Button.setText("Back");
         back_Button.setBorderPainted(false);
         back_Button.setFocusPainted(false);
-        back_Button.setOpaque(false);
         back_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 back_ButtonActionPerformed(evt);
@@ -783,9 +817,9 @@ public class order_page extends javax.swing.JFrame {
         
     }//GEN-LAST:event_back_ButtonActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void americanobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_americanobtnActionPerformed
+        receiptTxt.setText("Americano");
+    }//GEN-LAST:event_americanobtnActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
@@ -857,6 +891,10 @@ public class order_page extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton17ActionPerformed
 
+    private void receiptTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_receiptTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_receiptTxtActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -909,8 +947,8 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JPanel Ovaltine_Foster_frame;
     private javax.swing.JPanel Salted_caramel_frame;
     private javax.swing.JPanel americano_frame;
+    private javax.swing.JButton americanobtn;
     private javax.swing.JButton back_Button;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
@@ -933,6 +971,7 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner10;
@@ -953,6 +992,7 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner8;
     private javax.swing.JSpinner jSpinner9;
     private javax.swing.JPanel menulist;
+    private javax.swing.JTextField receiptTxt;
     private javax.swing.JLabel title;
     private javax.swing.JPanel white_chocolate_frame;
     // End of variables declaration//GEN-END:variables
