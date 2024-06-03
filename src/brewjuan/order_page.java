@@ -16,7 +16,8 @@ public class order_page extends javax.swing.JFrame {
      * Creates new form order_page
      */
     
-    double total = 0.00;
+    double total = 0.00, cash = 0.0, change = 0.0;
+    int x;
     public order_page() {
         initComponents();
     }
@@ -49,25 +50,25 @@ public class order_page extends javax.swing.JFrame {
         americanoprice = new javax.swing.JLabel();
         Latte_frame = new javax.swing.JPanel();
         jSpinner2 = new javax.swing.JSpinner();
-        jButton2 = new javax.swing.JButton();
+        lattebtn = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         lattelbl = new javax.swing.JLabel();
         caramelnut = new javax.swing.JLabel();
         Cappuccino_frame = new javax.swing.JPanel();
         jSpinner3 = new javax.swing.JSpinner();
-        jButton3 = new javax.swing.JButton();
+        cappucinobtn = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         cappucinolbl = new javax.swing.JLabel();
         cappucinoprice = new javax.swing.JLabel();
         ATTC_frame = new javax.swing.JPanel();
         jSpinner4 = new javax.swing.JSpinner();
-        jButton4 = new javax.swing.JButton();
+        ATTCbtn = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         ATTClbl = new javax.swing.JLabel();
         ATTCprice = new javax.swing.JLabel();
         Caramelnut_frame = new javax.swing.JPanel();
         jSpinner5 = new javax.swing.JSpinner();
-        jButton5 = new javax.swing.JButton();
+        caranutbtn = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         caramelnutlbl = new javax.swing.JLabel();
         caramelnutprice = new javax.swing.JLabel();
@@ -79,38 +80,38 @@ public class order_page extends javax.swing.JFrame {
         caramacchiprice = new javax.swing.JLabel();
         CrackerJack_Caramel_frame = new javax.swing.JPanel();
         jSpinner7 = new javax.swing.JSpinner();
-        jButton7 = new javax.swing.JButton();
+        cjcbtn = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         crkrjckcmllbl = new javax.swing.JLabel();
         CJCprice = new javax.swing.JLabel();
         Dark_Chocolate_frame = new javax.swing.JPanel();
         jSpinner8 = new javax.swing.JSpinner();
-        jButton8 = new javax.swing.JButton();
+        darkchcobtn = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         darkChocolbl = new javax.swing.JLabel();
         darkchocoprice = new javax.swing.JLabel();
         Matcha_Esspresso_frame = new javax.swing.JPanel();
         jSpinner9 = new javax.swing.JSpinner();
-        jButton9 = new javax.swing.JButton();
+        matchpressbtn = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         matchpresslbl = new javax.swing.JLabel();
         matchapressprice = new javax.swing.JLabel();
         MCISE_frame = new javax.swing.JPanel();
         jSpinner10 = new javax.swing.JSpinner();
-        jButton10 = new javax.swing.JButton();
+        mcisebtn = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         mciselbl1 = new javax.swing.JLabel();
         mciselbl2 = new javax.swing.JLabel();
         MCISEprice = new javax.swing.JLabel();
         Salted_caramel_frame = new javax.swing.JPanel();
         jSpinner11 = new javax.swing.JSpinner();
-        jButton11 = new javax.swing.JButton();
+        saltedcarabtn = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         saltedcaralbl = new javax.swing.JLabel();
         saltedcaraprice = new javax.swing.JLabel();
         white_chocolate_frame = new javax.swing.JPanel();
         jSpinner12 = new javax.swing.JSpinner();
-        jButton12 = new javax.swing.JButton();
+        whitechoco = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
         whitechocolbl = new javax.swing.JLabel();
         whitechocoprice = new javax.swing.JLabel();
@@ -154,6 +155,7 @@ public class order_page extends javax.swing.JFrame {
         changetxt = new javax.swing.JTextField();
         clearBtn = new javax.swing.JButton();
         payoutBtn = new javax.swing.JButton();
+        totalbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -218,10 +220,10 @@ public class order_page extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton2.setText("ADD");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        lattebtn.setText("ADD");
+        lattebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                lattebtnActionPerformed(evt);
             }
         });
 
@@ -244,7 +246,7 @@ public class order_page extends javax.swing.JFrame {
                     .addGroup(Latte_frameLayout.createSequentialGroup()
                         .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
-                        .addComponent(jButton2))
+                        .addComponent(lattebtn))
                     .addGroup(Latte_frameLayout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -264,14 +266,14 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(Latte_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2))
+                    .addComponent(lattebtn))
                 .addContainerGap())
         );
 
-        jButton3.setText("ADD");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        cappucinobtn.setText("ADD");
+        cappucinobtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                cappucinobtnActionPerformed(evt);
             }
         });
 
@@ -294,7 +296,7 @@ public class order_page extends javax.swing.JFrame {
                     .addGroup(Cappuccino_frameLayout.createSequentialGroup()
                         .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
-                        .addComponent(jButton3))
+                        .addComponent(cappucinobtn))
                     .addComponent(cappucinolbl)
                     .addGroup(Cappuccino_frameLayout.createSequentialGroup()
                         .addComponent(jLabel7)
@@ -314,14 +316,14 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Cappuccino_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3))
+                    .addComponent(cappucinobtn))
                 .addContainerGap())
         );
 
-        jButton4.setText("ADD");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        ATTCbtn.setText("ADD");
+        ATTCbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                ATTCbtnActionPerformed(evt);
             }
         });
 
@@ -344,7 +346,7 @@ public class order_page extends javax.swing.JFrame {
                     .addGroup(ATTC_frameLayout.createSequentialGroup()
                         .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
-                        .addComponent(jButton4))
+                        .addComponent(ATTCbtn))
                     .addGroup(ATTC_frameLayout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -364,14 +366,14 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ATTC_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4))
+                    .addComponent(ATTCbtn))
                 .addContainerGap())
         );
 
-        jButton5.setText("ADD");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        caranutbtn.setText("ADD");
+        caranutbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                caranutbtnActionPerformed(evt);
             }
         });
 
@@ -394,7 +396,7 @@ public class order_page extends javax.swing.JFrame {
                     .addGroup(Caramelnut_frameLayout.createSequentialGroup()
                         .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
-                        .addComponent(jButton5))
+                        .addComponent(caranutbtn))
                     .addGroup(Caramelnut_frameLayout.createSequentialGroup()
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -414,7 +416,7 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Caramelnut_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5))
+                    .addComponent(caranutbtn))
                 .addContainerGap())
         );
 
@@ -468,10 +470,10 @@ public class order_page extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton7.setText("ADD");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        cjcbtn.setText("ADD");
+        cjcbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                cjcbtnActionPerformed(evt);
             }
         });
 
@@ -494,7 +496,7 @@ public class order_page extends javax.swing.JFrame {
                     .addGroup(CrackerJack_Caramel_frameLayout.createSequentialGroup()
                         .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
-                        .addComponent(jButton7))
+                        .addComponent(cjcbtn))
                     .addGroup(CrackerJack_Caramel_frameLayout.createSequentialGroup()
                         .addComponent(jLabel10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -514,14 +516,14 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(CrackerJack_Caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7))
+                    .addComponent(cjcbtn))
                 .addContainerGap())
         );
 
-        jButton8.setText("ADD");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        darkchcobtn.setText("ADD");
+        darkchcobtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                darkchcobtnActionPerformed(evt);
             }
         });
 
@@ -544,7 +546,7 @@ public class order_page extends javax.swing.JFrame {
                     .addGroup(Dark_Chocolate_frameLayout.createSequentialGroup()
                         .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
-                        .addComponent(jButton8))
+                        .addComponent(darkchcobtn))
                     .addGroup(Dark_Chocolate_frameLayout.createSequentialGroup()
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -564,14 +566,14 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Dark_Chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8))
+                    .addComponent(darkchcobtn))
                 .addContainerGap())
         );
 
-        jButton9.setText("ADD");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        matchpressbtn.setText("ADD");
+        matchpressbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                matchpressbtnActionPerformed(evt);
             }
         });
 
@@ -594,7 +596,7 @@ public class order_page extends javax.swing.JFrame {
                     .addGroup(Matcha_Esspresso_frameLayout.createSequentialGroup()
                         .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
-                        .addComponent(jButton9))
+                        .addComponent(matchpressbtn))
                     .addGroup(Matcha_Esspresso_frameLayout.createSequentialGroup()
                         .addComponent(jLabel12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -614,14 +616,14 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Matcha_Esspresso_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9))
+                    .addComponent(matchpressbtn))
                 .addContainerGap())
         );
 
-        jButton10.setText("ADD");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        mcisebtn.setText("ADD");
+        mcisebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                mcisebtnActionPerformed(evt);
             }
         });
 
@@ -650,7 +652,7 @@ public class order_page extends javax.swing.JFrame {
                             .addGroup(MCISE_frameLayout.createSequentialGroup()
                                 .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(28, 28, 28)
-                                .addComponent(jButton10))
+                                .addComponent(mcisebtn))
                             .addGroup(MCISE_frameLayout.createSequentialGroup()
                                 .addComponent(jLabel14)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -675,7 +677,7 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10))
+                    .addComponent(mcisebtn))
                 .addContainerGap())
             .addGroup(MCISE_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MCISE_frameLayout.createSequentialGroup()
@@ -684,10 +686,10 @@ public class order_page extends javax.swing.JFrame {
                     .addGap(65, 65, 65)))
         );
 
-        jButton11.setText("ADD");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        saltedcarabtn.setText("ADD");
+        saltedcarabtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                saltedcarabtnActionPerformed(evt);
             }
         });
 
@@ -710,7 +712,7 @@ public class order_page extends javax.swing.JFrame {
                     .addGroup(Salted_caramel_frameLayout.createSequentialGroup()
                         .addComponent(jSpinner11, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
-                        .addComponent(jButton11)
+                        .addComponent(saltedcarabtn)
                         .addGap(34, 34, 34))
                     .addGroup(Salted_caramel_frameLayout.createSequentialGroup()
                         .addComponent(jLabel13)
@@ -733,14 +735,14 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Salted_caramel_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11))
+                    .addComponent(saltedcarabtn))
                 .addContainerGap())
         );
 
-        jButton12.setText("ADD");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        whitechoco.setText("ADD");
+        whitechoco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                whitechocoActionPerformed(evt);
             }
         });
 
@@ -763,7 +765,7 @@ public class order_page extends javax.swing.JFrame {
                     .addGroup(white_chocolate_frameLayout.createSequentialGroup()
                         .addComponent(jSpinner12, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
-                        .addComponent(jButton12))
+                        .addComponent(whitechoco))
                     .addGroup(white_chocolate_frameLayout.createSequentialGroup()
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -783,7 +785,7 @@ public class order_page extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(white_chocolate_frameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12))
+                    .addComponent(whitechoco))
                 .addContainerGap())
         );
 
@@ -1069,7 +1071,7 @@ public class order_page extends javax.swing.JFrame {
                     .addComponent(Matcha_Esspresso_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Dark_Chocolate_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(CrackerJack_Caramel_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(37, 37, 37)
+                .addGap(27, 27, 27)
                 .addGroup(menulistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Salted_caramel_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(MCISE_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1124,6 +1126,7 @@ public class order_page extends javax.swing.JFrame {
         receiptpanel2.setBackground(new java.awt.Color(0, 0, 0));
         receiptpanel2.setForeground(new java.awt.Color(242, 242, 242));
 
+        receipttxt.setEditable(false);
         receipttxt.setColumns(20);
         receipttxt.setRows(5);
         jScrollPane3.setViewportView(receipttxt);
@@ -1140,6 +1143,7 @@ public class order_page extends javax.swing.JFrame {
         Changelbl.setForeground(new java.awt.Color(242, 242, 242));
         Changelbl.setText("Change:");
 
+        totaltxt.setEditable(false);
         totaltxt.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         totaltxt.setText("₱ 0.00");
         totaltxt.addActionListener(new java.awt.event.ActionListener() {
@@ -1155,6 +1159,7 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        changetxt.setEditable(false);
         changetxt.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         changetxt.setText("₱ 0.00");
         changetxt.addActionListener(new java.awt.event.ActionListener() {
@@ -1183,6 +1188,16 @@ public class order_page extends javax.swing.JFrame {
             }
         });
 
+        totalbtn.setBackground(new java.awt.Color(0, 0, 0));
+        totalbtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        totalbtn.setForeground(new java.awt.Color(242, 242, 242));
+        totalbtn.setText("Total");
+        totalbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                totalbtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout receiptpanel2Layout = new javax.swing.GroupLayout(receiptpanel2);
         receiptpanel2.setLayout(receiptpanel2Layout);
         receiptpanel2Layout.setHorizontalGroup(
@@ -1190,27 +1205,32 @@ public class order_page extends javax.swing.JFrame {
             .addGroup(receiptpanel2Layout.createSequentialGroup()
                 .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(receiptpanel2Layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(receiptpanel2Layout.createSequentialGroup()
-                                .addComponent(totallb)
+                                .addContainerGap()
+                                .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(receiptpanel2Layout.createSequentialGroup()
+                                        .addComponent(cashlbl)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(cashtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(receiptpanel2Layout.createSequentialGroup()
+                                        .addComponent(Changelbl)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(changetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(receiptpanel2Layout.createSequentialGroup()
+                                        .addComponent(totallb)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(totaltxt, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(totalbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(receiptpanel2Layout.createSequentialGroup()
+                                .addGap(79, 79, 79)
+                                .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(totaltxt, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(receiptpanel2Layout.createSequentialGroup()
-                                .addComponent(cashlbl)
-                                .addGap(18, 18, 18)
-                                .addComponent(cashtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(receiptpanel2Layout.createSequentialGroup()
-                                .addComponent(Changelbl)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(changetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(receiptpanel2Layout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(payoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(11, Short.MAX_VALUE))
+                                .addComponent(payoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 14, Short.MAX_VALUE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         receiptpanel2Layout.setVerticalGroup(
             receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1220,7 +1240,8 @@ public class order_page extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(totallb)
-                    .addComponent(totaltxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(totaltxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totalbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(receiptpanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cashlbl)
@@ -1244,15 +1265,15 @@ public class order_page extends javax.swing.JFrame {
             receiptpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(receiptpanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2)
-                .addContainerGap())
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         receiptpanelLayout.setVerticalGroup(
             receiptpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, receiptpanelLayout.createSequentialGroup()
                 .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 651, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -1271,8 +1292,8 @@ public class order_page extends javax.swing.JFrame {
                         .addGap(8, 8, 8)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 873, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(receiptpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(11, Short.MAX_VALUE))))
+                        .addComponent(receiptpanel, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(37, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1322,7 +1343,7 @@ public class order_page extends javax.swing.JFrame {
     
     public void brewJuan(){
         String receiptMessage = "**************MARAMING SALAMAT PO!***************** \n";
-        receiptMessage += "********************************************************* \n";
+        receiptMessage += "*********************************************************** \n";
         receiptMessage += "               \t   BREW JUAN                       \n";
         receiptMessage += "Item Name:\t\t\t";
         receiptMessage += "Price(₱) \n";
@@ -1353,58 +1374,183 @@ public class order_page extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton13ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    private void whitechocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_whitechocoActionPerformed
+        int qty = Integer.parseInt(jSpinner12.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }else{
+        double price = qty * 110.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + whitechocolbl.getText()+ "\t\t\t" + price + "\n");
+        }
+        
+        jSpinner12.setValue(0);
+    }//GEN-LAST:event_whitechocoActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    private void saltedcarabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saltedcarabtnActionPerformed
+        int qty = Integer.parseInt(jSpinner11.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 115.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + saltedcaralbl.getText()+ "\t\t\t" + price + "\n");
+        
+        jSpinner11.setValue(0);
+    }//GEN-LAST:event_saltedcarabtnActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    private void mcisebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mcisebtnActionPerformed
+        int qty = Integer.parseInt(jSpinner10.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 125.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + "Muscovado Cinnamon Iced \n Shaken Espresso"+ "\t\t" + price + "\n");
+        
+        jSpinner10.setValue(0);
+    }//GEN-LAST:event_mcisebtnActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    private void matchpressbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matchpressbtnActionPerformed
+        int qty = Integer.parseInt(jSpinner9.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 120.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + matchpresslbl.getText()+ "\t\t\t" + price + "\n");
+        
+        jSpinner9.setValue(0);
+    }//GEN-LAST:event_matchpressbtnActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    private void darkchcobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_darkchcobtnActionPerformed
+        int qty = Integer.parseInt(jSpinner8.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 110.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + darkChocolbl.getText()+ "\t\t\t" + price + "\n");
+        
+        jSpinner8.setValue(0);
+    }//GEN-LAST:event_darkchcobtnActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    private void cjcbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cjcbtnActionPerformed
+        int qty = Integer.parseInt(jSpinner7.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 130.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + crkrjckcmllbl.getText()+ "\t\t\t" + price + "\n");
+        
+        jSpinner7.setValue(0);
+    }//GEN-LAST:event_cjcbtnActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
+        int qty = Integer.parseInt(jSpinner6.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 100.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + caramachilbl.getText()+ "\t\t\t" + price + "\n");
+        
+        jSpinner6.setValue(0);
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void caranutbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caranutbtnActionPerformed
+        int qty = Integer.parseInt(jSpinner5.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 130.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + caramelnutlbl.getText()+ "\t\t\t" + price + "\n");
+        
+        jSpinner5.setValue(0);
+    }//GEN-LAST:event_caranutbtnActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void ATTCbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ATTCbtnActionPerformed
+        int qty = Integer.parseInt(jSpinner4.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 120.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + ATTClbl.getText()+ "\t" + price + "\n");
+        
+        jSpinner4.setValue(0);
+    }//GEN-LAST:event_ATTCbtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void cappucinobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cappucinobtnActionPerformed
+        int qty = Integer.parseInt(jSpinner3.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 100.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + cappucinolbl.getText()+ "\t\t\t" + price + "\n");
+        
+        jSpinner3.setValue(0);
+    }//GEN-LAST:event_cappucinobtnActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void lattebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lattebtnActionPerformed
+        int qty = Integer.parseInt(jSpinner2.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 90.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + lattelbl.getText()+ "\t\t\t" + price + "\n");
+        
+        jSpinner2.setValue(0);
+    }//GEN-LAST:event_lattebtnActionPerformed
 
     private void americanobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_americanobtnActionPerformed
         int qty = Integer.parseInt(jSpinner1.getValue().toString());
         if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
             brewJuan();
+            }
         }
         double price = qty * 80.00;
         total += price;
-        receipttxt.setText(receipttxt.getText()+ americanolbl.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + americanolbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner1.setValue(0);
     }//GEN-LAST:event_americanobtnActionPerformed
@@ -1423,12 +1569,36 @@ public class order_page extends javax.swing.JFrame {
 
     private void clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBtnActionPerformed
         receipttxt.setText("");
-        
+        jSpinner1.setValue(0);
     }//GEN-LAST:event_clearBtnActionPerformed
 
     private void payoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payoutBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_payoutBtnActionPerformed
+
+    private void totalbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalbtnActionPerformed
+        if (total == 0.0){
+            JOptionPane.showMessageDialog(null,"You haven't selected any items");
+        }else {
+            receipttxt.setText(receipttxt.getText() +
+                    "\n ***********************************************************\n" 
+                    + "Total:₱ \t\t\t" + total +"\n" 
+                    + " ***********************************************************\n" 
+                    + "               \t   BREW JUAN                       "
+            );
+            
+        if (cashtxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(this, "Please enter the cash amount.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+            cash = Double.parseDouble(cashtxt.getText());
+            change = cash - total;
+        if (change < 0){
+            JOptionPane.showMessageDialog(this, "Insufficient Cash Amount", "Error", JOptionPane.ERROR_MESSAGE);
+        }else { 
+          changetxt.setText(String.format("%.2f ", change));
+        }
+        }
+    }//GEN-LAST:event_totalbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1468,6 +1638,7 @@ public class order_page extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ATOTC_frame;
     private javax.swing.JPanel ATTC_frame;
+    private javax.swing.JButton ATTCbtn;
     private javax.swing.JLabel ATTClbl;
     private javax.swing.JLabel ATTCprice;
     private javax.swing.JLabel CJCprice;
@@ -1491,6 +1662,7 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JLabel americanolbl;
     private javax.swing.JLabel americanoprice;
     private javax.swing.JButton back_Button;
+    private javax.swing.JButton cappucinobtn;
     private javax.swing.JLabel cappucinolbl;
     private javax.swing.JLabel cappucinoprice;
     private javax.swing.JLabel caramacchiprice;
@@ -1498,29 +1670,22 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JLabel caramelnut;
     private javax.swing.JLabel caramelnutlbl;
     private javax.swing.JLabel caramelnutprice;
+    private javax.swing.JButton caranutbtn;
     private javax.swing.JLabel cashlbl;
     private javax.swing.JTextField cashtxt;
     private javax.swing.JTextField changetxt;
+    private javax.swing.JButton cjcbtn;
     private javax.swing.JButton clearBtn;
     private javax.swing.JLabel crkrjckcmllbl;
     private javax.swing.JLabel darkChocolbl;
+    private javax.swing.JButton darkchcobtn;
     private javax.swing.JLabel darkchocoprice;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1565,9 +1730,12 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner7;
     private javax.swing.JSpinner jSpinner8;
     private javax.swing.JSpinner jSpinner9;
+    private javax.swing.JButton lattebtn;
     private javax.swing.JLabel lattelbl;
     private javax.swing.JLabel matchapressprice;
+    private javax.swing.JButton matchpressbtn;
     private javax.swing.JLabel matchpresslbl;
+    private javax.swing.JButton mcisebtn;
     private javax.swing.JLabel mciselbl1;
     private javax.swing.JLabel mciselbl2;
     private javax.swing.JPanel menulist;
@@ -1575,12 +1743,15 @@ public class order_page extends javax.swing.JFrame {
     private javax.swing.JPanel receiptpanel;
     private javax.swing.JPanel receiptpanel2;
     private javax.swing.JTextArea receipttxt;
+    private javax.swing.JButton saltedcarabtn;
     private javax.swing.JLabel saltedcaralbl;
     private javax.swing.JLabel saltedcaraprice;
     private javax.swing.JLabel title;
+    private javax.swing.JButton totalbtn;
     private javax.swing.JLabel totallb;
     private javax.swing.JTextField totaltxt;
     private javax.swing.JPanel white_chocolate_frame;
+    private javax.swing.JButton whitechoco;
     private javax.swing.JLabel whitechocolbl;
     private javax.swing.JLabel whitechocoprice;
     // End of variables declaration//GEN-END:variables
