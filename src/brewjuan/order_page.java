@@ -1573,7 +1573,18 @@ public class order_page extends javax.swing.JFrame {
     }//GEN-LAST:event_clearBtnActionPerformed
 
     private void payoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payoutBtnActionPerformed
-        // TODO add your handling code here:
+        if (cashtxt.getText().isEmpty()){
+            JOptionPane.showMessageDialog(this, "Please enter the cash amount.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+            cash = Double.parseDouble(cashtxt.getText());
+            change = cash - total;
+        if (change < 0){
+            JOptionPane.showMessageDialog(this, "Insufficient Cash Amount", "Error", JOptionPane.ERROR_MESSAGE);
+        }else { 
+          changetxt.setText(String.format("%.2f ", change));
+          JOptionPane.showMessageDialog(this, receipttxt.getText());
+        }
+        
     }//GEN-LAST:event_payoutBtnActionPerformed
 
     private void totalbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalbtnActionPerformed
@@ -1586,17 +1597,6 @@ public class order_page extends javax.swing.JFrame {
                     + " ***********************************************************\n" 
                     + "               \t   BREW JUAN                       "
             );
-            
-        if (cashtxt.getText().isEmpty()){
-            JOptionPane.showMessageDialog(this, "Please enter the cash amount.", "Error", JOptionPane.ERROR_MESSAGE);
-        }
-            cash = Double.parseDouble(cashtxt.getText());
-            change = cash - total;
-        if (change < 0){
-            JOptionPane.showMessageDialog(this, "Insufficient Cash Amount", "Error", JOptionPane.ERROR_MESSAGE);
-        }else { 
-          changetxt.setText(String.format("%.2f ", change));
-        }
         }
     }//GEN-LAST:event_totalbtnActionPerformed
 
