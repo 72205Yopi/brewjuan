@@ -185,7 +185,7 @@ public class login extends javax.swing.JFrame {
            
        }
        else if(user_field.getText().contains("Cashier")&& pass_field.getText().contains("654321")) {
-         Cashview frame = new Cashview();
+         order_page frame = new order_page();
           frame.show();
           
           dispose();}
