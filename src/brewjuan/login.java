@@ -184,6 +184,11 @@ public class login extends javax.swing.JFrame {
           dispose();
            
        }
+       else if(user_field.getText().contains("Cashier")&& pass_field.getText().contains("654321")) {
+         Cashview frame = new Cashview();
+          frame.show();
+          
+          dispose();}
        else{
            error_dialog.showMessageDialog(null,"Wrong Password or Username ! ! ! ", "Message", error_dialog.ERROR_MESSAGE);
        }
