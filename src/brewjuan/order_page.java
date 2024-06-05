@@ -12,13 +12,13 @@ import javax.swing.JOptionPane;
  */
 public class order_page extends javax.swing.JFrame {
 
-    /**
-     * Creates new form order_page
-     */
-    
+    private historypage history;
     double total = 0.00, cash = 0.0, change = 0.0;
     int x;
-    public order_page() {
+    int prodSold;
+    
+    public order_page(historypage history) {
+        this.history = history;
         initComponents();
     }
     
@@ -1379,6 +1379,7 @@ public class order_page extends javax.swing.JFrame {
         }else{
         double price = qty * 110.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + whitechocolbl.getText()+ "\t\t\t" + price + "\n");
         }
         
@@ -1395,6 +1396,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 115.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + saltedcaralbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner11.setValue(0);
@@ -1410,6 +1412,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 125.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + "Muscovado Cinnamon Iced \n Shaken Espresso"+ "\t\t" + price + "\n");
         
         jSpinner10.setValue(0);
@@ -1425,6 +1428,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 120.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + matchpresslbl.getText()+ "\t\t" + price + "\n");
         
         jSpinner9.setValue(0);
@@ -1440,6 +1444,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 110.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + darkChocolbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner8.setValue(0);
@@ -1455,6 +1460,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 130.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + crkrjckcmllbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner7.setValue(0);
@@ -1470,6 +1476,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 100.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + caramachilbl.getText()+ "\t\t" + price + "\n");
         
         jSpinner6.setValue(0);
@@ -1485,6 +1492,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 130.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + caramelnutlbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner5.setValue(0);
@@ -1500,6 +1508,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 120.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + ATTClbl.getText()+ "\t" + price + "\n");
         
         jSpinner4.setValue(0);
@@ -1515,6 +1524,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 100.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + cappucinolbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner3.setValue(0);
@@ -1530,6 +1540,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 90.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + lattelbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner2.setValue(0);
@@ -1545,6 +1556,7 @@ public class order_page extends javax.swing.JFrame {
         }
         double price = qty * 80.00;
         total += price;
+        prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + americanolbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner1.setValue(0);
@@ -1578,14 +1590,16 @@ public class order_page extends javax.swing.JFrame {
         }else { 
           changetxt.setText(String.format("%.2f ", change));
           JOptionPane.showMessageDialog(this, receipttxt.getText());
+          history.updateLabels(total,prodSold);
         }
         
     }//GEN-LAST:event_payoutBtnActionPerformed
 
     private void totalbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalbtnActionPerformed
-        if (total == 0.0){
+       if (total == 0.0){
             JOptionPane.showMessageDialog(null,"You haven't selected any items");
         }else {
+            totaltxt.setText(String.valueOf(total));
             receipttxt.setText(receipttxt.getText() +
                     "\n ***********************************************************\n" 
                     + "Total:₱ \t\t\t" + total +"\n" 
@@ -1624,8 +1638,12 @@ public class order_page extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
-                new order_page().setVisible(true);
+               historypage historyFrame = new historypage();
+                
+                order_page frame = new order_page(historyFrame);
+                frame.setVisible(true);
             }
         });
     }

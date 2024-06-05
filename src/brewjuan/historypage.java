@@ -10,7 +10,8 @@ package brewjuan;
  */
 public class historypage extends javax.swing.JFrame {
 
-    
+    int numberOfCustomers = 0,totalProductsSold;
+    double todaysIncome,totalIncome;
     public historypage() {
         initComponents();
     }
@@ -27,13 +28,13 @@ public class historypage extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         mainpanel = new javax.swing.JPanel();
         customerPanel = new javax.swing.JPanel();
-        numOfCustomers = new javax.swing.JLabel();
+        customer = new javax.swing.JLabel();
         customerPanel1 = new javax.swing.JPanel();
-        numOfCustomers1 = new javax.swing.JLabel();
+        todaysincome = new javax.swing.JLabel();
         customerPanel2 = new javax.swing.JPanel();
-        numOfCustomers2 = new javax.swing.JLabel();
+        totalincome = new javax.swing.JLabel();
         customerPanel3 = new javax.swing.JPanel();
-        numOfCustomers3 = new javax.swing.JLabel();
+        prodsold = new javax.swing.JLabel();
         historyLbl = new javax.swing.JLabel();
         backBtn = new javax.swing.JLabel();
 
@@ -45,30 +46,30 @@ public class historypage extends javax.swing.JFrame {
         customerPanel.setBackground(new java.awt.Color(0, 0, 0));
         customerPanel.setForeground(new java.awt.Color(242, 242, 242));
 
-        numOfCustomers.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        numOfCustomers.setForeground(new java.awt.Color(242, 242, 242));
-        numOfCustomers.setText("Number of Customers: ");
+        customer.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        customer.setForeground(new java.awt.Color(242, 242, 242));
+        customer.setText("Number of Customers: ");
 
         javax.swing.GroupLayout customerPanelLayout = new javax.swing.GroupLayout(customerPanel);
         customerPanel.setLayout(customerPanelLayout);
         customerPanelLayout.setHorizontalGroup(
             customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(numOfCustomers, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+            .addComponent(customer, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
         );
         customerPanelLayout.setVerticalGroup(
             customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanelLayout.createSequentialGroup()
                 .addContainerGap(182, Short.MAX_VALUE)
-                .addComponent(numOfCustomers, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(customer, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         customerPanel1.setBackground(new java.awt.Color(0, 0, 0));
         customerPanel1.setForeground(new java.awt.Color(242, 242, 242));
 
-        numOfCustomers1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        numOfCustomers1.setForeground(new java.awt.Color(242, 242, 242));
-        numOfCustomers1.setText("Today's Income: ₱");
+        todaysincome.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        todaysincome.setForeground(new java.awt.Color(242, 242, 242));
+        todaysincome.setText("Today's Income: ₱");
 
         javax.swing.GroupLayout customerPanel1Layout = new javax.swing.GroupLayout(customerPanel1);
         customerPanel1.setLayout(customerPanel1Layout);
@@ -76,56 +77,56 @@ public class historypage extends javax.swing.JFrame {
             customerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(customerPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(numOfCustomers1, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+                .addComponent(todaysincome, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
                 .addContainerGap())
         );
         customerPanel1Layout.setVerticalGroup(
             customerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(numOfCustomers1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(todaysincome, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         customerPanel2.setBackground(new java.awt.Color(0, 0, 0));
         customerPanel2.setForeground(new java.awt.Color(242, 242, 242));
 
-        numOfCustomers2.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        numOfCustomers2.setForeground(new java.awt.Color(242, 242, 242));
-        numOfCustomers2.setText("Total Income:  ₱");
+        totalincome.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        totalincome.setForeground(new java.awt.Color(242, 242, 242));
+        totalincome.setText("Total Income:  ₱");
 
         javax.swing.GroupLayout customerPanel2Layout = new javax.swing.GroupLayout(customerPanel2);
         customerPanel2.setLayout(customerPanel2Layout);
         customerPanel2Layout.setHorizontalGroup(
             customerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(numOfCustomers2, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+            .addComponent(totalincome, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
         );
         customerPanel2Layout.setVerticalGroup(
             customerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel2Layout.createSequentialGroup()
                 .addContainerGap(188, Short.MAX_VALUE)
-                .addComponent(numOfCustomers2, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(totalincome, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         customerPanel3.setBackground(new java.awt.Color(0, 0, 0));
         customerPanel3.setForeground(new java.awt.Color(242, 242, 242));
 
-        numOfCustomers3.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        numOfCustomers3.setForeground(new java.awt.Color(242, 242, 242));
-        numOfCustomers3.setText("Total Products Sold: ");
+        prodsold.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        prodsold.setForeground(new java.awt.Color(242, 242, 242));
+        prodsold.setText("Total Products Sold: ");
 
         javax.swing.GroupLayout customerPanel3Layout = new javax.swing.GroupLayout(customerPanel3);
         customerPanel3.setLayout(customerPanel3Layout);
         customerPanel3Layout.setHorizontalGroup(
             customerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(numOfCustomers3, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+            .addComponent(prodsold, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
         );
         customerPanel3Layout.setVerticalGroup(
             customerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel3Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(numOfCustomers3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(prodsold, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         historyLbl.setFont(new java.awt.Font("Calibri", 1, 48)); // NOI18N
@@ -206,7 +207,19 @@ public class historypage extends javax.swing.JFrame {
         back.setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnMouseClicked
-
+    
+    public void updateLabels( double income, int productsSold){
+        numberOfCustomers += 1;
+        todaysIncome += income;
+        totalIncome += income;
+        totalProductsSold += productsSold;
+        
+        customer.setText("Number of Customers: " + numberOfCustomers);
+        todaysincome.setText("Today's Income: ₱ " + todaysIncome);
+        totalincome.setText("Total Income: ₱ " + totalIncome);
+        prodsold.setText("Total Products Sold: " + totalProductsSold);
+        
+    }
     /**
      * @param args the command line arguments
      */
@@ -245,15 +258,15 @@ public class historypage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel backBtn;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel customer;
     private javax.swing.JPanel customerPanel;
     private javax.swing.JPanel customerPanel1;
     private javax.swing.JPanel customerPanel2;
     private javax.swing.JPanel customerPanel3;
     private javax.swing.JLabel historyLbl;
     private javax.swing.JPanel mainpanel;
-    private javax.swing.JLabel numOfCustomers;
-    private javax.swing.JLabel numOfCustomers1;
-    private javax.swing.JLabel numOfCustomers2;
-    private javax.swing.JLabel numOfCustomers3;
+    private javax.swing.JLabel prodsold;
+    private javax.swing.JLabel todaysincome;
+    private javax.swing.JLabel totalincome;
     // End of variables declaration//GEN-END:variables
 }
