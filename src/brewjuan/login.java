@@ -4,6 +4,8 @@
  */
 package brewjuan;
 
+import core.PersonClass;
+
 /**
  *
  * @author USER
@@ -14,6 +16,7 @@ public class login extends javax.swing.JFrame {
      * Creates new form login
      */
     private historypage history;
+    private PersonClass person;
     public login(historypage history) {
         this.history = history;
         initComponents();
@@ -237,6 +240,16 @@ public class login extends javax.swing.JFrame {
             }
         });
     }
+        
+    public void loginEvent(PersonClass user) {
+        person = user;
+    }
+
+    public PersonClass getUser() {
+        return this.person;
+    }
+
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JOptionPane error_dialog;

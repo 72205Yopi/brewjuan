@@ -18,7 +18,7 @@ public class order_page extends javax.swing.JFrame {
     int prodSold;
     
     public order_page(historypage history) {
-        this.history = history;
+       * this.history = history;
         initComponents();
     }
     
