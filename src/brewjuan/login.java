@@ -13,7 +13,9 @@ public class login extends javax.swing.JFrame {
     /**
      * Creates new form login
      */
-    public login() {
+    private historypage history;
+    public login(historypage history) {
+        this.history = history;
         initComponents();
     }
 
@@ -178,14 +180,14 @@ public class login extends javax.swing.JFrame {
            pass_dialog.showMessageDialog(null,"Please fill out the Username");
        }
        else if(user_field.getText().contains("admin")&& pass_field.getText().contains("123456")) {
-         btnspage frame = new btnspage();
+         btnspage frame = new btnspage(history);
           frame.show();
           
           dispose();
            
        }
        else if(user_field.getText().contains("Cashier")&& pass_field.getText().contains("654321")) {
-         order_page frame = new order_page();
+         order_page frame = new order_page(history);
           frame.show();
           
           dispose();}
@@ -228,7 +230,10 @@ public class login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new login().setVisible(true);
+                historypage historyFrame = new historypage();
+                
+                login frame = new login(historyFrame);
+                frame.show();
             }
         });
     }

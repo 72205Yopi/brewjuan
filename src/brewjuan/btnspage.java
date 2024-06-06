@@ -13,7 +13,9 @@ public class btnspage extends javax.swing.JFrame {
     /**
      * Creates new form btnspage
      */
-    public btnspage() {
+    private historypage history;
+    public btnspage(historypage history) {
+        this.history = history;
         initComponents();
     }
 
@@ -142,7 +144,7 @@ public class btnspage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void menubtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menubtnActionPerformed
-        order_page frame = new order_page();
+        order_page frame = new order_page(history);
         frame.setVisible(true);
         dispose();
     }//GEN-LAST:event_menubtnActionPerformed
@@ -153,7 +155,7 @@ public class btnspage extends javax.swing.JFrame {
 
     private void Logout_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Logout_ButtonActionPerformed
         // TODO add your handling code here:
-        login logout = new login();
+        login logout = new login(history);
         logout.setVisible(true);
         dispose();
         
@@ -168,7 +170,7 @@ public class btnspage extends javax.swing.JFrame {
     private void inventorybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inventorybtnActionPerformed
         // TODO add your handling code here:
         dispose();
-        invpage frame = new invpage();
+        invpage frame = new invpage(history);
         frame.setVisible(true);
     }//GEN-LAST:event_inventorybtnActionPerformed
 
@@ -202,7 +204,10 @@ public class btnspage extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new btnspage().setVisible(true);
+               historypage history = new historypage();
+               
+               btnspage frame = new btnspage(history);
+               frame.show();
             }
         });
     }

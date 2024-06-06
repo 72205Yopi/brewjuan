@@ -10,9 +10,11 @@ package brewjuan;
  */
 public class historypage extends javax.swing.JFrame {
 
-    int numberOfCustomers = 0,totalProductsSold;
-    double todaysIncome,totalIncome;
+    int numberOfCustomers = 0,totalProductsSold = 0;
+    double todaysIncome = 0.00,totalIncome = 0.00;
+    private  historypage history;
     public historypage() {
+        this.history = history;
         initComponents();
     }
 
@@ -203,7 +205,7 @@ public class historypage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backBtnMouseClicked
-        btnspage back = new btnspage();
+        btnspage back = new btnspage(history);
         back.setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnMouseClicked
@@ -215,9 +217,13 @@ public class historypage extends javax.swing.JFrame {
         totalProductsSold += productsSold;
         
         customer.setText("Number of Customers: " + numberOfCustomers);
+        System.out.println(numberOfCustomers);
         todaysincome.setText("Today's Income: ₱ " + todaysIncome);
+        System.out.println(todaysIncome);
         totalincome.setText("Total Income: ₱ " + totalIncome);
+        System.out.println(totalIncome);
         prodsold.setText("Total Products Sold: " + totalProductsSold);
+        System.out.println(totalProductsSold);
         
     }
     /**
@@ -250,7 +256,9 @@ public class historypage extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new historypage().setVisible(true);
+                
+                historypage frame = new historypage();
+                frame.show();
             }
         });
     }

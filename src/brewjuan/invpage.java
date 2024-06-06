@@ -21,8 +21,9 @@ public class invpage extends javax.swing.JFrame {
     /**
      * Creates new form invpage
      */
-    
-    public invpage() {
+    private historypage history;
+    public invpage(historypage history) {
+        this.history = history; 
         initComponents();
     }
     
@@ -369,7 +370,7 @@ try{
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
         dispose();
-        btnspage frame = new btnspage();
+        btnspage frame = new btnspage(history);
         frame.setVisible(true);
     }//GEN-LAST:event_jLabel1MouseClicked
 
@@ -524,7 +525,8 @@ try{
         // Create and display the form *inventory_addBtn  
         java.awt.EventQueue.invokeLater(new Runnable() {
            public void run() {
-               invpage x = new invpage();
+               historypage history = new historypage();
+               invpage x = new invpage(history);
                 x.loadData();
                 x.setLocationRelativeTo(null);
                 x.setVisible(true);

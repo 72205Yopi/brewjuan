@@ -1330,7 +1330,7 @@ public class order_page extends javax.swing.JFrame {
     
     private void back_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back_ButtonActionPerformed
         // TODO add your handling code here:
-        btnspage frame = new btnspage();
+        btnspage frame = new btnspage(history);
         frame.show();
 
         dispose();
@@ -1347,7 +1347,7 @@ public class order_page extends javax.swing.JFrame {
     }
     private void titleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_titleMouseClicked
         // TODO add your handling code here:
-        login frame = new login();
+        login frame = new login(history);
         frame.show();
 
         dispose();
