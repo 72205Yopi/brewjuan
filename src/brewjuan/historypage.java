@@ -212,6 +212,7 @@ public class historypage extends javax.swing.JFrame {
     
     public void updateLabels( double income, int productsSold){
         numberOfCustomers += 1;
+        numberOfCustomers = numberOfCustomers;
         todaysIncome += income;
         totalIncome += income;
         totalProductsSold += productsSold;
