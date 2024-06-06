@@ -12,6 +12,8 @@ public class historypage extends javax.swing.JFrame {
 
     int numberOfCustomers = 0,totalProductsSold = 0;
     double todaysIncome = 0.00,totalIncome = 0.00;
+    int productSold;
+    double income;
     private  historypage history;
     public historypage() {
         this.history = history;
@@ -31,14 +33,19 @@ public class historypage extends javax.swing.JFrame {
         mainpanel = new javax.swing.JPanel();
         customerPanel = new javax.swing.JPanel();
         customer = new javax.swing.JLabel();
+        noCustomer = new javax.swing.JLabel();
         customerPanel1 = new javax.swing.JPanel();
         todaysincome = new javax.swing.JLabel();
+        incomelbl = new javax.swing.JLabel();
         customerPanel2 = new javax.swing.JPanel();
         totalincome = new javax.swing.JLabel();
+        incometod = new javax.swing.JLabel();
         customerPanel3 = new javax.swing.JPanel();
         prodsold = new javax.swing.JLabel();
+        prodSold = new javax.swing.JLabel();
         historyLbl = new javax.swing.JLabel();
         backBtn = new javax.swing.JLabel();
+        updatBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("History");
@@ -52,17 +59,28 @@ public class historypage extends javax.swing.JFrame {
         customer.setForeground(new java.awt.Color(242, 242, 242));
         customer.setText("Number of Customers: ");
 
+        noCustomer.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        noCustomer.setForeground(new java.awt.Color(242, 242, 242));
+        noCustomer.setText("0");
+
         javax.swing.GroupLayout customerPanelLayout = new javax.swing.GroupLayout(customerPanel);
         customerPanel.setLayout(customerPanelLayout);
         customerPanelLayout.setHorizontalGroup(
             customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(customer, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+            .addGroup(customerPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(customer)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(noCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         customerPanelLayout.setVerticalGroup(
             customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanelLayout.createSequentialGroup()
-                .addContainerGap(182, Short.MAX_VALUE)
-                .addComponent(customer, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(169, Short.MAX_VALUE)
+                .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(customer, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(noCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -73,20 +91,28 @@ public class historypage extends javax.swing.JFrame {
         todaysincome.setForeground(new java.awt.Color(242, 242, 242));
         todaysincome.setText("Today's Income: ₱");
 
+        incomelbl.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        incomelbl.setForeground(new java.awt.Color(242, 242, 242));
+        incomelbl.setText("0.00");
+
         javax.swing.GroupLayout customerPanel1Layout = new javax.swing.GroupLayout(customerPanel1);
         customerPanel1.setLayout(customerPanel1Layout);
         customerPanel1Layout.setHorizontalGroup(
             customerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(customerPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(todaysincome, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(todaysincome, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(incomelbl)
+                .addGap(36, 36, 36))
         );
         customerPanel1Layout.setVerticalGroup(
             customerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(todaysincome, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(customerPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(todaysincome, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(incomelbl))
                 .addContainerGap())
         );
 
@@ -97,17 +123,27 @@ public class historypage extends javax.swing.JFrame {
         totalincome.setForeground(new java.awt.Color(242, 242, 242));
         totalincome.setText("Total Income:  ₱");
 
+        incometod.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        incometod.setForeground(new java.awt.Color(242, 242, 242));
+        incometod.setText("0.00");
+
         javax.swing.GroupLayout customerPanel2Layout = new javax.swing.GroupLayout(customerPanel2);
         customerPanel2.setLayout(customerPanel2Layout);
         customerPanel2Layout.setHorizontalGroup(
             customerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(totalincome, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+            .addGroup(customerPanel2Layout.createSequentialGroup()
+                .addComponent(totalincome, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(incometod, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         customerPanel2Layout.setVerticalGroup(
             customerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel2Layout.createSequentialGroup()
-                .addContainerGap(188, Short.MAX_VALUE)
-                .addComponent(totalincome, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(170, Short.MAX_VALUE)
+                .addGroup(customerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalincome, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(incometod))
                 .addContainerGap())
         );
 
@@ -118,17 +154,28 @@ public class historypage extends javax.swing.JFrame {
         prodsold.setForeground(new java.awt.Color(242, 242, 242));
         prodsold.setText("Total Products Sold: ");
 
+        prodSold.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        prodSold.setForeground(new java.awt.Color(242, 242, 242));
+        prodSold.setText("0");
+
         javax.swing.GroupLayout customerPanel3Layout = new javax.swing.GroupLayout(customerPanel3);
         customerPanel3.setLayout(customerPanel3Layout);
         customerPanel3Layout.setHorizontalGroup(
             customerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(prodsold, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+            .addGroup(customerPanel3Layout.createSequentialGroup()
+                .addComponent(prodsold, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(prodSold, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(38, Short.MAX_VALUE))
         );
         customerPanel3Layout.setVerticalGroup(
             customerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel3Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(prodsold, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(customerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(prodsold, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(prodSold, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         historyLbl.setFont(new java.awt.Font("Calibri", 1, 48)); // NOI18N
@@ -142,26 +189,38 @@ public class historypage extends javax.swing.JFrame {
             }
         });
 
+        updatBtn.setText("Update");
+        updatBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updatBtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout mainpanelLayout = new javax.swing.GroupLayout(mainpanel);
         mainpanel.setLayout(mainpanelLayout);
         mainpanelLayout.setHorizontalGroup(
             mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainpanelLayout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(customerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(customerPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(47, 47, 47)
+                .addGap(87, 87, 87)
                 .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(customerPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(customerPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(40, Short.MAX_VALUE))
-            .addGroup(mainpanelLayout.createSequentialGroup()
-                .addGap(22, 231, Short.MAX_VALUE)
-                .addComponent(historyLbl)
-                .addGap(128, 128, 128)
-                .addComponent(backBtn)
-                .addGap(52, 52, 52))
+                    .addComponent(customerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(customerPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(37, 37, 37)
+                .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(customerPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(customerPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(121, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainpanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainpanelLayout.createSequentialGroup()
+                        .addComponent(historyLbl)
+                        .addGap(128, 128, 128)
+                        .addComponent(backBtn)
+                        .addGap(52, 52, 52))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainpanelLayout.createSequentialGroup()
+                        .addComponent(updatBtn)
+                        .addGap(106, 106, 106))))
         );
         mainpanelLayout.setVerticalGroup(
             mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -181,7 +240,9 @@ public class historypage extends javax.swing.JFrame {
                 .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(customerPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(customerPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(updatBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                .addGap(24, 24, 24))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -191,7 +252,7 @@ public class historypage extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(mainpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -209,23 +270,28 @@ public class historypage extends javax.swing.JFrame {
         back.setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnMouseClicked
-    
-    public void updateLabels( double income, int productsSold){
-        numberOfCustomers += 1;
-        numberOfCustomers = numberOfCustomers;
-        todaysIncome += income;
+
+    private void updatBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updatBtnActionPerformed
+        updateLabels();
+    }//GEN-LAST:event_updatBtnActionPerformed
+    public void getValues(double inc, int prd){
+        income = inc;
+        productSold = prd;
+    }
+    public void updateLabels(){
+        numberOfCustomers++;
+        todaysIncome += income; 
         totalIncome += income;
-        totalProductsSold += productsSold;
+        totalProductsSold += productSold;
         
-        customer.setText("Number of Customers: " + numberOfCustomers);
+        noCustomer.setText( String.valueOf(numberOfCustomers));
         System.out.println(numberOfCustomers);
-        todaysincome.setText("Today's Income: ₱ " + todaysIncome);
+        incomelbl.setText( String.valueOf(todaysIncome));
         System.out.println(todaysIncome);
-        totalincome.setText("Total Income: ₱ " + totalIncome);
+        incometod.setText(String.valueOf(totalIncome));
         System.out.println(totalIncome);
-        prodsold.setText("Total Products Sold: " + totalProductsSold);
-        System.out.println(totalProductsSold);
-        
+        prodSold.setText( String.valueOf(totalProductsSold));
+        System.out.println(totalProductsSold);   
     }
     /**
      * @param args the command line arguments
@@ -273,9 +339,15 @@ public class historypage extends javax.swing.JFrame {
     private javax.swing.JPanel customerPanel2;
     private javax.swing.JPanel customerPanel3;
     private javax.swing.JLabel historyLbl;
+    private javax.swing.JLabel incomelbl;
+    private javax.swing.JLabel incometod;
     private javax.swing.JPanel mainpanel;
+    private javax.swing.JLabel noCustomer;
+    private javax.swing.JLabel prodSold;
     private javax.swing.JLabel prodsold;
     private javax.swing.JLabel todaysincome;
     private javax.swing.JLabel totalincome;
+    private javax.swing.JButton updatBtn;
     // End of variables declaration//GEN-END:variables
-}
+
+    }

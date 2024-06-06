@@ -1577,6 +1577,7 @@ public class order_page extends javax.swing.JFrame {
     private void clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBtnActionPerformed
         receipttxt.setText("");
         jSpinner1.setValue(0);
+        x =0;
     }//GEN-LAST:event_clearBtnActionPerformed
 
     private void payoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payoutBtnActionPerformed
@@ -1590,7 +1591,10 @@ public class order_page extends javax.swing.JFrame {
         }else { 
           changetxt.setText(String.format("%.2f ", change));
           JOptionPane.showMessageDialog(this, receipttxt.getText());
-          history.updateLabels(total,prodSold);
+          totaltxt.setText("₱ 0.00");
+          cashtxt.setText("");
+          changetxt.setText("₱ 0.00");
+          history.getValues(total,prodSold);
         }
         
     }//GEN-LAST:event_payoutBtnActionPerformed
@@ -1641,6 +1645,7 @@ public class order_page extends javax.swing.JFrame {
             @Override
             public void run() {
                historypage historyFrame = new historypage();
+              
                 
                 order_page frame = new order_page(historyFrame);
                 frame.setVisible(true);
