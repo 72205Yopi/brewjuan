@@ -1,21 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package core;
 
-/**
- *
- * @author USER
- */
 public class PersonClass {
-    private String username;
-    private String fullName;
-    private String email;
-    private String password;
-    private String phoneNumber;
-    
-    public PersonClass(String username, String name, String email, String password, String phoneNumber) {
+    public String username;
+    public String fullName;
+    public String email;
+    public String password;
+    public String phoneNumber;
+
+    public PersonClass(String username, String name, String email, String password) {
         this.username = username;
         this.fullName = name;
         this.email = email;
@@ -23,11 +15,9 @@ public class PersonClass {
         this.phoneNumber = phoneNumber;
     }
 
-    public PersonClass(String text, String trim, String text0, String text1) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
  
-        public String getUsername() {
+
+    public String getUsername() {
         return this.username;
     }
 
@@ -51,17 +41,15 @@ public class PersonClass {
         this.email = email;
     }
 
-    public String getNumber() {
+    public String getPhoneNumber() {
         return this.phoneNumber;
     }
 
-    public void setNumber(String number) {
-        this.phoneNumber = number;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getPassword() {
         return this.password;
     }
-
-    
 }
