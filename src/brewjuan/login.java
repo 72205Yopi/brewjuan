@@ -192,27 +192,81 @@ public class login extends javax.swing.JFrame {
 
     private void login_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login_buttonActionPerformed
         // TODO add your handling code here:
-        if(user_field.getText().equals("")){
-            user_dialog.showMessageDialog(null,"Please fill out the Username");
+         String username, passWord, query, full_name, password = null;
+       String SUrl, SUser, SPass;
+        SUrl = "jdbc:MySQL://localhost:3306/brewjuan";
+        SUser = "root";
+        SPass = "";
+        int notFound = 0;
+ try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con = DriverManager.getConnection(SUrl, SUser, SPass);
+            Statement st = con.createStatement();
+            if("".equals(user_field.getText())){
+                jOptionPane.showMessageDialog(new JFrame(), "Username is require", "Error",
+                        jOptionPane.ERROR_MESSAGE);
+            }else if("".equals(pass_field.getText())){
+                jOptionPane.showMessageDialog(new JFrame(), "Password is require", "Error",
+                        jOptionPane.ERROR_MESSAGE);
+            }else {
+            username = user_field.getText();
+            passWord = pass_field.getText();
+            
+            query = "SELECT * FROM credentials WHERE username= '"+username+"'";
+       
+            ResultSet rs = st.executeQuery(query);
+            while(rs.next()){
+                password = rs.getString("password");
+                full_name = rs.getString("full_name");
+                notFound = 1;
+            }
+            if(notFound == 1 && passWord.equals(password)){
+                if(username.equals("admin")){
+                    btnspage p = new btnspage(history);
+                    p.setVisible(true);
+                     this.dispose();
+                }else if(username.equals("cashier")){
+                   order_page1 o = new order_page1(history);
+                    o.setVisible(true);
+                     this.dispose(); 
+                }
+                
+               
+                
+            }
+            else{
+               jOptionPane.showMessageDialog(new JFrame(), "Incorrect email or password", "Error",
+                        jOptionPane.ERROR_MESSAGE);
+            }
+            pass_field.setText("");
+            
+            }
+        }catch(Exception e){
+           System.out.println("Error!" + e.getMessage()); 
         }
-       else if (pass_field.getText().equals("")){
-           pass_dialog.showMessageDialog(null,"Please fill out the Username");
-       }
-       else if(user_field.getText().contains("admin")&& pass_field.getText().contains("123456")) {
-         btnspage frame = new btnspage(history);
-          frame.show();
+
+        
+//      if(user_field.getText().equals("")){
+        //    user_dialog.showMessageDialog(null,"Please fill out the Username");
+       // }
+      // else if (pass_field.getText().equals("")){
+        //   pass_dialog.showMessageDialog(null,"Please fill out the Username");
+      // }
+      // else if(user_field.getText().contains("admin")&& pass_field.getText().contains("123456")) {
+       //  btnspage frame = new btnspage(history);
+        //  frame.show();
           
-          dispose();
-           
-       }
-       else if(user_field.getText().contains("cashier")&& pass_field.getText().contains("654321")) {
-         order_page frame = new order_page(history);
-          frame.show();
+        //  dispose();
+        //   
+      // }
+       //else if(user_field.getText().contains("cashier")&& pass_field.getText().contains("654321")) {
+        // order_page frame = new order_page(history);
+        //  frame.show();
           
-          dispose();}
-       else{
-           error_dialog.showMessageDialog(null,"Wrong Password or Username ! ! ! ", "Message", error_dialog.ERROR_MESSAGE);
-       }
+        ///  dispose();}
+      // else{
+        //   error_dialog.showMessageDialog(null,"Wrong Password or Username ! ! ! ", "Message", error_dialog.ERROR_MESSAGE);
+      // }//
     }//GEN-LAST:event_login_buttonActionPerformed
 
     private void pass_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pass_fieldActionPerformed

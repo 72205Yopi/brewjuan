@@ -20,8 +20,7 @@ public class btnspage extends javax.swing.JFrame {
     }
 
     btnspage() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+        }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -211,6 +210,7 @@ public class btnspage extends javax.swing.JFrame {
                historypage history = new historypage();
                
                btnspage frame = new btnspage(history);
+               
                frame.show();
             }
         });
