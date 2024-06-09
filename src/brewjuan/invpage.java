@@ -114,34 +114,41 @@ public class invpage extends javax.swing.JFrame {
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
         prodID_label.setBackground(new java.awt.Color(0, 0, 0));
+        prodID_label.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         prodID_label.setForeground(new java.awt.Color(255, 255, 255));
         prodID_label.setText("Product ID:");
 
         prodName_label.setBackground(new java.awt.Color(0, 0, 0));
+        prodName_label.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         prodName_label.setForeground(new java.awt.Color(255, 255, 255));
         prodName_label.setText("Product Name:");
 
         type_label.setBackground(new java.awt.Color(0, 0, 0));
+        type_label.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         type_label.setForeground(new java.awt.Color(255, 255, 255));
         type_label.setText("Type:");
 
         cmbType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose Type...", "Starter", "Pasta", "Sandwinch & Wrap", "Chicken", "Main Course & Bowl", "Stir-Fried Rice", "Burger", "Coffee", "Non-Coffee", "Specialty", "Refreshment" }));
 
         stock_label.setBackground(new java.awt.Color(0, 0, 0));
+        stock_label.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         stock_label.setForeground(new java.awt.Color(255, 255, 255));
         stock_label.setText("Stock:");
 
         price_label.setBackground(new java.awt.Color(0, 0, 0));
+        price_label.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         price_label.setForeground(new java.awt.Color(255, 255, 255));
         price_label.setText("Price:");
 
         stat.setBackground(new java.awt.Color(0, 0, 0));
+        stat.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         stat.setForeground(new java.awt.Color(255, 255, 255));
         stat.setText("Status:");
 
         cmbStats.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose Status...", "Available", "Not Available" }));
 
         inventory_addBtn.setBackground(new java.awt.Color(0, 0, 0));
+        inventory_addBtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         inventory_addBtn.setForeground(new java.awt.Color(255, 255, 255));
         inventory_addBtn.setText("Add");
         inventory_addBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -151,6 +158,7 @@ public class invpage extends javax.swing.JFrame {
         });
 
         inventory_updateBtn.setBackground(new java.awt.Color(0, 0, 0));
+        inventory_updateBtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         inventory_updateBtn.setForeground(new java.awt.Color(255, 255, 255));
         inventory_updateBtn.setText("Update");
         inventory_updateBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -160,6 +168,7 @@ public class invpage extends javax.swing.JFrame {
         });
 
         inventory_delBtn.setBackground(new java.awt.Color(0, 0, 0));
+        inventory_delBtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         inventory_delBtn.setForeground(new java.awt.Color(255, 255, 255));
         inventory_delBtn.setText("Delete");
         inventory_delBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -169,6 +178,7 @@ public class invpage extends javax.swing.JFrame {
         });
 
         inventory_clearBtn.setBackground(new java.awt.Color(0, 0, 0));
+        inventory_clearBtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         inventory_clearBtn.setForeground(new java.awt.Color(255, 255, 255));
         inventory_clearBtn.setText("Clear");
         inventory_clearBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -185,6 +195,7 @@ public class invpage extends javax.swing.JFrame {
         });
 
         search_button.setBackground(new java.awt.Color(0, 0, 0));
+        search_button.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         search_button.setForeground(new java.awt.Color(255, 255, 255));
         search_button.setText("Search");
         search_button.addActionListener(new java.awt.event.ActionListener() {
@@ -233,7 +244,7 @@ public class invpage extends javax.swing.JFrame {
                             .addComponent(txtPrice)
                             .addComponent(txtStocks)
                             .addComponent(search_field))))
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -289,7 +300,7 @@ public class invpage extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 714, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
