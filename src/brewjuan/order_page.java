@@ -4,6 +4,11 @@
  */
 package brewjuan;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -1581,6 +1586,7 @@ public class order_page extends javax.swing.JFrame {
     }//GEN-LAST:event_clearBtnActionPerformed
 
     private void payoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payoutBtnActionPerformed
+        String income, prodsold,query;
         if (cashtxt.getText().isEmpty()){
             JOptionPane.showMessageDialog(this, "Please enter the cash amount.", "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -1591,14 +1597,39 @@ public class order_page extends javax.swing.JFrame {
         }else { 
           changetxt.setText(String.format("%.2f ", change));
           JOptionPane.showMessageDialog(this, receipttxt.getText());
+          
+            try {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                String url = "jdbc:MySql://localhost:3306/brewjuan"; 
+                 String user = "root";
+            String pass = "";
+
+            Connection con = DriverManager.getConnection(url, user, pass);
+
+            Statement st = con.createStatement();
+            
+            income = String.valueOf(total);
+            prodsold = String.valueOf(prodSold);
+            
+            query = "INSERT INTO historytable (income, prodSold)" 
+                    + "VALUES ('"+income+"', '"+prodsold+"')";
+            
+            st.executeUpdate(query);
+            
+            } catch (Exception e) {
+                System.out.println("Error"+e.getMessage());
+            }
+           
           totaltxt.setText("₱ 0.00");
           cashtxt.setText("");
           changetxt.setText("₱ 0.00");
+          receipttxt.setText("");
           history.getValues(total,prodSold);
         }
         
     }//GEN-LAST:event_payoutBtnActionPerformed
-
+    
+    
     private void totalbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalbtnActionPerformed
        if (total == 0.0){
             JOptionPane.showMessageDialog(null,"You haven't selected any items");

@@ -5,6 +5,10 @@
 package brewjuan;
 
 import java.awt.event.MouseEvent;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 /**
  *
@@ -211,7 +215,7 @@ public class btnspage extends javax.swing.JFrame {
         history.setVisible(true);
         dispose();
     }//GEN-LAST:event_historybtnActionPerformed
-
+    
     private void inventorybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inventorybtnActionPerformed
         // TODO add your handling code here:
         dispose();
