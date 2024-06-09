@@ -81,8 +81,6 @@ public class SignUp extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("I've an account");
 
-        SignUpBtn.setBackground(new java.awt.Color(255, 255, 255));
-        SignUpBtn.setForeground(new java.awt.Color(0, 0, 0));
         SignUpBtn.setText("Sign Up");
         SignUpBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
