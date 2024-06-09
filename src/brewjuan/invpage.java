@@ -245,11 +245,7 @@ public class invpage extends javax.swing.JFrame {
                             .addComponent(txtPrice)
                             .addComponent(txtStocks)
                             .addComponent(search_field))))
-<<<<<<< HEAD
                 .addContainerGap(84, Short.MAX_VALUE))
-=======
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
->>>>>>> origin/master
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
