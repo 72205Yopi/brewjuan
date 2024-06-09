@@ -4,6 +4,7 @@
  */
 package brewjuan;
 
+import java.awt.Color;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -26,6 +27,7 @@ public class invpage extends javax.swing.JFrame {
         this.history = history; 
         initComponents();
     }
+    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -63,6 +65,11 @@ public class invpage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+
+        Table.setBackground(new java.awt.Color(0, 0, 0));
+        Table.setForeground(new java.awt.Color(255, 255, 255));
         Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -86,6 +93,11 @@ public class invpage extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        Table.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Table.setGridColor(new java.awt.Color(255, 255, 255));
+        Table.setSelectionBackground(new java.awt.Color(0, 0, 0));
+        Table.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        Table.setShowGrid(false);
         Table.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(Table);
         if (Table.getColumnModel().getColumnCount() > 0) {
@@ -98,37 +110,39 @@ public class invpage extends javax.swing.JFrame {
             Table.getColumnModel().getColumn(6).setResizable(false);
         }
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE))
-        );
+        jPanel2.setBackground(java.awt.Color.black);
+        jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
+        prodID_label.setBackground(new java.awt.Color(0, 0, 0));
+        prodID_label.setForeground(new java.awt.Color(255, 255, 255));
         prodID_label.setText("Product ID:");
 
+        prodName_label.setBackground(new java.awt.Color(0, 0, 0));
+        prodName_label.setForeground(new java.awt.Color(255, 255, 255));
         prodName_label.setText("Product Name:");
 
+        type_label.setBackground(new java.awt.Color(0, 0, 0));
+        type_label.setForeground(new java.awt.Color(255, 255, 255));
         type_label.setText("Type:");
 
         cmbType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose Type...", "Starter", "Pasta", "Sandwinch & Wrap", "Chicken", "Main Course & Bowl", "Stir-Fried Rice", "Burger", "Coffee", "Non-Coffee", "Specialty", "Refreshment" }));
 
+        stock_label.setBackground(new java.awt.Color(0, 0, 0));
+        stock_label.setForeground(new java.awt.Color(255, 255, 255));
         stock_label.setText("Stock:");
 
+        price_label.setBackground(new java.awt.Color(0, 0, 0));
+        price_label.setForeground(new java.awt.Color(255, 255, 255));
         price_label.setText("Price:");
 
+        stat.setBackground(new java.awt.Color(0, 0, 0));
+        stat.setForeground(new java.awt.Color(255, 255, 255));
         stat.setText("Status:");
 
         cmbStats.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose Status...", "Available", "Not Available" }));
 
+        inventory_addBtn.setBackground(new java.awt.Color(0, 0, 0));
+        inventory_addBtn.setForeground(new java.awt.Color(255, 255, 255));
         inventory_addBtn.setText("Add");
         inventory_addBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,6 +150,8 @@ public class invpage extends javax.swing.JFrame {
             }
         });
 
+        inventory_updateBtn.setBackground(new java.awt.Color(0, 0, 0));
+        inventory_updateBtn.setForeground(new java.awt.Color(255, 255, 255));
         inventory_updateBtn.setText("Update");
         inventory_updateBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,6 +159,8 @@ public class invpage extends javax.swing.JFrame {
             }
         });
 
+        inventory_delBtn.setBackground(new java.awt.Color(0, 0, 0));
+        inventory_delBtn.setForeground(new java.awt.Color(255, 255, 255));
         inventory_delBtn.setText("Delete");
         inventory_delBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,6 +168,8 @@ public class invpage extends javax.swing.JFrame {
             }
         });
 
+        inventory_clearBtn.setBackground(new java.awt.Color(0, 0, 0));
+        inventory_clearBtn.setForeground(new java.awt.Color(255, 255, 255));
         inventory_clearBtn.setText("Clear");
         inventory_clearBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,6 +184,8 @@ public class invpage extends javax.swing.JFrame {
             }
         });
 
+        search_button.setBackground(new java.awt.Color(0, 0, 0));
+        search_button.setForeground(new java.awt.Color(255, 255, 255));
         search_button.setText("Search");
         search_button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,11 +229,11 @@ public class invpage extends javax.swing.JFrame {
                             .addComponent(search_button))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(cmbStats, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cmbStats, 0, 134, Short.MAX_VALUE)
                             .addComponent(txtPrice)
-                            .addComponent(txtStocks, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)
+                            .addComponent(txtStocks)
                             .addComponent(search_field))))
-                .addContainerGap(334, Short.MAX_VALUE))
+                .addContainerGap(135, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -258,9 +280,26 @@ public class invpage extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(inventory_addBtn)
                         .addComponent(inventory_updateBtn)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(20, 20, 20))
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -268,14 +307,10 @@ public class invpage extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -296,6 +331,8 @@ public void loadData(){
      DefaultTableModel model = new DefaultTableModel(new String[]{"prod_id", 
          "prod_name", "type", "price", "status", "date"},0);
      Table.setModel(model);
+
+
     String sql = "SELECT * FROM inventory";
     ResultSet rs = st.executeQuery(sql);
     String prodname, id, type, price, status,stock, date;
@@ -494,6 +531,7 @@ try{
             System.out.println("Error "+ e.getMessage());
         }
     }//GEN-LAST:event_search_buttonActionPerformed
+
 
     /**
      * @param args the command line arguments
