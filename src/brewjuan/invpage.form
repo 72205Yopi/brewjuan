@@ -183,33 +183,39 @@
                               <Component id="inventory_delBtn" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="type_label" min="-2" max="-2" attributes="0"/>
-                                          <Component id="prodName_label" min="-2" max="-2" attributes="0"/>
-                                          <Component id="prodID_label" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="cmbType" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="txtName" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="txtID" alignment="0" min="-2" pref="143" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="search_button" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="prodName_label" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txtName" pref="143" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="stock_label" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="type_label" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="txtStocks" min="-2" pref="134" max="-2" attributes="0"/>
+                                                  <Component id="cmbType" min="-2" pref="143" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="stat" alignment="1" min="-2" max="-2" attributes="0"/>
                                           <Component id="price_label" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="stock_label" alignment="1" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Component id="search_button" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="cmbStats" pref="134" max="32767" attributes="0"/>
                                   <Component id="txtPrice" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtStocks" alignment="0" max="32767" attributes="0"/>
                                   <Component id="search_field" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -226,47 +232,37 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="stock_label" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtStocks" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="price_label" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="stat" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cmbStats" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="prodID_label" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtID" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="prodName_label" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtName" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="type_label" min="-2" max="-2" attributes="0"/>
-                                  <Component id="cmbType" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtPrice" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="price_label" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="search_field" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="search_button" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="type_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cmbType" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cmbStats" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="stat" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="stock_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtStocks" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="search_button" alignment="3" min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="search_field" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                               <Component id="inventory_clearBtn" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -285,22 +281,6 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="prodID_label">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Calibri" size="18" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Product ID:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtID">
-            </Component>
             <Component class="javax.swing.JLabel" name="prodName_label">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -316,6 +296,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txtName">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNameActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="type_label">
               <Properties>
@@ -334,19 +317,12 @@
             <Component class="javax.swing.JComboBox" name="cmbType">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="12">
+                  <StringArray count="5">
                     <StringItem index="0" value="Choose Type..."/>
-                    <StringItem index="1" value="Starter"/>
-                    <StringItem index="2" value="Pasta"/>
-                    <StringItem index="3" value="Sandwinch &amp; Wrap"/>
-                    <StringItem index="4" value="Chicken"/>
-                    <StringItem index="5" value="Main Course &amp; Bowl"/>
-                    <StringItem index="6" value="Stir-Fried Rice"/>
-                    <StringItem index="7" value="Burger"/>
-                    <StringItem index="8" value="Coffee"/>
-                    <StringItem index="9" value="Non-Coffee"/>
-                    <StringItem index="10" value="Specialty"/>
-                    <StringItem index="11" value="Refreshment"/>
+                    <StringItem index="1" value="Coffee"/>
+                    <StringItem index="2" value="Non-Coffee"/>
+                    <StringItem index="3" value="Specialty"/>
+                    <StringItem index="4" value="Refreshment"/>
                   </StringArray>
                 </Property>
               </Properties>

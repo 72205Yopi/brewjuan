@@ -1765,6 +1765,11 @@ public class order_page extends javax.swing.JFrame {
         jLabel50.setText("Sauce");
 
         saucebtn.setText("ADD");
+        saucebtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saucebtnActionPerformed(evt);
+            }
+        });
 
         jLabel51.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel51.setText("Espresso");
@@ -1786,8 +1791,18 @@ public class order_page extends javax.swing.JFrame {
         });
 
         syrupbtn.setText("ADD");
+        syrupbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                syrupbtnActionPerformed(evt);
+            }
+        });
 
         sweetcreambtn.setText("ADD");
+        sweetcreambtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sweetcreambtnActionPerformed(evt);
+            }
+        });
 
         biscuitbtn.setText("ADD");
         biscuitbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -1800,6 +1815,11 @@ public class order_page extends javax.swing.JFrame {
         jLabel78.setText("Sinker");
 
         sinkerbtn.setText("ADD");
+        sinkerbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sinkerbtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -2412,7 +2432,7 @@ public class order_page extends javax.swing.JFrame {
         double price = qty * 110.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + darkChocolbl.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + darkChocolbl.getText()+ "\t\t" + price + "\n");
         
         jSpinner8.setValue(0);
     }//GEN-LAST:event_darkchcobtnActionPerformed
@@ -2428,7 +2448,7 @@ public class order_page extends javax.swing.JFrame {
         double price = qty * 130.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + crkrjckcmllbl.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + crkrjckcmllbl.getText()+ "\t\t" + price + "\n");
         
         jSpinner7.setValue(0);
     }//GEN-LAST:event_cjcbtnActionPerformed
@@ -2476,7 +2496,7 @@ public class order_page extends javax.swing.JFrame {
         double price = qty * 120.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + ATTClbl.getText()+ "\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + ATTClbl.getText()+ "\t\t" + price + "\n");
         
         jSpinner4.setValue(0);
     }//GEN-LAST:event_ATTCbtnActionPerformed
@@ -2627,13 +2647,15 @@ public class order_page extends javax.swing.JFrame {
     }//GEN-LAST:event_ovaltinemaltbtnActionPerformed
 
     private void espressobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_espressobtnActionPerformed
-        double price = 1 * 140.00;
+        double price = 1 * 20.00;
         total += price;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel35.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel51.getText()+ "\t\t\t" + price + "\n");
     }//GEN-LAST:event_espressobtnActionPerformed
 
     private void biscuitbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biscuitbtnActionPerformed
-        // TODO add your handling code here:
+        double price = 1 * 15.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel54.getText()+ "\t\t\t" + price + "\n");
     }//GEN-LAST:event_biscuitbtnActionPerformed
 
     private void matchabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matchabtnActionPerformed
@@ -2788,6 +2810,30 @@ public class order_page extends javax.swing.JFrame {
         
         berrylemonspin.setValue(0);
     }//GEN-LAST:event_berrybtnActionPerformed
+
+    private void saucebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saucebtnActionPerformed
+        double price = 1 * 20.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel50.getText()+ "\t\t\t" + price + "\n");
+    }//GEN-LAST:event_saucebtnActionPerformed
+
+    private void syrupbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_syrupbtnActionPerformed
+        double price = 1 * 20.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel52.getText()+ "\t\t\t" + price + "\n");
+    }//GEN-LAST:event_syrupbtnActionPerformed
+
+    private void sweetcreambtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sweetcreambtnActionPerformed
+        double price = 1 * 25.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel53.getText()+ "\t\t" + price + "\n");
+    }//GEN-LAST:event_sweetcreambtnActionPerformed
+
+    private void sinkerbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinkerbtnActionPerformed
+        double price = 1 * 15.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel78.getText()+ "\t\t\t" + price + "\n");
+    }//GEN-LAST:event_sinkerbtnActionPerformed
 
     /**
      * @param args the command line arguments

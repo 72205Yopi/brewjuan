@@ -26,6 +26,7 @@ public class invpage extends javax.swing.JFrame {
     public invpage(historypage history) {
         this.history = history; 
         initComponents();
+        loadData();
     }
     
     
@@ -43,8 +44,6 @@ public class invpage extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         Table = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
-        prodID_label = new javax.swing.JLabel();
-        txtID = new javax.swing.JTextField();
         prodName_label = new javax.swing.JLabel();
         txtName = new javax.swing.JTextField();
         type_label = new javax.swing.JLabel();
@@ -114,22 +113,23 @@ public class invpage extends javax.swing.JFrame {
         jPanel2.setBackground(java.awt.Color.black);
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
-        prodID_label.setBackground(new java.awt.Color(0, 0, 0));
-        prodID_label.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        prodID_label.setForeground(new java.awt.Color(255, 255, 255));
-        prodID_label.setText("Product ID:");
-
         prodName_label.setBackground(new java.awt.Color(0, 0, 0));
         prodName_label.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         prodName_label.setForeground(new java.awt.Color(255, 255, 255));
         prodName_label.setText("Product Name:");
+
+        txtName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameActionPerformed(evt);
+            }
+        });
 
         type_label.setBackground(new java.awt.Color(0, 0, 0));
         type_label.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         type_label.setForeground(new java.awt.Color(255, 255, 255));
         type_label.setText("Type:");
 
-        cmbType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose Type...", "Starter", "Pasta", "Sandwinch & Wrap", "Chicken", "Main Course & Bowl", "Stir-Fried Rice", "Burger", "Coffee", "Non-Coffee", "Specialty", "Refreshment" }));
+        cmbType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose Type...", "Coffee", "Non-Coffee", "Specialty", "Refreshment" }));
 
         stock_label.setBackground(new java.awt.Color(0, 0, 0));
         stock_label.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
@@ -223,28 +223,31 @@ public class invpage extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(inventory_delBtn))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(search_button)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(type_label)
-                                    .addComponent(prodName_label)
-                                    .addComponent(prodID_label))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(cmbType, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtName)
-                                    .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(prodName_label)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txtName, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                                        .addGap(38, 38, 38)
+                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(stock_label)
+                                            .addComponent(type_label))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtStocks, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(cmbType, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(101, 101, 101)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(stat)
-                                    .addComponent(price_label)
-                                    .addComponent(stock_label)))
-                            .addComponent(search_button))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(stat, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(price_label, javax.swing.GroupLayout.Alignment.TRAILING))))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(cmbStats, 0, 134, Short.MAX_VALUE)
                             .addComponent(txtPrice)
-                            .addComponent(txtStocks)
                             .addComponent(search_field))))
                 .addContainerGap(84, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
@@ -255,37 +258,30 @@ public class invpage extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(52, 52, 52)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(stock_label)
-                            .addComponent(txtStocks, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(price_label)
-                            .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(stat)
-                            .addComponent(cmbStats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(prodID_label)
-                            .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                        .addGap(52, 52, 52)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(prodName_label)
-                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(type_label)
-                            .addComponent(cmbType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(price_label))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(search_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(search_button, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(16, 16, 16)
+                    .addComponent(type_label)
+                    .addComponent(cmbType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmbStats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(stat))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(stock_label)
+                    .addComponent(txtStocks, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(search_button, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(search_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(73, 73, 73)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(inventory_clearBtn)
@@ -341,24 +337,24 @@ public void loadData(){
         Connection con = DriverManager.getConnection(url, user, pass);
         Statement st = con.createStatement();
         
-     DefaultTableModel model = new DefaultTableModel(new String[]{"prod_id", 
-         "prod_name", "type", "price", "status", "date"},0);
+     DefaultTableModel model = new DefaultTableModel(new String[]{"prod_name", 
+         "id", "price", "type", "stock", "status"},0);
      Table.setModel(model);
 
 
     String sql = "SELECT * FROM inventory";
     ResultSet rs = st.executeQuery(sql);
-    String prodname, id, type, price, status,stock, date;
+    String prodname, id, type, price, status,stock;
     
     while(rs.next()){
         prodname = rs.getString("prod_name");
-        id = rs.getString("prod_id");
+        id = rs.getString("id");
         price = rs.getString("price");
         type = rs.getString("type");
         status = rs.getString("status");
         stock = rs.getString("stock");
-        date = rs.getString("date");
-       model.addRow (new Object []{prodname, id, price, type,stock, status, date});
+        
+       model.addRow (new Object []{prodname, id, price, type,stock, status});
     }
     
     }catch(Exception e){
@@ -369,7 +365,7 @@ public void loadData(){
 }
     private void inventory_clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inventory_clearBtnActionPerformed
         // TODO add your handling code here:
-        txtID.setText("");
+        
         txtName.setText("");
         txtStocks.setText("");
         txtPrice.setText("");
@@ -380,7 +376,7 @@ public void loadData(){
     private void inventory_addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inventory_addBtnActionPerformed
         // TODO add your handling code here:
          String id,PN, PR, stock,status, type, query;
-       String data[] = {txtID.getText(), txtName.getText(), txtStocks.getText(), txtPrice.getText(),(String)cmbStats.getSelectedItem(), (String) cmbType.getSelectedItem() };
+       String data[] = { txtName.getText(), txtStocks.getText(), txtPrice.getText(),(String)cmbStats.getSelectedItem(), (String) cmbType.getSelectedItem() };
 
         DefaultTableModel tblModel = (DefaultTableModel)Table.getModel();
         tblModel.addRow(data);
@@ -396,7 +392,7 @@ try{
         Statement st = con.createStatement();
         
         
-        id = txtID.getText();
+        
         PN = txtName.getText();
         PR = txtPrice.getText();
         stock = txtStocks.getText();
@@ -404,7 +400,7 @@ try{
         type = (String) cmbType.getSelectedItem();
         
         
-         query = "INSERT INTO inventory (prod_id, prod_name, price, type, status ,stock) VALUES ('" + id + "','" + PN + "', '" + PR + "','" 
+         query = "INSERT INTO inventory ( prod_name, price, type, status ,stock) VALUES ('" + PN + "', '" + PR + "','" 
                  + type + "','" + status +"','" + stock +"')";
             st.executeUpdate(query);
         
@@ -428,7 +424,7 @@ try{
         // TODO add your handling code here:
         String ID;
         int notFound = 0;
-        String pn, pr, stock;
+        String pn, pr, stock,type;
          try{
         Class.forName("com.mysql.cj.jdbc.Driver");
         
@@ -446,19 +442,29 @@ try{
            errorid.showMessageDialog(new JFrame(), "ID is requred", "Dialog",
                     errorid.ERROR_MESSAGE);
         }else{
-            String sql = "SELECT * FROM inventory WHERE prod_id="+ID;
+            String sql = "SELECT * FROM inventory WHERE id="+ID;
             ResultSet rs = st.executeQuery(sql);
-             txtID.setText("");
-        txtName.setText("");
-        txtPrice.setText("");
-        txtStocks.setText("");
-        showMessageDialog(null, "Successfully registered.");
-        loadData();
-        con.close();
+             while (rs.next()){
+                 notFound = 1;
+                 pn =txtName.getText();
+                pr= txtPrice.getText();
+                stock = txtStocks.getText();
+                cmbStats.getSelectedItem();
+                
+                // maiuupdate yung status at type sa data base
+                String sql2 ="UPDATE inventory SET prod_name='"+pn+"',price='"+pr+"',stock='"+stock+"' WHERE id="+ID;
+                st.executeUpdate(sql2);
+                loadData();
+                con.close();
+             }
+        
+       
+        
        }if (notFound == 0){
            errorid.showMessageDialog(new JFrame(), "Invalid ID", "Dialog",
                     errorid.ERROR_MESSAGE);
        }
+       con.close();
         }catch(Exception e){
             System.out.println("Error "+ e.getMessage());
         }
@@ -485,11 +491,11 @@ try{
             errorid.showMessageDialog(new JFrame(), "ID is requred", "Dialog",
                     errorid.ERROR_MESSAGE);
         }else{
-            String sql = "SELECT * FROM inventory WHERE prod_id="+ID;
+            String sql = "SELECT * FROM inventory WHERE id="+ID;
             ResultSet rs = st.executeQuery(sql);
             while(rs.next()){
                 notFound = 1;
-                String sql2= "DELETE FROM inventory WHERE prod_id="+ID;
+                String sql2= "DELETE FROM inventory WHERE id="+ID;
                 st.executeUpdate(sql2);
                 loadData();
                 con.close();
@@ -525,12 +531,12 @@ try{
             errorid.showMessageDialog(new JFrame(), "ID is requred", "Dialog",
                     errorid.ERROR_MESSAGE);
         }else{
-            String sql = "SELECT * FROM inventory WHERE prod_id="+ID;
+            String sql = "SELECT * FROM inventory WHERE id="+ID;
             ResultSet rs = st.executeQuery(sql);
             while(rs.next()){
-             txtID.setText(rs.getString("id"));
-             txtName.setText(rs.getString("PN"));
-             txtPrice.setText(rs.getString("PR"));
+             
+             txtName.setText(rs.getString("prod_name"));
+             txtPrice.setText(rs.getString("price"));
              txtStocks.setText(rs.getString("stock"));
              notFound = 1;
              con.close();
@@ -544,6 +550,10 @@ try{
             System.out.println("Error "+ e.getMessage());
         }
     }//GEN-LAST:event_search_buttonActionPerformed
+
+    private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameActionPerformed
 
 
     /**
@@ -599,13 +609,11 @@ try{
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel price_label;
-    private javax.swing.JLabel prodID_label;
     private javax.swing.JLabel prodName_label;
     private javax.swing.JButton search_button;
     private javax.swing.JTextField search_field;
     private javax.swing.JLabel stat;
     private javax.swing.JLabel stock_label;
-    private javax.swing.JTextField txtID;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtPrice;
     private javax.swing.JTextField txtStocks;

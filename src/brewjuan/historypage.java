@@ -23,6 +23,7 @@ public class historypage extends javax.swing.JFrame {
     public historypage() {
         this.history = history;
         initComponents();
+        loadData();
     }
 
     /**
@@ -39,22 +40,25 @@ public class historypage extends javax.swing.JFrame {
         customerPanel = new javax.swing.JPanel();
         customer = new javax.swing.JLabel();
         noCustomer = new javax.swing.JLabel();
+        customerIconlbl = new javax.swing.JLabel();
         customerPanel2 = new javax.swing.JPanel();
         totalincome = new javax.swing.JLabel();
         totincome = new javax.swing.JLabel();
+        incomelblicon = new javax.swing.JLabel();
         customerPanel3 = new javax.swing.JPanel();
         prodsold = new javax.swing.JLabel();
         prodSold = new javax.swing.JLabel();
+        soldlbl = new javax.swing.JLabel();
         historyLbl = new javax.swing.JLabel();
         backBtn = new javax.swing.JLabel();
-        updatBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("History");
 
+        mainpanel.setBackground(new java.awt.Color(0, 0, 0));
         mainpanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0)));
 
-        customerPanel.setBackground(new java.awt.Color(0, 0, 0));
+        customerPanel.setBackground(new java.awt.Color(51, 51, 51));
         customerPanel.setForeground(new java.awt.Color(242, 242, 242));
 
         customer.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
@@ -65,27 +69,33 @@ public class historypage extends javax.swing.JFrame {
         noCustomer.setForeground(new java.awt.Color(242, 242, 242));
         noCustomer.setText("0");
 
+        customerIconlbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/people-removebg-preview.png"))); // NOI18N
+
         javax.swing.GroupLayout customerPanelLayout = new javax.swing.GroupLayout(customerPanel);
         customerPanel.setLayout(customerPanelLayout);
         customerPanelLayout.setHorizontalGroup(
             customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(customerPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(customer)
+                .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(customerIconlbl)
+                    .addComponent(customer))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(noCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE))
         );
         customerPanelLayout.setVerticalGroup(
             customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanelLayout.createSequentialGroup()
-                .addContainerGap(169, Short.MAX_VALUE)
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(customerIconlbl)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(customerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(customer, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(noCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        customerPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        customerPanel2.setBackground(new java.awt.Color(51, 51, 51));
         customerPanel2.setForeground(new java.awt.Color(242, 242, 242));
 
         totalincome.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
@@ -96,6 +106,8 @@ public class historypage extends javax.swing.JFrame {
         totincome.setForeground(new java.awt.Color(242, 242, 242));
         totincome.setText("0.00");
 
+        incomelblicon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/totalmoney-removebg-preview.png"))); // NOI18N
+
         javax.swing.GroupLayout customerPanel2Layout = new javax.swing.GroupLayout(customerPanel2);
         customerPanel2.setLayout(customerPanel2Layout);
         customerPanel2Layout.setHorizontalGroup(
@@ -105,18 +117,24 @@ public class historypage extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totincome, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(incomelblicon)
+                .addGap(60, 60, 60))
         );
         customerPanel2Layout.setVerticalGroup(
             customerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel2Layout.createSequentialGroup()
-                .addContainerGap(170, Short.MAX_VALUE)
+                .addContainerGap(52, Short.MAX_VALUE)
+                .addComponent(incomelblicon)
+                .addGap(35, 35, 35)
                 .addGroup(customerPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(totalincome, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(totincome))
                 .addContainerGap())
         );
 
-        customerPanel3.setBackground(new java.awt.Color(0, 0, 0));
+        customerPanel3.setBackground(new java.awt.Color(51, 51, 51));
         customerPanel3.setForeground(new java.awt.Color(242, 242, 242));
 
         prodsold.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
@@ -127,6 +145,8 @@ public class historypage extends javax.swing.JFrame {
         prodSold.setForeground(new java.awt.Color(242, 242, 242));
         prodSold.setText("0");
 
+        soldlbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/sold-removebg-preview.png"))); // NOI18N
+
         javax.swing.GroupLayout customerPanel3Layout = new javax.swing.GroupLayout(customerPanel3);
         customerPanel3.setLayout(customerPanel3Layout);
         customerPanel3Layout.setHorizontalGroup(
@@ -135,33 +155,36 @@ public class historypage extends javax.swing.JFrame {
                 .addComponent(prodsold, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(prodSold, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel3Layout.createSequentialGroup()
+                .addGap(0, 53, Short.MAX_VALUE)
+                .addComponent(soldlbl)
+                .addGap(50, 50, 50))
         );
         customerPanel3Layout.setVerticalGroup(
             customerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(soldlbl)
+                .addGap(33, 33, 33)
                 .addGroup(customerPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(prodsold, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(prodSold, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
+        historyLbl.setBackground(new java.awt.Color(0, 0, 0));
         historyLbl.setFont(new java.awt.Font("Calibri", 1, 48)); // NOI18N
+        historyLbl.setForeground(new java.awt.Color(255, 255, 255));
         historyLbl.setText("HISTORY");
 
+        backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        backBtn.setForeground(new java.awt.Color(255, 255, 255));
         backBtn.setText("Back");
         backBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 backBtnMouseClicked(evt);
-            }
-        });
-
-        updatBtn.setText("Update");
-        updatBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                updatBtnActionPerformed(evt);
             }
         });
 
@@ -171,15 +194,10 @@ public class historypage extends javax.swing.JFrame {
             mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainpanelLayout.createSequentialGroup()
                 .addContainerGap(237, Short.MAX_VALUE)
-                .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainpanelLayout.createSequentialGroup()
-                        .addComponent(historyLbl)
-                        .addGap(190, 190, 190)
-                        .addComponent(backBtn)
-                        .addGap(52, 52, 52))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainpanelLayout.createSequentialGroup()
-                        .addComponent(updatBtn)
-                        .addGap(106, 106, 106))))
+                .addComponent(historyLbl)
+                .addGap(190, 190, 190)
+                .addComponent(backBtn)
+                .addGap(52, 52, 52))
             .addGroup(mainpanelLayout.createSequentialGroup()
                 .addGroup(mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainpanelLayout.createSequentialGroup()
@@ -188,7 +206,7 @@ public class historypage extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(customerPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(mainpanelLayout.createSequentialGroup()
-                        .addGap(204, 204, 204)
+                        .addGap(218, 218, 218)
                         .addComponent(customerPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -209,23 +227,19 @@ public class historypage extends javax.swing.JFrame {
                     .addComponent(customerPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(customerPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addComponent(updatBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                .addGap(24, 24, 24))
+                .addContainerGap(134, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(mainpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 38, Short.MAX_VALUE))
+            .addComponent(mainpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(0, 0, 0)
                 .addComponent(mainpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -238,10 +252,6 @@ public class historypage extends javax.swing.JFrame {
         back.setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnMouseClicked
-
-    private void updatBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updatBtnActionPerformed
-        loadData();
-    }//GEN-LAST:event_updatBtnActionPerformed
     public void getValues(double inc, int prd){
         income = inc;
         productSold = prd;
@@ -317,17 +327,19 @@ public class historypage extends javax.swing.JFrame {
     private javax.swing.JLabel backBtn;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel customer;
+    private javax.swing.JLabel customerIconlbl;
     private javax.swing.JPanel customerPanel;
     private javax.swing.JPanel customerPanel2;
     private javax.swing.JPanel customerPanel3;
     private javax.swing.JLabel historyLbl;
+    private javax.swing.JLabel incomelblicon;
     private javax.swing.JPanel mainpanel;
     private javax.swing.JLabel noCustomer;
     private javax.swing.JLabel prodSold;
     private javax.swing.JLabel prodsold;
+    private javax.swing.JLabel soldlbl;
     private javax.swing.JLabel totalincome;
     private javax.swing.JLabel totincome;
-    private javax.swing.JButton updatBtn;
     // End of variables declaration//GEN-END:variables
 
     }

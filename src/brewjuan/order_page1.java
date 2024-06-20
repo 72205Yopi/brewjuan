@@ -1765,6 +1765,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel50.setText("Sauce");
 
         saucebtn.setText("ADD");
+        saucebtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saucebtnActionPerformed(evt);
+            }
+        });
 
         jLabel51.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel51.setText("Espresso");
@@ -1786,8 +1791,18 @@ public class order_page1 extends javax.swing.JFrame {
         });
 
         syrupbtn.setText("ADD");
+        syrupbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                syrupbtnActionPerformed(evt);
+            }
+        });
 
         sweetcreambtn.setText("ADD");
+        sweetcreambtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sweetcreambtnActionPerformed(evt);
+            }
+        });
 
         biscuitbtn.setText("ADD");
         biscuitbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -1800,6 +1815,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel78.setText("Sinker");
 
         sinkerbtn.setText("ADD");
+        sinkerbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sinkerbtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -2020,7 +2040,7 @@ public class order_page1 extends javax.swing.JFrame {
         back_Button.setBackground(new java.awt.Color(0, 0, 0));
         back_Button.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         back_Button.setForeground(new java.awt.Color(255, 255, 255));
-        back_Button.setText("Back");
+        back_Button.setText("log-out");
         back_Button.setBorderPainted(false);
         back_Button.setFocusPainted(false);
         back_Button.addActionListener(new java.awt.event.ActionListener() {
@@ -2214,11 +2234,11 @@ public class order_page1 extends javax.swing.JFrame {
                         .addComponent(title)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 2203, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(receiptpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(receiptpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 2513, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -2585,6 +2605,7 @@ public class order_page1 extends javax.swing.JFrame {
           change = 0.00;
           cash = 0.00;
           prodSold = 0;
+          x = 0;
           totaltxt.setText("₱ 0.00");
           cashtxt.setText("");
           changetxt.setText("₱ 0.00");
@@ -2627,13 +2648,15 @@ public class order_page1 extends javax.swing.JFrame {
     }//GEN-LAST:event_ovaltinemaltbtnActionPerformed
 
     private void espressobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_espressobtnActionPerformed
-        double price = 1 * 140.00;
+        double price = 1 * 20.00;
         total += price;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel35.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel51.getText()+ "\t\t\t" + price + "\n");
     }//GEN-LAST:event_espressobtnActionPerformed
 
     private void biscuitbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biscuitbtnActionPerformed
-        // TODO add your handling code here:
+        double price = 1 * 15.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel54.getText()+ "\t\t\t" + price + "\n");
     }//GEN-LAST:event_biscuitbtnActionPerformed
 
     private void matchabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matchabtnActionPerformed
@@ -2788,6 +2811,30 @@ public class order_page1 extends javax.swing.JFrame {
         
         berrylemonspin.setValue(0);
     }//GEN-LAST:event_berrybtnActionPerformed
+
+    private void saucebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saucebtnActionPerformed
+        double price = 1 * 20.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel50.getText()+ "\t\t\t" + price + "\n");
+    }//GEN-LAST:event_saucebtnActionPerformed
+
+    private void syrupbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_syrupbtnActionPerformed
+        double price = 1 * 20.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel52.getText()+ "\t\t\t" + price + "\n");
+    }//GEN-LAST:event_syrupbtnActionPerformed
+
+    private void sweetcreambtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sweetcreambtnActionPerformed
+        double price = 1 * 25.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel53.getText()+ "\t\t" + price + "\n");
+    }//GEN-LAST:event_sweetcreambtnActionPerformed
+
+    private void sinkerbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinkerbtnActionPerformed
+        double price = 1 * 10.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel78.getText()+ "\t\t\t" + price + "\n");
+    }//GEN-LAST:event_sinkerbtnActionPerformed
 
     /**
      * @param args the command line arguments
