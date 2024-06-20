@@ -65,7 +65,7 @@
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" pref="1782" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" pref="1444" max="32767" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="receiptpanel" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -126,48 +126,9 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="CrackerJack_Caramel_frame" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="americano_frame" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="Latte_frame" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="Dark_Chocolate_frame" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="Matcha_Esspresso_frame" min="-2" max="-2" attributes="0"/>
-                                      <Component id="Cappuccino_frame" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace pref="7" max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                                          <Component id="MCISE_frame" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                                          <Component id="Salted_caramel_frame" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="ATTC_frame" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="Caramelnut_frame" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace pref="1350" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="Caramel_Macciato_frame" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="white_chocolate_frame" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
@@ -177,7 +138,7 @@
                                                   <Component id="ATOTC_frame" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="Chocolate_frame" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Component id="Every_Summertime_frame" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                                   <Component id="Matcha_Tea_Latte_frame" min="-2" max="-2" attributes="0"/>
@@ -186,36 +147,70 @@
                                               </Group>
                                               <Component id="jLabel38" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel49" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                      <Component id="jPanel11" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                                                          <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" attributes="0">
-                                                          <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                          <Component id="jPanel7" min="-2" pref="200" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                              </Group>
                                               <Component id="jPanel12" alignment="0" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
+                                                  <Component id="jPanel11" pref="0" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="CrackerJack_Caramel_frame" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="americano_frame" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="Caramel_Macciato_frame" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="Latte_frame" max="32767" attributes="0"/>
+                                      <Component id="Dark_Chocolate_frame" max="32767" attributes="0"/>
+                                      <Component id="white_chocolate_frame" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="Cappuccino_frame" max="32767" attributes="0"/>
+                                      <Component id="Matcha_Esspresso_frame" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="ATTC_frame" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="MCISE_frame" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="Caramelnut_frame" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Salted_caramel_frame" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="60" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -226,67 +221,73 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="Latte_frame" max="32767" attributes="0"/>
-                              <Component id="Cappuccino_frame" max="32767" attributes="0"/>
                               <Component id="americano_frame" alignment="0" max="32767" attributes="0"/>
-                              <Component id="ATTC_frame" alignment="1" max="32767" attributes="0"/>
+                              <Component id="ATTC_frame" alignment="0" max="32767" attributes="0"/>
                               <Component id="Caramelnut_frame" alignment="0" max="32767" attributes="0"/>
+                              <Component id="Cappuccino_frame" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="Dark_Chocolate_frame" min="-2" max="-2" attributes="0"/>
-                              <Component id="CrackerJack_Caramel_frame" min="-2" max="-2" attributes="0"/>
-                              <Component id="Matcha_Esspresso_frame" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="Salted_caramel_frame" alignment="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="MCISE_frame" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="Matcha_Esspresso_frame" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="CrackerJack_Caramel_frame" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="Dark_Chocolate_frame" alignment="0" max="32767" attributes="0"/>
                               </Group>
+                              <Component id="Salted_caramel_frame" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="Caramel_Macciato_frame" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="white_chocolate_frame" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="Caramel_Macciato_frame" min="-2" max="-2" attributes="0"/>
+                              <Component id="white_chocolate_frame" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="Ovaltine_Foster_frame" max="32767" attributes="0"/>
-                              <Component id="Matcha_Tea_Latte_frame" max="32767" attributes="0"/>
-                              <Component id="ATOTC_frame" alignment="0" max="32767" attributes="0"/>
-                              <Component id="Chocolate_frame" alignment="0" max="32767" attributes="0"/>
-                              <Component id="Every_Summertime_frame" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="Ovaltine_Foster_frame" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="Chocolate_frame" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="ATOTC_frame" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="Matcha_Tea_Latte_frame" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="Every_Summertime_frame" alignment="0" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jPanel4" max="32767" attributes="0"/>
-                              <Component id="jPanel2" max="32767" attributes="0"/>
-                              <Component id="jPanel3" max="32767" attributes="0"/>
-                              <Component id="jPanel5" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jPanel6" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jPanel6" max="32767" attributes="0"/>
+                              <Component id="jPanel4" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jPanel5" alignment="1" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jPanel11" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jPanel11" max="32767" attributes="0"/>
+                                      <Component id="jPanel7" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel49" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jPanel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jPanel8" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jPanel9" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jLabel49" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jPanel12" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="1483" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="1461" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -311,7 +312,6 @@
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="americanolbl" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jSpinner1" min="-2" pref="80" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
@@ -322,6 +322,11 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="americanoprice" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="americanolbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
@@ -331,6 +336,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                               <Component id="americanolbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -382,6 +389,13 @@
                         <Property name="text" type="java.lang.String" value="80.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel56">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/Americano (2).png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Latte_frame">
@@ -389,29 +403,34 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner2" min="-2" pref="80" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                      <Component id="lattebtn" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jSpinner2" min="-2" pref="80" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                          <Component id="lattebtn" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="caramelnut" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="lattelbl" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="caramelnut" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="lattelbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="58" max="32767" attributes="0"/>
+                              <EmptySpace pref="49" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="160" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="lattelbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -463,6 +482,13 @@
                         <Property name="text" type="java.lang.String" value="90.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel57">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/Latte (2).png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Cappuccino_frame">
@@ -471,28 +497,39 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jSpinner3" min="-2" pref="80" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                      <Component id="jSpinner3" min="-2" pref="80" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="cappucinobtn" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="cappucinolbl" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="cappucinoprice" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="cappucinoprice" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="cappucinolbl" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                                      <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="64" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="39" max="32767" attributes="0"/>
+                              <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Component id="cappucinolbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -544,6 +581,13 @@
                         <Property name="text" type="java.lang.String" value="100.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel58">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/Cappuccino.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="ATTC_frame">
@@ -554,23 +598,32 @@
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jSpinner4" min="-2" pref="80" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                      <Component id="ATTCbtn" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="ATTClbl" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="ATTCprice" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jSpinner4" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                              <Component id="ATTCbtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="ATTCprice" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="ATTClbl" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="80" max="32767" attributes="0"/>
+                              <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -578,6 +631,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                               <Component id="ATTClbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -629,6 +684,13 @@
                         <Property name="text" type="java.lang.String" value="120.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel59">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/T_O_C.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Caramelnut_frame">
@@ -649,9 +711,17 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="caramelnutprice" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="caramelnutlbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                                      <Component id="caramelnutlbl" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                               <EmptySpace pref="58" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -659,6 +729,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                               <Component id="caramelnutlbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -710,6 +782,13 @@
                         <Property name="text" type="java.lang.String" value="130.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel60">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/carramel_hazelnut.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Caramel_Macciato_frame">
@@ -718,28 +797,38 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner6" min="-2" pref="80" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                      <Component id="jButton6" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="caramacchiprice" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jSpinner6" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                              <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="caramacchiprice" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="caramachilbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Component id="caramachilbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                                      <Component id="jLabel66" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace pref="34" max="32767" attributes="0"/>
+                              <EmptySpace pref="29" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="154" max="32767" attributes="0"/>
+                              <EmptySpace pref="29" max="32767" attributes="0"/>
+                              <Component id="jLabel66" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Component id="caramachilbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -791,6 +880,13 @@
                         <Property name="text" type="java.lang.String" value="Caramel Macchiato"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel66">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/Caramel_Macchiato.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="CrackerJack_Caramel_frame">
@@ -799,28 +895,38 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner7" min="-2" pref="80" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                      <Component id="cjcbtn" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="CJCprice" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jSpinner7" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                              <Component id="cjcbtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="CJCprice" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="crkrjckcmllbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Component id="crkrjckcmllbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                      <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="15" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="168" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                               <Component id="crkrjckcmllbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -872,6 +978,13 @@
                         <Property name="text" type="java.lang.String" value="130.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel61">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/cj_carramel.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Dark_Chocolate_frame">
@@ -894,14 +1007,21 @@
                                   </Group>
                                   <Component id="darkChocolbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="58" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="79" max="32767" attributes="0"/>
+                              <Component id="jLabel62" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="168" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                              <Component id="jLabel62" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="darkChocolbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -953,6 +1073,13 @@
                         <Property name="text" type="java.lang.String" value="110.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel62">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/DARK_CHOCO.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Matcha_Esspresso_frame">
@@ -960,29 +1087,39 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner9" min="-2" pref="80" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                      <Component id="matchpressbtn" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                          <Component id="jSpinner9" min="-2" pref="80" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="matchpressbtn" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                                          <Component id="jLabel63" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="matchapressprice" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="matchapressprice" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="matchpresslbl" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="matchpresslbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="58" max="32767" attributes="0"/>
+                              <EmptySpace pref="81" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="168" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel63" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                               <Component id="matchpresslbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -1034,6 +1171,13 @@
                         <Property name="text" type="java.lang.String" value="120.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel63">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/mtatcha_espresso.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="MCISE_frame">
@@ -1042,29 +1186,38 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="mciselbl1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="mciselbl2" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jSpinner10" min="-2" pref="80" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                      <Component id="mcisebtn" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jSpinner10" min="-2" pref="80" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                              <Component id="mcisebtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="MCISEprice" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="MCISEprice" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                                      <Component id="jLabel64" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="62" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="mciselbl2" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="126" max="32767" attributes="0"/>
+                              <Component id="jLabel64" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="mciselbl1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="mciselbl2" min="-2" max="-2" attributes="0"/>
@@ -1126,6 +1279,13 @@
                         <Property name="text" type="java.lang.String" value="125.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel64">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/Muscuvado.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Salted_caramel_frame">
@@ -1154,12 +1314,19 @@
                                   </Group>
                               </Group>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="jLabel65" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel65" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="42" max="32767" attributes="0"/>
                               <Component id="saltedcaralbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -1211,6 +1378,13 @@
                         <Property name="text" type="java.lang.String" value="115.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel65">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/salted_Caramel.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="white_chocolate_frame">
@@ -1218,29 +1392,34 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner12" min="-2" pref="80" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                      <Component id="whitechoco" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel67" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jSpinner12" min="-2" pref="80" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                          <Component id="whitechoco" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="whitechocoprice" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="whitechocolbl" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="whitechocoprice" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="whitechocolbl" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="62" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="168" max="32767" attributes="0"/>
+                              <EmptySpace pref="49" max="32767" attributes="0"/>
+                              <Component id="jLabel67" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="whitechocolbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
@@ -1292,6 +1471,13 @@
                         <Property name="text" type="java.lang.String" value="110.00"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel67">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Coffee/White_Chocolate.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Component class="javax.swing.JLabel" name="jLabel1">
@@ -1317,9 +1503,9 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner13" min="-2" pref="79" max="-2" attributes="0"/>
-                                      <EmptySpace pref="39" max="32767" attributes="0"/>
-                                      <Component id="jButton13" min="-2" pref="56" max="-2" attributes="0"/>
+                                      <Component id="tocspin" min="-2" pref="79" max="-2" attributes="0"/>
+                                      <EmptySpace pref="43" max="32767" attributes="0"/>
+                                      <Component id="tocbtn" min="-2" pref="56" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1332,19 +1518,26 @@
                                   </Group>
                               </Group>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner13" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tocspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="tocbtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1352,14 +1545,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner13">
+                    <Component class="javax.swing.JSpinner" name="tocspin">
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton13">
+                    <Component class="javax.swing.JButton" name="tocbtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton13ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tocbtnActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel16">
@@ -1367,7 +1560,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 110"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel22">
@@ -1376,6 +1569,13 @@
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="A Tale of Two Chocolates"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel31">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Non-Coffee/T_O_C.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1389,18 +1589,26 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner14" min="-2" pref="92" max="-2" attributes="0"/>
-                                      <EmptySpace pref="45" max="32767" attributes="0"/>
-                                      <Component id="jButton14" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="chocspin" min="-2" pref="92" max="-2" attributes="0"/>
+                                              <EmptySpace pref="29" max="32767" attributes="0"/>
+                                              <Component id="chocobtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -1409,14 +1617,16 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner14" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Component id="jButton14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chocspin" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="chocobtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1424,14 +1634,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner14">
+                    <Component class="javax.swing.JSpinner" name="chocspin">
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton14">
+                    <Component class="javax.swing.JButton" name="chocobtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton14ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chocobtnActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel17">
@@ -1439,7 +1649,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 100"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel23">
@@ -1450,6 +1660,13 @@
                         <Property name="text" type="java.lang.String" value="Chocolates"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel45">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Non-Coffee/T_O_C.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Every_Summertime_frame">
@@ -1458,17 +1675,31 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner15" min="-2" pref="91" max="-2" attributes="0"/>
-                                      <EmptySpace pref="34" max="32767" attributes="0"/>
-                                      <Component id="jButton15" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="sumspin" min="-2" pref="91" max="-2" attributes="0"/>
+                                              <EmptySpace pref="55" max="32767" attributes="0"/>
+                                              <Component id="summertimebtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="0" pref="129" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                              <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
@@ -1480,14 +1711,16 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="107" max="32767" attributes="0"/>
-                              <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                              <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner15" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sumspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="summertimebtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1495,14 +1728,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner15">
+                    <Component class="javax.swing.JSpinner" name="sumspin">
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton15">
+                    <Component class="javax.swing.JButton" name="summertimebtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton15ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="summertimebtnActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel18">
@@ -1510,7 +1743,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 125"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel24">
@@ -1519,6 +1752,13 @@
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Every Summertime"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel29">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Non-Coffee/EVERY_SUMMERTIME.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1532,9 +1772,9 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner16" min="-2" pref="89" max="-2" attributes="0"/>
+                                      <Component id="matchaspin" min="-2" pref="89" max="-2" attributes="0"/>
                                       <EmptySpace pref="59" max="32767" attributes="0"/>
-                                      <Component id="jButton16" min="-2" max="-2" attributes="0"/>
+                                      <Component id="matchabtn" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1547,19 +1787,26 @@
                                   </Group>
                               </Group>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner16" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton16" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="matchaspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="matchabtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1567,9 +1814,9 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner16">
+                    <Component class="javax.swing.JSpinner" name="matchaspin">
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton16">
+                    <Component class="javax.swing.JButton" name="matchabtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
@@ -1579,7 +1826,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 100"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel28">
@@ -1590,6 +1837,13 @@
                         <Property name="text" type="java.lang.String" value="Matcha Tea Latte"/>
                       </Properties>
                     </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel46">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Non-Coffee/Matcha_Tea_Latte.png"/>
+                        </Property>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Ovaltine_Foster_frame">
@@ -1598,36 +1852,49 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner17" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="ovaltinefosspin" min="-2" pref="92" max="-2" attributes="0"/>
                                       <EmptySpace pref="63" max="32767" attributes="0"/>
-                                      <Component id="jButton17" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ovaltinebtn" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                              <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="19" max="32767" attributes="0"/>
+                              <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner17" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                                  <Component id="jButton17" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ovaltinefosspin" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                                  <Component id="ovaltinebtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1635,14 +1902,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner17">
+                    <Component class="javax.swing.JSpinner" name="ovaltinefosspin">
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton17">
+                    <Component class="javax.swing.JButton" name="ovaltinebtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton17ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ovaltinebtnActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel20">
@@ -1650,7 +1917,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 115"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel25">
@@ -1659,6 +1926,13 @@
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Ovaltine Foster"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel55">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Non-Coffee/Ovaltine_Foster.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1693,12 +1967,17 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner18" min="-2" pref="82" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton19" min="-2" max="-2" attributes="0"/>
+                                      <Component id="brewjuanspin" min="-2" pref="82" max="-2" attributes="0"/>
+                                      <EmptySpace pref="55" max="32767" attributes="0"/>
+                                      <Component id="brewkuanbtn" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                              <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1706,13 +1985,15 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner18" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton19" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="brewjuanspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="brewkuanbtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1720,14 +2001,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner18">
+                    <Component class="javax.swing.JSpinner" name="brewjuanspin">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel21">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 140"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel26">
@@ -1738,9 +2019,16 @@
                         <Property name="text" type="java.lang.String" value="Brew Juan Coffee"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton19">
+                    <Component class="javax.swing.JButton" name="brewkuanbtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel68">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/specialty/Brew_Juan_Coffee.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1754,19 +2042,29 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel27" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner19" min="-2" pref="82" max="-2" attributes="0"/>
-                                      <EmptySpace pref="22" max="32767" attributes="0"/>
-                                      <Component id="jButton18" min="-2" max="-2" attributes="0"/>
+                                      <Component id="burntspin" min="-2" pref="82" max="-2" attributes="0"/>
+                                      <EmptySpace pref="24" max="32767" attributes="0"/>
+                                      <Component id="burntbtn" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1774,13 +2072,15 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                               <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner19" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton18" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="burntspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="burntbtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1788,14 +2088,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner19">
+                    <Component class="javax.swing.JSpinner" name="burntspin">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel27">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 145"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel30">
@@ -1806,9 +2106,16 @@
                         <Property name="text" type="java.lang.String" value="Burnt Creme Blanco"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton18">
+                    <Component class="javax.swing.JButton" name="burntbtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel69">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/specialty/Burnt_Creme_Blanco.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1818,18 +2125,29 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner20" min="-2" pref="82" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                      <Component id="jButton20" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="oreospin" min="-2" pref="82" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                              <Component id="oreobtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jLabel32" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Component id="jLabel32" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel33" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                      <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="32" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1837,13 +2155,15 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                               <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner20" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton20" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="oreospin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="oreobtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1851,14 +2171,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner20">
+                    <Component class="javax.swing.JSpinner" name="oreospin">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel32">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 140"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel33">
@@ -1869,9 +2189,16 @@
                         <Property name="text" type="java.lang.String" value="Oreo Blondie"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton20">
+                    <Component class="javax.swing.JButton" name="oreobtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel70">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/specialty/Oreo_Blondie.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1881,32 +2208,43 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner21" min="-2" pref="82" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                                      <Component id="jButton21" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="ovaltinemaltspin" min="-2" pref="82" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                      <Component id="ovaltinemaltbtn" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel34" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel35" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Component id="jLabel77" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
-                              <EmptySpace pref="69" max="32767" attributes="0"/>
+                              <EmptySpace pref="57" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel77" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner21" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton21" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ovaltinemaltspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="ovaltinemaltbtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1914,14 +2252,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner21">
+                    <Component class="javax.swing.JSpinner" name="ovaltinemaltspin">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel34">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 140"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel35">
@@ -1932,9 +2270,19 @@
                         <Property name="text" type="java.lang.String" value="Ovaltine Malt"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton21">
+                    <Component class="javax.swing.JButton" name="ovaltinemaltbtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ovaltinemaltbtnActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel77">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/Non-Coffee/Ovaltine_Foster.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -1944,41 +2292,42 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jSpinner22" min="-2" pref="82" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                                          <Component id="jButton22" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="strawberryspin" min="-2" pref="82" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                              <Component id="strawberrybtn" min="-2" max="-2" attributes="0"/>
                                           </Group>
+                                          <Component id="jLabel36" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel37" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                                      <Component id="jLabel72" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace pref="66" max="32767" attributes="0"/>
+                              <EmptySpace pref="44" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel72" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner22" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton22" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="strawberryspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="strawberrybtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -1986,14 +2335,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner22">
+                    <Component class="javax.swing.JSpinner" name="strawberryspin">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel36">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 130"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel37">
@@ -2004,15 +2353,15 @@
                         <Property name="text" type="java.lang.String" value="Strawberry Haze"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton22">
+                    <Component class="javax.swing.JButton" name="strawberrybtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel29">
+                    <Component class="javax.swing.JLabel" name="jLabel72">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/images/specialty/Strawberry_Haze .png"/>
+                          <Image iconType="3" name="/images/specialty/Strawberry_Haze.png"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -2037,21 +2386,28 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel39" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel40" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                      <Component id="jLabel75" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jLabel76" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner23" min="-2" pref="82" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton23" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="berrylemonspin" min="-2" pref="82" max="-2" attributes="0"/>
+                                      <EmptySpace pref="7" max="32767" attributes="0"/>
+                                      <Component id="berrybtn" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel40" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -2060,14 +2416,25 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="105" max="32767" attributes="0"/>
-                              <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="188" max="-2" attributes="0"/>
+                                      <Component id="jLabel76" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jLabel75" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                      <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                               <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner23" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton23" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="berrylemonspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="berrybtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -2075,14 +2442,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner23">
+                    <Component class="javax.swing.JSpinner" name="berrylemonspin">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel39">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 90"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel40">
@@ -2093,9 +2460,18 @@
                         <Property name="text" type="java.lang.String" value="Berry Lemon"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton23">
+                    <Component class="javax.swing.JButton" name="berrybtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel76">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel75">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/refreshments/lemon.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -2105,35 +2481,39 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner24" min="-2" pref="82" max="-2" attributes="0"/>
+                                      <Component id="lycheespin" min="-2" pref="82" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                      <Component id="jButton24" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lycheebtn" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel41" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                                      <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jLabel42" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel74" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="117" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                              <Component id="jLabel74" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner24" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton24" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lycheespin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="lycheebtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -2141,14 +2521,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner24">
+                    <Component class="javax.swing.JSpinner" name="lycheespin">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel41">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 90"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel42">
@@ -2159,9 +2539,16 @@
                         <Property name="text" type="java.lang.String" value="Lychee Cooler"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton24">
+                    <Component class="javax.swing.JButton" name="lycheebtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel74">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/refreshments/Lychee.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -2171,32 +2558,42 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner25" min="-2" pref="82" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                      <Component id="jButton25" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="passionspin" min="-2" pref="82" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                              <Component id="passionbtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel44" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Component id="jLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel44" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                      <Component id="jLabel73" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace pref="13" max="32767" attributes="0"/>
+                              <EmptySpace pref="39" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="112" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel73" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel43" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner25" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton25" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="passionspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="passionbtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -2204,14 +2601,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner25">
+                    <Component class="javax.swing.JSpinner" name="passionspin">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel43">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 90"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel44">
@@ -2222,9 +2619,16 @@
                         <Property name="text" type="java.lang.String" value="Passion Fruit Sweet"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton25">
+                    <Component class="javax.swing.JButton" name="passionbtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel73">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/refreshments/passionfruit.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -2237,34 +2641,42 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="okinawaspin" min="-2" pref="82" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="okinawabtn" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel47" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel48" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jSpinner27" min="-2" pref="82" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton26" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                  </Group>
                               </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="112" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                              <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="jLabel48" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jSpinner27" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Component id="jButton26" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="okinawaspin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="okinawabtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -2272,14 +2684,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="jSpinner27">
+                    <Component class="javax.swing.JSpinner" name="okinawaspin">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel47">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Calibri" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Price:"/>
+                        <Property name="text" type="java.lang.String" value="Price: 70"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel48">
@@ -2290,9 +2702,16 @@
                         <Property name="text" type="java.lang.String" value="Okinawa Milktea"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton26">
+                    <Component class="javax.swing.JButton" name="okinawabtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel71">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/images/refreshments/okinawa.png"/>
+                        </Property>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -2316,7 +2735,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
@@ -2326,28 +2745,33 @@
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Group type="102" attributes="0">
+                                              <Component id="jLabel78" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="sinkerbtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
                                               <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jButton28" min="-2" max="-2" attributes="0"/>
+                                              <Component id="espressobtn" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
                                               <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jButton31" min="-2" max="-2" attributes="0"/>
+                                              <Component id="biscuitbtn" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
                                               <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace pref="68" max="32767" attributes="0"/>
-                                              <Component id="jButton30" min="-2" max="-2" attributes="0"/>
+                                              <Component id="sweetcreambtn" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                              <Component id="jButton29" min="-2" max="-2" attributes="0"/>
+                                              <Component id="syrupbtn" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
                                               <Component id="jLabel50" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jButton27" min="-2" max="-2" attributes="0"/>
+                                              <Component id="saucebtn" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
@@ -2362,29 +2786,34 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel51" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="espressobtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jButton27" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="saucebtn" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel50" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel52" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton29" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="syrupbtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel53" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton30" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sweetcreambtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel54" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="jButton31" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="biscuitbtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel78" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                                  <Component id="sinkerbtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -2398,7 +2827,7 @@
                         <Property name="text" type="java.lang.String" value="Sauce"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton27">
+                    <Component class="javax.swing.JButton" name="saucebtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
@@ -2435,22 +2864,41 @@
                         <Property name="text" type="java.lang.String" value="Biscuit"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton28">
+                    <Component class="javax.swing.JButton" name="espressobtn">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="ADD"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="espressobtnActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="syrupbtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton29">
+                    <Component class="javax.swing.JButton" name="sweetcreambtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton30">
+                    <Component class="javax.swing.JButton" name="biscuitbtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="biscuitbtnActionPerformed"/>
+                      </Events>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton31">
+                    <Component class="javax.swing.JLabel" name="jLabel78">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Calibri" size="18" style="1"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Sinker"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="sinkerbtn">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="ADD"/>
                       </Properties>
