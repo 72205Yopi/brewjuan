@@ -2245,7 +2245,7 @@ public class order_page1 extends javax.swing.JFrame {
     
     private void back_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back_ButtonActionPerformed
         // TODO add your handling code here:
-        btnspage frame = new btnspage(history);
+        login frame = new login(history);
         frame.show();
 
         dispose();
@@ -2279,7 +2279,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 115.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel25.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel25.getText()+ "\t\t" + price + "\n");
         
         
         ovaltinefosspin.setValue(0);
@@ -2296,7 +2296,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 125.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel24.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel24.getText()+ "\t\t" + price + "\n");
         
         
         sumspin.setValue(0);
@@ -2330,7 +2330,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 110.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel22.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel22.getText()+ "\t\t" + price + "\n");
         
         
         tocspin.setValue(0);
@@ -2647,7 +2647,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 100.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel28.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel28.getText()+ "\t\t" + price + "\n");
         
         
         matchaspin.setValue(0);
@@ -2664,7 +2664,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 140.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel26.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel26.getText()+ "\t\t" + price + "\n");
         
         
         brewjuanspin.setValue(0);
@@ -2681,7 +2681,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 145.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel30.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel30.getText()+ "\t\t" + price + "\n");
         
         
         burntspin.setValue(0);
@@ -2715,7 +2715,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 130.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel37.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel37.getText()+ "\t\t" + price + "\n");
         
         
         strawberryspin.setValue(0);
@@ -2732,7 +2732,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 70.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel48.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel48.getText()+ "\t\t" + price + "\n");
         
         
         okinawaspin.setValue(0);
@@ -2749,7 +2749,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 90.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel44.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel44.getText()+ "\t\t" + price + "\n");
         
         
         passionspin.setValue(0);
@@ -2766,7 +2766,7 @@ public class order_page1 extends javax.swing.JFrame {
         double price = qty * 90.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + jLabel42.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel42.getText()+ "\t\t" + price + "\n");
         
         
         lycheespin.setValue(0);
