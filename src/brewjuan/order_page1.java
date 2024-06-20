@@ -257,7 +257,6 @@ public class order_page1 extends javax.swing.JFrame {
         totalbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1920, 1144));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
@@ -1156,6 +1155,11 @@ public class order_page1 extends javax.swing.JFrame {
         );
 
         matchabtn.setText("ADD");
+        matchabtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                matchabtnActionPerformed(evt);
+            }
+        });
 
         jLabel19.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel19.setText("Price: 100");
@@ -1273,6 +1277,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel26.setText("Brew Juan Coffee");
 
         brewkuanbtn.setText("ADD");
+        brewkuanbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                brewkuanbtnActionPerformed(evt);
+            }
+        });
 
         jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/specialty/Brew_Juan_Coffee.png"))); // NOI18N
 
@@ -1321,6 +1330,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel30.setText("Burnt Creme Blanco");
 
         burntbtn.setText("ADD");
+        burntbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                burntbtnActionPerformed(evt);
+            }
+        });
 
         jLabel69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/specialty/Burnt_Creme_Blanco.png"))); // NOI18N
 
@@ -1372,6 +1386,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel33.setText("Oreo Blondie");
 
         oreobtn.setText("ADD");
+        oreobtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                oreobtnActionPerformed(evt);
+            }
+        });
 
         jLabel70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/specialty/Oreo_Blondie.png"))); // NOI18N
 
@@ -1472,6 +1491,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel37.setText("Strawberry Haze");
 
         strawberrybtn.setText("ADD");
+        strawberrybtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                strawberrybtnActionPerformed(evt);
+            }
+        });
 
         jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/specialty/Strawberry_Haze.png"))); // NOI18N
 
@@ -1523,6 +1547,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel40.setText("Berry Lemon");
 
         berrybtn.setText("ADD");
+        berrybtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                berrybtnActionPerformed(evt);
+            }
+        });
 
         jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/refreshments/lemon.png"))); // NOI18N
 
@@ -1579,6 +1608,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel42.setText("Lychee Cooler");
 
         lycheebtn.setText("ADD");
+        lycheebtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lycheebtnActionPerformed(evt);
+            }
+        });
 
         jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/refreshments/Lychee.png"))); // NOI18N
 
@@ -1624,6 +1658,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel44.setText("Passion Fruit Sweet");
 
         passionbtn.setText("ADD");
+        passionbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passionbtnActionPerformed(evt);
+            }
+        });
 
         jLabel73.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/refreshments/passionfruit.png"))); // NOI18N
 
@@ -1670,6 +1709,11 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel48.setText("Okinawa Milktea");
 
         okinawabtn.setText("ADD");
+        okinawabtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                okinawabtnActionPerformed(evt);
+            }
+        });
 
         jLabel71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/refreshments/okinawa.png"))); // NOI18N
 
@@ -1857,7 +1901,7 @@ public class order_page1 extends javax.swing.JFrame {
                                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(menulistLayout.createSequentialGroup()
                                         .addGap(8, 8, 8)
-                                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                                        .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addGap(18, 18, 18)
                                 .addGroup(menulistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(menulistLayout.createSequentialGroup()
@@ -2225,19 +2269,71 @@ public class order_page1 extends javax.swing.JFrame {
     }//GEN-LAST:event_titleMouseClicked
 
     private void ovaltinebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ovaltinebtnActionPerformed
-        // TODO add your handling code here:
+        int qty = Integer.parseInt(ovaltinefosspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 115.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel25.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        ovaltinefosspin.setValue(0);
     }//GEN-LAST:event_ovaltinebtnActionPerformed
 
     private void summertimebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_summertimebtnActionPerformed
-        // TODO add your handling code here:
+        int qty = Integer.parseInt(sumspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 125.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel24.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        sumspin.setValue(0);
     }//GEN-LAST:event_summertimebtnActionPerformed
 
     private void chocobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chocobtnActionPerformed
-        // TODO add your handling code here:
+        int qty = Integer.parseInt(chocspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 100.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel23.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        chocspin.setValue(0);
     }//GEN-LAST:event_chocobtnActionPerformed
 
     private void tocbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tocbtnActionPerformed
-        // TODO add your handling code here:
+        int qty = Integer.parseInt(tocspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 110.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel22.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        tocspin.setValue(0);
     }//GEN-LAST:event_tocbtnActionPerformed
 
     private void whitechocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_whitechocoActionPerformed
@@ -2247,12 +2343,12 @@ public class order_page1 extends javax.swing.JFrame {
             if (x == 1){
             brewJuan();
             }
-        }else{
+        }
         double price = qty * 110.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + whitechocolbl.getText()+ "\t\t\t" + price + "\n");
-        }
+        
         
         jSpinner12.setValue(0);
     }//GEN-LAST:event_whitechocoActionPerformed
@@ -2514,16 +2610,184 @@ public class order_page1 extends javax.swing.JFrame {
     }//GEN-LAST:event_totalbtnActionPerformed
 
     private void ovaltinemaltbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ovaltinemaltbtnActionPerformed
-        // TODO add your handling code here:
+        int qty = Integer.parseInt(ovaltinemaltspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 140.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel35.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        ovaltinemaltspin.setValue(0);
     }//GEN-LAST:event_ovaltinemaltbtnActionPerformed
 
     private void espressobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_espressobtnActionPerformed
-        // TODO add your handling code here:
+        double price = 1 * 140.00;
+        total += price;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel35.getText()+ "\t\t\t" + price + "\n");
     }//GEN-LAST:event_espressobtnActionPerformed
 
     private void biscuitbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biscuitbtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_biscuitbtnActionPerformed
+
+    private void matchabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matchabtnActionPerformed
+        int qty = Integer.parseInt(matchaspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 100.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel28.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        matchaspin.setValue(0);
+    }//GEN-LAST:event_matchabtnActionPerformed
+
+    private void brewkuanbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brewkuanbtnActionPerformed
+        int qty = Integer.parseInt(brewjuanspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 140.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel26.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        brewjuanspin.setValue(0);
+    }//GEN-LAST:event_brewkuanbtnActionPerformed
+
+    private void burntbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_burntbtnActionPerformed
+        int qty = Integer.parseInt(burntspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 145.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel30.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        burntspin.setValue(0);
+    }//GEN-LAST:event_burntbtnActionPerformed
+
+    private void oreobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oreobtnActionPerformed
+        int qty = Integer.parseInt(oreospin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 140.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel33.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        oreospin.setValue(0);
+    }//GEN-LAST:event_oreobtnActionPerformed
+
+    private void strawberrybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_strawberrybtnActionPerformed
+        int qty = Integer.parseInt(strawberryspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 130.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel37.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        strawberryspin.setValue(0);
+    }//GEN-LAST:event_strawberrybtnActionPerformed
+
+    private void okinawabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okinawabtnActionPerformed
+        int qty = Integer.parseInt(okinawaspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 70.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel48.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        okinawaspin.setValue(0);
+    }//GEN-LAST:event_okinawabtnActionPerformed
+
+    private void passionbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passionbtnActionPerformed
+        int qty = Integer.parseInt(passionspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 90.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel44.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        passionspin.setValue(0);
+    }//GEN-LAST:event_passionbtnActionPerformed
+
+    private void lycheebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lycheebtnActionPerformed
+        int qty = Integer.parseInt(lycheespin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 90.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel42.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        lycheespin.setValue(0);
+    }//GEN-LAST:event_lycheebtnActionPerformed
+
+    private void berrybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_berrybtnActionPerformed
+        int qty = Integer.parseInt(berrylemonspin.getValue().toString());
+        if (qtyIsZero(qty)){
+            x++;
+            if (x == 1){
+            brewJuan();
+            }
+        }
+        double price = qty * 90.00;
+        total += price;
+        prodSold += qty;
+        receipttxt.setText(receipttxt.getText()+x+". " + jLabel40.getText()+ "\t\t\t" + price + "\n");
+        
+        
+        berrylemonspin.setValue(0);
+    }//GEN-LAST:event_berrybtnActionPerformed
 
     /**
      * @param args the command line arguments
