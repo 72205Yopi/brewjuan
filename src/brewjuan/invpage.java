@@ -424,7 +424,7 @@ try{
         // TODO add your handling code here:
         String ID;
         int notFound = 0;
-        String pn, pr, stock,type;
+        String pn, pr, stock,type, stats;
          try{
         Class.forName("com.mysql.cj.jdbc.Driver");
         
@@ -446,13 +446,14 @@ try{
             ResultSet rs = st.executeQuery(sql);
              while (rs.next()){
                  notFound = 1;
-                 pn =txtName.getText();
+                pn =txtName.getText();
                 pr= txtPrice.getText();
                 stock = txtStocks.getText();
-                cmbStats.getSelectedItem();
+                type = cmbType.getSelectedItem().toString();
+                stats = cmbStats.getSelectedItem().toString();
                 
                 // maiuupdate yung status at type sa data base
-                String sql2 ="UPDATE inventory SET prod_name='"+pn+"',price='"+pr+"',stock='"+stock+"' WHERE id="+ID;
+                String sql2 ="UPDATE inventory SET prod_name='"+pn+"',price='"+pr+"',stock='"+stock+"',type='"+type+"',status='"+stats+"' WHERE id="+ID;
                 st.executeUpdate(sql2);
                 loadData();
                 con.close();
