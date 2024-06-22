@@ -337,8 +337,8 @@ public void loadData(){
         Connection con = DriverManager.getConnection(url, user, pass);
         Statement st = con.createStatement();
         
-     DefaultTableModel model = new DefaultTableModel(new String[]{"prod_name", 
-         "id", "price", "type", "stock", "status"},0);
+     DefaultTableModel model = new DefaultTableModel(new String[]{"id", 
+         "prod_name", "price", "type", "status", "stock"},0);
      Table.setModel(model);
 
 
@@ -354,7 +354,7 @@ public void loadData(){
         status = rs.getString("status");
         stock = rs.getString("stock");
         
-       model.addRow (new Object []{prodname, id, price, type,stock, status});
+       model.addRow (new Object []{id, prodname, price, type, status, stock });
     }
     
     }catch(Exception e){
@@ -403,9 +403,8 @@ try{
          query = "INSERT INTO inventory ( prod_name, price, type, status ,stock) VALUES ('" + PN + "', '" + PR + "','" 
                  + type + "','" + status +"','" + stock +"')";
             st.executeUpdate(query);
-        
-        loadData();
-        con.close();
+                loadData();
+                con.close();
             
             
 }catch(Exception e){
@@ -452,8 +451,9 @@ try{
                 type = cmbType.getSelectedItem().toString();
                 stats = cmbStats.getSelectedItem().toString();
                 
-                // maiuupdate yung status at type sa data base
-                String sql2 ="UPDATE inventory SET prod_name='"+pn+"',price='"+pr+"',stock='"+stock+"',type='"+type+"',status='"+stats+"' WHERE id="+ID;
+                // maiuupdate yung status at type sa data base 
+                String sql2 ="UPDATE inventory SET prod_name='"+pn+"',price='"+pr+"',stock='"+stock+"',type='"+type+"',status='"+stats+"'" +
+"                 WHERE id="+ID;
                 st.executeUpdate(sql2);
                 loadData();
                 con.close();

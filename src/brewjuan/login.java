@@ -27,7 +27,7 @@ public class login extends javax.swing.JFrame {
     }
 
     login() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+         // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
@@ -113,8 +113,9 @@ public class login extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addGroup(login_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(login_panelLayout.createSequentialGroup()
-                        .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(login_button))
                     .addGroup(login_panelLayout.createSequentialGroup()
                         .addGroup(login_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,8 +140,8 @@ public class login extends javax.swing.JFrame {
                 .addGroup(login_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(pass_field, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(login_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(36, 36, 36)
+                .addGroup(login_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(login_button)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(174, Short.MAX_VALUE))
@@ -153,9 +154,9 @@ public class login extends javax.swing.JFrame {
         mainpanelLayout.setHorizontalGroup(
             mainpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainpanelLayout.createSequentialGroup()
-                .addGap(52, 52, 52)
+                .addGap(39, 39, 39)
                 .addComponent(login_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53)
+                .addGap(66, 66, 66)
                 .addComponent(jLabel4)
                 .addContainerGap(98, Short.MAX_VALUE))
         );
@@ -168,7 +169,7 @@ public class login extends javax.swing.JFrame {
                         .addComponent(jLabel4)
                         .addGap(105, 105, 105))
                     .addComponent(login_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -229,16 +230,21 @@ public class login extends javax.swing.JFrame {
                    order_page1 o = new order_page1(history);
                     o.setVisible(true);
                      this.dispose(); 
-                }
+                }else if(username.equals("")){
+                  jOptionPane.showMessageDialog(new JFrame(), "Incorrect email or password", "Error",
+                        jOptionPane.ERROR_MESSAGE);
+            }
+            pass_field.setText("");
+            
+            
                 
                
                 
             }
             else{
-               jOptionPane.showMessageDialog(new JFrame(), "Incorrect email or password", "Error",
-                        jOptionPane.ERROR_MESSAGE);
-            }
-            pass_field.setText("");
+           order_page1 o = new order_page1(history);
+                    o.setVisible(true);
+                     this.dispose(); }
             
             }
         }catch(Exception e){
