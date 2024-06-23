@@ -363,6 +363,55 @@ public void loadData(){
     }
     
 }
+
+public class InventoryUtil {
+    public static int getStock(String productName) {
+        int stock = 0;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            String url = "jdbc:MYSQL://localhost:3306/brewjuan";
+            String user = "root";
+            String pass = "";
+            Connection con = DriverManager.getConnection(url, user, pass);
+            Statement st = con.createStatement();
+            
+            // Assuming the product name is unique in the inventory table
+            String sql = "SELECT stock FROM inventory WHERE prod_name = '" + productName + "'";
+            ResultSet rs = st.executeQuery(sql);
+            
+            if (rs.next()) {
+                stock = rs.getInt("stock");
+            }
+            
+            con.close();
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        return stock;
+    }
+     public static void updateStock(String productName, int newStock) {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            String url = "jdbc:MYSQL://localhost:3306/brewjuan";
+            String user = "root";
+            String pass = "";
+            Connection con = DriverManager.getConnection(url, user, pass);
+            Statement st = con.createStatement();
+            
+            String sql = "UPDATE inventory SET stock = " + newStock + " WHERE prod_name = '" + productName + "'";
+            st.executeUpdate(sql);
+            
+            con.close();
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
+
+
+
+
+
     private void inventory_clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inventory_clearBtnActionPerformed
         // TODO add your handling code here:
         

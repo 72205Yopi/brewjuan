@@ -12,6 +12,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.ImageIcon;
+import brewjuan.invpage.InventoryUtil;
+
 
 /**
  *
@@ -240,7 +242,7 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel78 = new javax.swing.JLabel();
         sinkerbtn = new javax.swing.JButton();
         title = new javax.swing.JLabel();
-        back_Button = new javax.swing.JButton();
+        logout_Button = new javax.swing.JButton();
         receiptpanel = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         receiptpanel2 = new javax.swing.JPanel();
@@ -394,7 +396,7 @@ public class order_page1 extends javax.swing.JFrame {
         jLabel7.setText("Price:");
 
         cappucinolbl.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        cappucinolbl.setText("Cappucino");
+        cappucinolbl.setText("Cappuccino");
 
         cappucinoprice.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         cappucinoprice.setText("100.00");
@@ -1954,7 +1956,7 @@ public class order_page1 extends javax.swing.JFrame {
                         .addGroup(menulistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(Cappuccino_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Matcha_Esspresso_frame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                         .addGroup(menulistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(ATTC_frame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(MCISE_frame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1962,7 +1964,7 @@ public class order_page1 extends javax.swing.JFrame {
                         .addGroup(menulistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Caramelnut_frame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Salted_caramel_frame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(60, Short.MAX_VALUE))))
+                        .addContainerGap(123, Short.MAX_VALUE))))
         );
         menulistLayout.setVerticalGroup(
             menulistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2037,15 +2039,15 @@ public class order_page1 extends javax.swing.JFrame {
             }
         });
 
-        back_Button.setBackground(new java.awt.Color(0, 0, 0));
-        back_Button.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        back_Button.setForeground(new java.awt.Color(255, 255, 255));
-        back_Button.setText("log-out");
-        back_Button.setBorderPainted(false);
-        back_Button.setFocusPainted(false);
-        back_Button.addActionListener(new java.awt.event.ActionListener() {
+        logout_Button.setBackground(new java.awt.Color(0, 0, 0));
+        logout_Button.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        logout_Button.setForeground(new java.awt.Color(255, 255, 255));
+        logout_Button.setText("Log-Out");
+        logout_Button.setBorderPainted(false);
+        logout_Button.setFocusPainted(false);
+        logout_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                back_ButtonActionPerformed(evt);
+                logout_ButtonActionPerformed(evt);
             }
         });
 
@@ -2212,10 +2214,10 @@ public class order_page1 extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(title)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(back_Button))
+                        .addComponent(logout_Button))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(8, 8, 8)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1444, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(receiptpanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2228,17 +2230,17 @@ public class order_page1 extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(back_Button))
+                        .addComponent(logout_Button))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addComponent(title)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 2203, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(receiptpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 2513, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(receiptpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
@@ -2263,13 +2265,13 @@ public class order_page1 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
-    private void back_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back_ButtonActionPerformed
+    private void logout_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logout_ButtonActionPerformed
         // TODO add your handling code here:
         login frame = new login(history);
         frame.show();
 
         dispose();
-    }//GEN-LAST:event_back_ButtonActionPerformed
+    }//GEN-LAST:event_logout_ButtonActionPerformed
     
     public void brewJuan(){
         String receiptMessage = "**************MARAMING SALAMAT PO!***************** \n";
@@ -2290,263 +2292,388 @@ public class order_page1 extends javax.swing.JFrame {
 
     private void ovaltinebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ovaltinebtnActionPerformed
         int qty = Integer.parseInt(ovaltinefosspin.getValue().toString());
+        int currentStock = InventoryUtil.getStock(jLabel25.getText());
+          
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(jLabel25.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 115.00;
+            double price = qty * 115.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel25.getText()+ "\t\t" + price + "\n");
         
         
         ovaltinefosspin.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+ jLabel25);
+        }
+        
     }//GEN-LAST:event_ovaltinebtnActionPerformed
 
     private void summertimebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_summertimebtnActionPerformed
         int qty = Integer.parseInt(sumspin.getValue().toString());
+        int currentStock = InventoryUtil.getStock(jLabel24.getText());
+          
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(jLabel24.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+           
             }
-        }
-        double price = qty * 125.00;
+             double price = qty * 125.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel24.getText()+ "\t\t" + price + "\n");
         
         
         sumspin.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+ jLabel24);
+        }
     }//GEN-LAST:event_summertimebtnActionPerformed
 
     private void chocobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chocobtnActionPerformed
         int qty = Integer.parseInt(chocspin.getValue().toString());
+         int currentStock = InventoryUtil.getStock(jLabel22.getText());
+          
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(jLabel22.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 100.00;
+            double price = qty * 100.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel23.getText()+ "\t\t\t" + price + "\n");
         
         
         chocspin.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+ jLabel22);
+        }
+        
     }//GEN-LAST:event_chocobtnActionPerformed
 
     private void tocbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tocbtnActionPerformed
         int qty = Integer.parseInt(tocspin.getValue().toString());
+        int currentStock = InventoryUtil.getStock(jLabel22.getText());
+          
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(jLabel22.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 110.00;
+            double price = qty * 110.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel22.getText()+ "\t\t" + price + "\n");
         
         
         tocspin.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+ jLabel22);
+        }
+
+        
     }//GEN-LAST:event_tocbtnActionPerformed
 
     private void whitechocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_whitechocoActionPerformed
         int qty = Integer.parseInt(jSpinner12.getValue().toString());
+        int currentStock = InventoryUtil.getStock(whitechocolbl.getText());
+          
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(whitechocolbl.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+             
             }
-        }
-        double price = qty * 110.00;
+            double price = qty * 110.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + whitechocolbl.getText()+ "\t\t\t" + price + "\n");
         
         
         jSpinner12.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+ whitechocolbl);
+        }
+        
+       
     }//GEN-LAST:event_whitechocoActionPerformed
 
     private void saltedcarabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saltedcarabtnActionPerformed
         int qty = Integer.parseInt(jSpinner11.getValue().toString());
+        int currentStock = InventoryUtil.getStock(saltedcaralbl.getText());
+          
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(saltedcaralbl.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+           
             }
-        }
-        double price = qty * 115.00;
+             double price = qty * 115.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + saltedcaralbl.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + saltedcaralbl.getText()+ "\t\t" + price + "\n");
         
         jSpinner11.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+ saltedcaralbl);
+        }
+        
     }//GEN-LAST:event_saltedcarabtnActionPerformed
 
     private void mcisebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mcisebtnActionPerformed
         int qty = Integer.parseInt(jSpinner10.getValue().toString());
+        int currentStock = InventoryUtil.getStock(mciselbl1.getText());
+          
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(mciselbl1.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 125.00;
+            double price = qty * 125.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + "Muscovado Cinnamon Iced \n Shaken Espresso"+ "\t\t" + price + "\n");
         
         jSpinner10.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for Muscovado Cinnamon Iced  Shaken Espresso");
+        }
+        
     }//GEN-LAST:event_mcisebtnActionPerformed
 
     private void matchpressbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matchpressbtnActionPerformed
         int qty = Integer.parseInt(jSpinner9.getValue().toString());
-        if (qtyIsZero(qty)){
+        
+            int currentStock = InventoryUtil.getStock(matchpresslbl.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(matchpresslbl.getText(), currentStock - qty);
+         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
+            double price = qty * 120.00;
+            total += price;
+            prodSold += qty;
+            receipttxt.setText(receipttxt.getText() + x + ". " + matchpresslbl.getText() + "\t\t" + price + "\n");
+            jSpinner9.setValue(0);
         }
-        double price = qty * 120.00;
-        total += price;
-        prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + matchpresslbl.getText()+ "\t\t" + price + "\n");
-        
-        jSpinner9.setValue(0);
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+matchpresslbl.getText());
+        }
     }//GEN-LAST:event_matchpressbtnActionPerformed
 
     private void darkchcobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_darkchcobtnActionPerformed
         int qty = Integer.parseInt(jSpinner8.getValue().toString());
-        if (qtyIsZero(qty)){
+        int currentStock = InventoryUtil.getStock(darkChocolbl.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(darkChocolbl.getText(), currentStock - qty);
+         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
+            double price = qty * 110.00;
+            total += price;
+            prodSold += qty;
+            receipttxt.setText(receipttxt.getText() + x + ". " + darkChocolbl.getText() + "\t\t" + price + "\n");
+            jSpinner8.setValue(0);
         }
-        double price = qty * 110.00;
-        total += price;
-        prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + darkChocolbl.getText()+ "\t\t\t" + price + "\n");
-        
-        jSpinner8.setValue(0);
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+darkChocolbl.getText());
+        }
     }//GEN-LAST:event_darkchcobtnActionPerformed
 
     private void cjcbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cjcbtnActionPerformed
         int qty = Integer.parseInt(jSpinner7.getValue().toString());
+        int currentStock = InventoryUtil.getStock(crkrjckcmllbl.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(crkrjckcmllbl.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+             
             }
-        }
-        double price = qty * 130.00;
+            double price = qty * 130.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + crkrjckcmllbl.getText()+ "\t\t\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + crkrjckcmllbl.getText()+ "\t\t" + price + "\n");
         
         jSpinner7.setValue(0);
+        }
+       
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+crkrjckcmllbl.getText());
+        }
     }//GEN-LAST:event_cjcbtnActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         int qty = Integer.parseInt(jSpinner6.getValue().toString());
+        int currentStock = InventoryUtil.getStock(caramachilbl.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(caramachilbl.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+             
             }
-        }
-        double price = qty * 100.00;
+            double price = qty * 100.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + caramachilbl.getText()+ "\t\t" + price + "\n");
         
         jSpinner6.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+caramachilbl.getText());
+        }
+        
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void caranutbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caranutbtnActionPerformed
         int qty = Integer.parseInt(jSpinner5.getValue().toString());
+        int currentStock = InventoryUtil.getStock(caramelnutlbl.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(caramelnutlbl.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 130.00;
+            double price = qty * 130.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + caramelnutlbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner5.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+caramelnutlbl.getText());
+        }
     }//GEN-LAST:event_caranutbtnActionPerformed
 
     private void ATTCbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ATTCbtnActionPerformed
         int qty = Integer.parseInt(jSpinner4.getValue().toString());
+         int currentStock = InventoryUtil.getStock(ATTClbl.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock( ATTClbl.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 120.00;
+            double price = qty * 120.00;
         total += price;
         prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + ATTClbl.getText()+ "\t" + price + "\n");
+        receipttxt.setText(receipttxt.getText()+x+". " + ATTClbl.getText()+ "\t\t" + price + "\n");
         
         jSpinner4.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+ATTClbl.getText());
+        }
+        
     }//GEN-LAST:event_ATTCbtnActionPerformed
 
     private void cappucinobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cappucinobtnActionPerformed
         int qty = Integer.parseInt(jSpinner3.getValue().toString());
+         int currentStock = InventoryUtil.getStock(cappucinolbl.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(cappucinolbl.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 100.00;
+            double price = qty * 100.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + cappucinolbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner3.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+cappucinolbl.getText());
+        }
+        
     }//GEN-LAST:event_cappucinobtnActionPerformed
 
     private void lattebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lattebtnActionPerformed
         int qty = Integer.parseInt(jSpinner2.getValue().toString());
+         int currentStock = InventoryUtil.getStock(lattelbl.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(lattelbl.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 90.00;
-        total += price;
-        prodSold += qty;
-        receipttxt.setText(receipttxt.getText()+x+". " + lattelbl.getText()+ "\t\t\t" + price + "\n");
+            double price = qty * 90.00;
+            total += price;
+            prodSold += qty;
+            receipttxt.setText(receipttxt.getText()+x+". " + lattelbl.getText()+ "\t\t\t" + price + "\n");
         
-        jSpinner2.setValue(0);
+            jSpinner2.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+lattelbl.getText());
+        }
+        
     }//GEN-LAST:event_lattebtnActionPerformed
 
     private void americanobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_americanobtnActionPerformed
         int qty = Integer.parseInt(jSpinner1.getValue().toString());
+         int currentStock = InventoryUtil.getStock(americanolbl.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(americanolbl.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+             
             }
-        }
-        double price = qty * 80.00;
+            double price = qty * 80.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + americanolbl.getText()+ "\t\t\t" + price + "\n");
         
         jSpinner1.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+americanolbl.getText());
+        }
+        
+       
     }//GEN-LAST:event_americanobtnActionPerformed
 
     private void totaltxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totaltxtActionPerformed
@@ -2605,7 +2732,6 @@ public class order_page1 extends javax.swing.JFrame {
           change = 0.00;
           cash = 0.00;
           prodSold = 0;
-          x = 0;
           totaltxt.setText("₱ 0.00");
           cashtxt.setText("");
           changetxt.setText("₱ 0.00");
@@ -2632,16 +2758,23 @@ public class order_page1 extends javax.swing.JFrame {
 
     private void ovaltinemaltbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ovaltinemaltbtnActionPerformed
         int qty = Integer.parseInt(ovaltinemaltspin.getValue().toString());
+         int currentStock = InventoryUtil.getStock(jLabel35.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(jLabel35.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 140.00;
+             double price = qty * 140.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel35.getText()+ "\t\t\t" + price + "\n");
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+americanolbl.getText());
+        }
+       
         
         
         ovaltinemaltspin.setValue(0);
@@ -2661,155 +2794,216 @@ public class order_page1 extends javax.swing.JFrame {
 
     private void matchabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matchabtnActionPerformed
         int qty = Integer.parseInt(matchaspin.getValue().toString());
+         int currentStock = InventoryUtil.getStock(jLabel28.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(jLabel28.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+           
             }
-        }
-        double price = qty * 100.00;
+             double price = qty * 100.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel28.getText()+ "\t\t" + price + "\n");
         
         
         matchaspin.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+jLabel28.getText());
+        }
+        
     }//GEN-LAST:event_matchabtnActionPerformed
 
     private void brewkuanbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brewkuanbtnActionPerformed
         int qty = Integer.parseInt(brewjuanspin.getValue().toString());
+         int currentStock = InventoryUtil.getStock(jLabel26.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(jLabel26.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 140.00;
+            double price = qty * 140.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel26.getText()+ "\t\t" + price + "\n");
         
         
         brewjuanspin.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+jLabel26.getText());
+        }
     }//GEN-LAST:event_brewkuanbtnActionPerformed
 
     private void burntbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_burntbtnActionPerformed
         int qty = Integer.parseInt(burntspin.getValue().toString());
+         int currentStock = InventoryUtil.getStock(jLabel30.getText());
+        if (currentStock >= qty) {
+            InventoryUtil.updateStock(jLabel30.getText(), currentStock - qty);
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 145.00;
+            double price = qty * 145.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel30.getText()+ "\t\t" + price + "\n");
         
         
         burntspin.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+jLabel30.getText());
+        }
+        
     }//GEN-LAST:event_burntbtnActionPerformed
 
     private void oreobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oreobtnActionPerformed
         int qty = Integer.parseInt(oreospin.getValue().toString());
+        int currentStock = InventoryUtil.getStock(jLabel33.getText());
+        if (currentStock >= qty) {
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 140.00;
+            double price = qty * 140.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel33.getText()+ "\t\t\t" + price + "\n");
         
         
         oreospin.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+jLabel33.getText());
+        }
+        
     }//GEN-LAST:event_oreobtnActionPerformed
 
     private void strawberrybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_strawberrybtnActionPerformed
         int qty = Integer.parseInt(strawberryspin.getValue().toString());
+        int currentStock = InventoryUtil.getStock(jLabel37.getText());
+        if (currentStock >= qty) {
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 130.00;
+            double price = qty * 130.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel37.getText()+ "\t\t" + price + "\n");
         
         
         strawberryspin.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+jLabel37.getText());
+        }
+        
     }//GEN-LAST:event_strawberrybtnActionPerformed
 
     private void okinawabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okinawabtnActionPerformed
         int qty = Integer.parseInt(okinawaspin.getValue().toString());
+        int currentStock = InventoryUtil.getStock(jLabel48.getText());
+        if (currentStock >= qty) {
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 70.00;
+            double price = qty * 70.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel48.getText()+ "\t\t" + price + "\n");
         
         
         okinawaspin.setValue(0);
+        }
+        }else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+jLabel48.getText());
+        }
+        
     }//GEN-LAST:event_okinawabtnActionPerformed
 
     private void passionbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passionbtnActionPerformed
         int qty = Integer.parseInt(passionspin.getValue().toString());
+        int currentStock = InventoryUtil.getStock(jLabel44.getText());
+        if (currentStock >= qty) {
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+             
             }
-        }
-        double price = qty * 90.00;
+            double price = qty * 90.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel44.getText()+ "\t\t" + price + "\n");
         
         
         passionspin.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+jLabel44.getText());
+        }
+        
     }//GEN-LAST:event_passionbtnActionPerformed
 
     private void lycheebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lycheebtnActionPerformed
         int qty = Integer.parseInt(lycheespin.getValue().toString());
+          int currentStock = InventoryUtil.getStock(jLabel42.getText());
+        if (currentStock >= qty) {
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+            
             }
-        }
-        double price = qty * 90.00;
+            double price = qty * 90.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel42.getText()+ "\t\t" + price + "\n");
         
         
         lycheespin.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+jLabel42.getText());
+        }
+        
     }//GEN-LAST:event_lycheebtnActionPerformed
 
     private void berrybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_berrybtnActionPerformed
         int qty = Integer.parseInt(berrylemonspin.getValue().toString());
+        int currentStock = InventoryUtil.getStock(jLabel40.getText());
+        if (currentStock >= qty) {
         if (qtyIsZero(qty)){
             x++;
             if (x == 1){
             brewJuan();
+             
             }
-        }
-        double price = qty * 90.00;
+            double price = qty * 90.00;
         total += price;
         prodSold += qty;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel40.getText()+ "\t\t\t" + price + "\n");
         
         
         berrylemonspin.setValue(0);
+        }}else {
+            JOptionPane.showMessageDialog(null, "Insufficient Stock for "+jLabel40.getText());
+        }
+       
     }//GEN-LAST:event_berrybtnActionPerformed
 
     private void saucebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saucebtnActionPerformed
@@ -2831,7 +3025,7 @@ public class order_page1 extends javax.swing.JFrame {
     }//GEN-LAST:event_sweetcreambtnActionPerformed
 
     private void sinkerbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinkerbtnActionPerformed
-        double price = 1 * 10.00;
+        double price = 1 * 15.00;
         total += price;
         receipttxt.setText(receipttxt.getText()+x+". " + jLabel78.getText()+ "\t\t\t" + price + "\n");
     }//GEN-LAST:event_sinkerbtnActionPerformed
@@ -2902,7 +3096,6 @@ public class order_page1 extends javax.swing.JFrame {
     private javax.swing.JButton americanobtn;
     private javax.swing.JLabel americanolbl;
     private javax.swing.JLabel americanoprice;
-    private javax.swing.JButton back_Button;
     private javax.swing.JButton berrybtn;
     private javax.swing.JSpinner berrylemonspin;
     private javax.swing.JButton biscuitbtn;
@@ -3038,6 +3231,7 @@ public class order_page1 extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner9;
     private javax.swing.JButton lattebtn;
     private javax.swing.JLabel lattelbl;
+    private javax.swing.JButton logout_Button;
     private javax.swing.JButton lycheebtn;
     private javax.swing.JSpinner lycheespin;
     private javax.swing.JButton matchabtn;
