@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.JFrame;
 import static javax.swing.JOptionPane.showMessageDialog;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -186,7 +187,7 @@ public class login extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+ 
     private void user_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_user_fieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_user_fieldActionPerformed
@@ -227,7 +228,7 @@ public class login extends javax.swing.JFrame {
                     p.setVisible(true);
                      this.dispose();
                 }else if(username.equals("cashier")){
-                   order_page1 o = new order_page1(history);
+                   order_page o = new order_page(history);
                     o.setVisible(true);
                      this.dispose(); 
                 }else if(username.equals("")){
@@ -252,27 +253,6 @@ public class login extends javax.swing.JFrame {
         }
 
         
-//      if(user_field.getText().equals("")){
-        //    user_dialog.showMessageDialog(null,"Please fill out the Username");
-       // }
-      // else if (pass_field.getText().equals("")){
-        //   pass_dialog.showMessageDialog(null,"Please fill out the Username");
-      // }
-      // else if(user_field.getText().contains("admin")&& pass_field.getText().contains("123456")) {
-       //  btnspage frame = new btnspage(history);
-        //  frame.show();
-          
-        //  dispose();
-        //   
-      // }
-       //else if(user_field.getText().contains("cashier")&& pass_field.getText().contains("654321")) {
-        // order_page frame = new order_page(history);
-        //  frame.show();
-          
-        ///  dispose();}
-      // else{
-        //   error_dialog.showMessageDialog(null,"Wrong Password or Username ! ! ! ", "Message", error_dialog.ERROR_MESSAGE);
-      // }//
     }//GEN-LAST:event_login_buttonActionPerformed
 
     private void pass_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pass_fieldActionPerformed

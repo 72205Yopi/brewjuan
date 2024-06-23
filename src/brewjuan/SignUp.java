@@ -8,16 +8,52 @@ import java.sql.Statement;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import static javax.swing.JOptionPane.showMessageDialog;
+import brewjuan.login;
 
 
 
 public class SignUp extends javax.swing.JFrame {
 
+    private historypage history;
+
  
     public SignUp() {
         initComponents();
     }
-
+private void loginUser(Connection con, String username, String passWord) {
+        String query, full_name, password = null;
+        int notFound = 0;
+        try {
+            Statement st = con.createStatement();
+            query = "SELECT * FROM credentials WHERE username= '" + username + "'";
+            ResultSet rs = st.executeQuery(query);
+            while (rs.next()) {
+                password = rs.getString("password");
+                full_name = rs.getString("full_name");
+                notFound = 1;
+            }
+            if (notFound == 1 && passWord.equals(password)) {
+                if (username.equals("admin")) {
+                    btnspage p = new btnspage(history);
+                    p.setVisible(true);
+                    this.dispose();
+                } else if (username.equals("cashier")) {
+                    order_page o = new order_page(history);
+                    o.setVisible(true);
+                    this.dispose();
+                } else {
+                    order_page1 o = new order_page1(history);
+                    o.setVisible(true);
+                    this.dispose();
+                }
+            } else {
+               JOptionPane.showMessageDialog(new JFrame(), "Incorrect email or password", "Error",
+                        JOptionPane.ERROR_MESSAGE);
+            }
+        } catch (Exception e) {
+            System.out.println("Error!" + e.getMessage());
+        }
+    }
   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -200,7 +236,7 @@ public class SignUp extends javax.swing.JFrame {
 
     private void SignUpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpBtnActionPerformed
         // System.out.println("Sign up btn clicked");
-        String fullName,username, email, Password, query;
+        String fullName,username = null, email, Password = null, query;
         String SUrl, SUser, SPass;
         SUrl = "jdbc:MySQL://localhost:3306/brewjuan";
         SUser = "root";
@@ -238,6 +274,8 @@ public class SignUp extends javax.swing.JFrame {
             pass.setText("");
             showMessageDialog(null, "New account has been created successfully!");
             }
+         loginUser(con, username, Password);
+            
         }catch(Exception e){
            System.out.println("Error!" + e.getMessage()); 
         }
